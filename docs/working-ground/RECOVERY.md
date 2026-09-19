@@ -2,7 +2,7 @@
 
 Start with [PROGRESS.md](PROGRESS.md) to find the phase, then inspect its exact
 mathematical statement, assumptions, source notes and evidence. R01–R02 concern
-foundations and revision; R03–R07 develop information, disclosure and enforcement.
+foundations and revision; R03–R08 develop information, disclosure, enforcement and sequential protocol composition.
 The games and information assumptions change between phases: their numerical
 results cannot be compared without checking those differences.
 
@@ -20,3 +20,14 @@ record earlier checks; moving these files is not a new verification run.
 The larger revision experiment was prepared but never run. It remains a proposed
 experiment, not an inherited result. Future work should not silently treat it as
 completed.
+
+For R08, preserve the distinction between (i) an actual model in which private
+facts are independent, (ii) the analyst's shared uncertainty constraint over the
+local positive probabilities, and (iii) an outer approximation formed from
+separate coordinate ranges. The R08 enforcement gap comes from discarding the
+shared analyst-side constraint, not from introducing correlation among the
+realized private facts.
+
+When extending R08, first test whether the proposed communication protocol makes
+the alleged joint constraint reachable by a unilateral deviation. Do not infer a
+strategic obstruction merely from an algebraic restriction on joint messages.

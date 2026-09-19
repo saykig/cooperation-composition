@@ -194,3 +194,61 @@ verification is claimed. README/programme steering now retain the sender's
 information partition and consistency rule. A repository release note records
 this transition; no GitHub Release or product changes. Prior frozen records and
 unrelated foundations local files are preserved. The R02 experiment remains unrun.
+
+## R08 — 9 September: sequential disclosure and compatible uncertainty
+
+**Question:** after the multi-sender novelty audit, what composition problem remains
+that is both mathematically real and connected to the enforcement programme?
+Can separately retained local probability ranges misstate the enforcement needed
+when disclosure occurs sequentially?
+
+**Literature correction:** minimum payments supporting a fixed information scheme,
+multi-sender persuasion, product restrictions, sequential persuasion and costly
+multi-sender disclosure already have substantial foundations. The phase therefore
+rejects a broad novelty claim based only on combining information with incentives.
+
+**Negative results:** enlarging the family of information structures that must all
+be tolerated cannot lower a universal robust fine; this is different from enlarging
+the institution's design menu. For fixed obedience constraints, convex mixtures of
+already-admissible information kernels do not change the universal threshold.
+The proposed simultaneous all-silent rank-one obstruction also fails in the stated
+unilateral-deviation model: a single sender deviation reaches a solo-message
+history, not a joint-disclosure history.
+
+**Positive result:** in a declared complementary-evidence game with independent
+binary facts, costly authenticated positive reports and a sequential disclosure
+order, an exact criterion determines whether fine 0 suffices or the full-information
+fine B is necessary. For order pi, a disclosure cascade occurs exactly when every
+sender j satisfies
+
+    k_{pi_j} < eta_{pi_j} * product_{l>j} p_{pi_l}.
+
+At a known probability vector, some order supports zero fine iff some sender i has
+
+    k_i / eta_i >= product_{j!=i} p_j.
+
+**Composition example:** with three senders and one shared one-dimensional
+constraint on their local positive probabilities, order (1,2,3) supports zero
+fine for every admissible model even though the identity of the sender blocking
+the cascade changes across models. Replacing that shared family by the same
+separate local probability ranges admits an impossible upper-corner combination
+under which every order cascades, raising the optimized robust fine from 0 to 1.
+The interval relaxation is conservative: it demands unnecessary enforcement.
+
+**Evidence:** analytical derivations plus 4,802 exact rational checks:
+960 sequential-fine checks, 1,824 order comparisons, 918 shared-family/outer-box
+checks, 900 exact tremble/posterior checks and 200 hidden-mixture obedience checks.
+No Lean or other formal proof checker was run. Computational checks corroborate
+the formulas but do not establish the continuum proofs, novelty or empirical fit.
+
+**Recover:** [phase README](research/sequential_disclosure_2026_09_09/README.md),
+[research note](research/sequential_disclosure_2026_09_09/manuscript/RESEARCH_NOTE.md),
+[current state](research/sequential_disclosure_2026_09_09/CURRENT_STATE.md),
+[source audit](research/sequential_disclosure_2026_09_09/sources/NOTES.md), and
+[experiment summary](research/sequential_disclosure_2026_09_09/experiments/README.md).
+
+**Next bounded attack:** characterize robust sequential order choice under a
+declared class of genuinely shared uncertainty constraints. Rectangular uncertainty
+is already solved by the upper corner. For a class such as compact polytopes in
+local probabilities, seek a necessary-and-sufficient certificate or a complexity
+boundary. Do not replace the shared family by independent coordinate ranges.

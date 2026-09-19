@@ -50,3 +50,35 @@ low-fine continuation violates strong persistence, so the example refutes only
 weak existence language. Uniform near-optimal COMMON DESIGN recovery is the exact
 criterion under compact closedness; individual optimizer persistence is stronger
 than necessary. See R07b proofs and rejected approaches.
+
+## D20 — 9 September, R08: robust uncertainty is not design freedom
+
+If an institution must sustain the target for every information structure in a
+family, enlarging that family cannot lower the minimum robust fine. Earlier language
+that blurred this with enlarging an institution's available design menu was
+incorrect. Keep universal robustness and existential design as separate queries.
+
+## D21 — 9 September, R08: abandon the simultaneous joint-message obstruction
+
+In the all-silent simultaneous multi-sender target, one sender's unilateral
+deviation reaches only a solo-message history. Restrictions on beliefs after two
+or more simultaneous disclosures therefore do not by themselves create the desired
+enforcement incompatibility. Product/rank-one restrictions remain real probability
+constraints, but they are not enough for this target and deviation concept.
+
+## D22 — 9 September, R08: disclosure order creates an active composition problem
+
+Sequential disclosure lets an earlier report alter the profitability of a later
+report. In the complementary-evidence benchmark, the minimum fine is determined by
+whether a disclosure cascade can complete. Timing therefore creates a genuine
+strategic connection between local information components that was absent in the
+simultaneous all-silent construction.
+
+## D23 — 9 September, R08: separate local ranges can overstate enforcement
+
+The three-sender shared-family example needs zero fine under one fixed order for
+every admissible law, while the outer rectangle formed from the same coordinate
+ranges needs fine one even after optimizing over all orders. A component's separate
+probability range is therefore not a sufficient summary for this strategic query.
+Preserve shared compatibility constraints until the order/enforcement calculation
+is complete.
