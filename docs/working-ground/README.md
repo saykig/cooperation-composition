@@ -7,6 +7,8 @@ literature notes, experiments and changes of direction in one place.
 - [Research progress](PROGRESS.md)
 - [Decisions, failures and corrections](DECISIONS.md)
 - [How to revisit and extend the work](RECOVERY.md)
+- [Verification ledger](VERIFICATION.md)
+- [Formalization backlog](FORMALIZATION_BACKLOG.md)
 
 ## Research phases
 

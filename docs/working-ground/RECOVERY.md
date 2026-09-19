@@ -2,7 +2,7 @@
 
 Start with [PROGRESS.md](PROGRESS.md) to find the phase, then inspect its exact
 mathematical statement, assumptions, source notes and evidence. R01–R02 concern
-foundations and revision; R03–R08 develop information, disclosure, enforcement and sequential protocol composition.
+foundations and revision; R03–R10 develop information, disclosure, enforcement and sequential protocol composition.
 The games and information assumptions change between phases: their numerical
 results cannot be compared without checking those differences.
 
@@ -31,3 +31,11 @@ realized private facts.
 When extending R08, first test whether the proposed communication protocol makes
 the alleged joint constraint reachable by a unilateral deviation. Do not infer a
 strategic obstruction merely from an algebraic restriction on joint messages.
+
+
+Before inheriting a theorem into a later phase, check
+[VERIFICATION.md](VERIFICATION.md). A downstream result may rely on a written proof
+that is not yet Lean-formalized. That is allowed, but the inherited status must not
+be silently upgraded. Every new phase should record which prior statements it
+uses and whether those statements are written, computationally checked or formally
+proved.

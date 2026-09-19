@@ -1,0 +1,108 @@
+name: Research verification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/working-ground/research/**"
+      - "docs/working-ground/VERIFICATION.md"
+      - "docs/working-ground/FORMALIZATION_BACKLOG.md"
+      - ".github/workflows/research-verification.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "docs/working-ground/research/**"
+      - "docs/working-ground/VERIFICATION.md"
+      - "docs/working-ground/FORMALIZATION_BACKLOG.md"
+      - ".github/workflows/research-verification.yml"
+  workflow_dispatch:
+
+jobs:
+  exact-python:
+    name: Exact/replayable Python checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: R01 foundations
+        run: |
+          python3 docs/working-ground/research/foundations/experiments/checks.py >/tmp/r01-checks.json
+          python3 docs/working-ground/research/foundations/experiments/signature_probe.py >/tmp/r01-signatures.json
+      - name: R02 clarification probes
+        run: python3 docs/working-ground/research/clarification_2026_08_13/probes.py >/tmp/r02-probes.json
+      - name: R07 optimized gate recovery
+        run: |
+          python3 docs/working-ground/research/optimized_gate_recovery_2026_08_14/experiments/search.py >/tmp/r07-search.json
+          python3 docs/working-ground/research/optimized_gate_recovery_2026_08_14/experiments/check.py >/tmp/r07-check.json
+          python3 -O docs/working-ground/research/optimized_gate_recovery_2026_08_14/experiments/check.py >/tmp/r07-check-O.json
+      - name: R09 robust order polytope
+        working-directory: docs/working-ground/research/robust_order_polytope_2026_09_19/experiments
+        run: |
+          python3 check.py >/tmp/r09-check.json
+          python3 -O check.py >/tmp/r09-check-O.json
+          python3 explore.py >/tmp/r09-explore.json
+      - name: R10 two-prefix selection
+        working-directory: docs/working-ground/research/two_prefix_selection_2026_09_19/experiments
+        run: |
+          python3 check.py >/tmp/r10-check.json
+          python3 -O check.py >/tmp/r10-check-O.json
+          python3 additional_checks.py >/tmp/r10-additional.json
+          python3 sharpness.py >/tmp/r10-sharpness.json
+          python3 audit.py >/tmp/r10-audit.json
+
+  numerical-python:
+    name: Numerical falsification/regression checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned numerical dependencies
+        run: pip install -r docs/working-ground/research/information_incentives_2026_08_14/experiments/requirements.txt
+      - name: R03 information incentives
+        run: |
+          python3 docs/working-ground/research/information_incentives_2026_08_14/experiments/check.py >/tmp/r03-check.json
+          python3 docs/working-ground/research/information_incentives_2026_08_14/experiments/hidden_separator.py >/tmp/r03-hidden.json
+          python3 docs/working-ground/research/information_incentives_2026_08_14/experiments/tree_identity.py >/tmp/r03-tree.json
+          python3 docs/working-ground/research/information_incentives_2026_08_14/experiments/disclosure_exact.py >/tmp/r03-disclosure.json
+      - name: R04 partial certificate frontier
+        run: python3 docs/working-ground/research/partial_certificate_frontier_2026_08_14/experiments/check.py >/tmp/r04-check.json
+      - name: R05 disclosure boundaries
+        run: python3 docs/working-ground/research/disclosure_boundaries_2026_08_14/experiments/check.py >/tmp/r05-check.json
+
+  lean-existing:
+    name: Existing Lean proof scope
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan and pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          "$HOME/.elan/bin/elan" toolchain install leanprover/lean4:v4.33.1
+      - name: R01 relational core
+        working-directory: docs/working-ground/research/foundations/lean
+        run: lean +leanprover/lean4:v4.33.1 Compatibility.lean
+      - name: Prepare pinned Mathlib cache
+        working-directory: docs/working-ground/research/information_incentives_2026_08_14/lean
+        run: |
+          lake update
+          lake exe cache get
+      - name: R03 narrow Lean proof
+        working-directory: docs/working-ground/research/information_incentives_2026_08_14/lean
+        run: python3 verify.py --packages .lake/packages --lean lean >/tmp/r03-lean.json
+      - name: R04 narrow Lean proof
+        run: |
+          python3 docs/working-ground/research/partial_certificate_frontier_2026_08_14/lean/verify.py             --packages docs/working-ground/research/information_incentives_2026_08_14/lean/.lake/packages             --lean lean >/tmp/r04-lean.json
+      - name: R05 fixed-information game proof
+        run: |
+          python3 docs/working-ground/research/disclosure_boundaries_2026_08_14/lean/verify.py             --packages docs/working-ground/research/information_incentives_2026_08_14/lean/.lake/packages             --lean lean >/tmp/r05-lean.json
+      - name: Reject admitted proof placeholders
+        run: |
+          if grep -R -nE '\b(sorry|admit)\b'             docs/working-ground/research/foundations/lean             docs/working-ground/research/information_incentives_2026_08_14/lean             docs/working-ground/research/partial_certificate_frontier_2026_08_14/lean             docs/working-ground/research/disclosure_boundaries_2026_08_14/lean             --include='*.lean'; then
+            echo "Found sorry/admit in claimed Lean verification scope"
+            exit 1
+          fi

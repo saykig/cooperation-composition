@@ -23,6 +23,11 @@ history here. Prior Bellman research may be read as background.
   DECISIONS.md before continuing the trajectory. Keep those ledgers current.
 - Record corrections and failed approaches without erasing prior mathematical
   findings. Distinguish assumptions, proofs, computations and formal verification.
+- For every new mathematical phase, update `docs/working-ground/VERIFICATION.md`.
+  Never write simply "verified": state the exact theorem/artifact and whether the
+  evidence is a written proof, exact computation, numerical check, Lean proof, or
+  independent external replay. Unformalized current mathematics must stay labelled
+  as such.
 - The historical research chronology starts August 13, 2026 as supplied by the
   author. Do not infer altered publication dates or verification timestamps.
 - Do not add a separate provenance archive. Keep research directly organized in
