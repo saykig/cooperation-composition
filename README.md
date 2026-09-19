@@ -1,4 +1,4 @@
-# Cooperation & Composition
+# Cooperation & Enforcement
 
 This repository records the development of my MA major thesis: the questions, proofs, counterexamples, literature notes, computational experiments, failed directions, and changes in argument as the research develops.
 
