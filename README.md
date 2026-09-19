@@ -1,5 +1,7 @@
 # Cooperation & Enforcement
 
+[![Research verification](https://github.com/saykig/cooperation-enforcement/actions/workflows/research-verification.yml/badge.svg)](https://github.com/saykig/cooperation-enforcement/actions/workflows/research-verification.yml)
+
 This repository records the development of my MA major thesis: the questions, proofs, counterexamples, literature notes, computational experiments, failed directions, and changes in argument as the research develops.
 
 Current literature already has substantial work on cooperation, information design, signaling, incentives, enforcement, and strategic communication. I am not trying to rebuild those literatures; instead, I am interested in a place where they seem to remain somewhat fragmented. Consider the following question: **what happens to cooperation when different information sources and strategic actors are connected, and when institutions can respond by changing either who learns what or how strongly cooperation is enforced?**
