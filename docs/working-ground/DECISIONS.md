@@ -119,3 +119,20 @@ existential order selection to n(n−1) exact univariate decisions. Distinct rej
 pairs can require distinct witness models; never replace this with one universal
 bad model. Software certificates cover root cells exactly, not a sampled grid.
 See [proof](research/two_prefix_selection_2026_09_19/math/THEOREM.md).
+
+## D29 — September 19, R10b: two-prefix selection is dimension-sensitive
+
+The conjecture that two senders always suffice is false in the same game: an
+explicit n=4,d=2 triangle needs three, and an n=5,d=3 hull needs four. Weighted
+AM-GM proves the successful-prefix assertion on the entire hull; finite rational
+witnesses prove each shorter prefix fails. These are not vertex-only success tests.
+The examples use admissible receiver thresholds near one; sharpness at a separately
+fixed numerical threshold such as 2/3 is not established by them. See
+[sharpness](research/two_prefix_selection_2026_09_19/math/SHARPNESS.md).
+
+## D30 — September 19, R10b: an incomplete search is not a stronger theorem
+
+The bounded six-sender construction search left 20 four-prefixes without found
+witnesses. This does not prove those prefixes succeed or that the dimension-four
+bound improves. Retain the inconclusive receipt and distinguish it from the
+fully certified lower-dimensional hulls.

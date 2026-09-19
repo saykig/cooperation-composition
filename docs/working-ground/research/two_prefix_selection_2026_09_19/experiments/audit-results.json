@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "audit_checks": 42,
+  "optimized_run": {
+    "counts_identical": true,
+    "certificates_identical": true,
+    "checks": 2271,
+    "python": "3.9.6"
+  },
+  "receipt_sha256": {
+    "results.json": "d901ed0a395ba356beb6ad871a6075137a313c363c9a2b01c50dd2e5db5d5f1a",
+    "additional-results.json": "8255a9e1f4badf8b4c085e53bcf1508fa929cb3f5503db09082fba9d47e73f4e",
+    "sharpness-results.json": "4ee81ab43e2a4e5aa766298b7671be734a6ef3f296af3fc5ba35821a2ddbcc7a"
+  },
+  "audit_source_sha256": "762f31b7350904d9200a2ad8e47c708a344db52370de486ba5af4ad228c14c02",
+  "scope": "Source identities, saved certificates, hull certificates and CLI; handwritten proofs require mathematical review."
+}

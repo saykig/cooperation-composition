@@ -135,3 +135,24 @@ our particular Python implementation. The executable uses elementary exact Sturm
 subdivision and rational Euclidean arithmetic, not ANewDsc. It is intended for
 small/moderate inputs; no optimized bit bound or production performance guarantee
 is claimed for that code. Its timing receipts measure only their declared cases.
+
+## Boundary sharpening and a self-contained finite Helly argument
+
+If some r_i≥1, that sender alone blocks when put first. Otherwise the last sender's
+strict inequality is always true (empty product 1>r_i), so it cannot help certify
+an empty intersection. For n≥2 the bound can therefore be sharpened to
+min(d+1,n−1), with a length-one solution in the r_i≥1 case. For n=1 use the direct
+constant test. In particular, three senders never require a three-sender certificate,
+even on a two-dimensional family.
+
+For completeness, finite Helly follows from affine dependence and convexity.
+Take an inclusion-minimal subfamily C_1,...,C_m with empty intersection. If m> d+1,
+choose x_i in the intersection of all C_j except C_i. Affine dependence of these
+m points gives coefficients α_i, not all zero, with Σα_i=0 and Σα_i x_i=0.
+Both positive and negative coefficients occur. Normalizing their common total
+magnitude gives a point y in the convex hull of the positive-index points AND
+in the convex hull of the negative-index points. For each k, at least one of
+these disjoint index sets omits k; all its points belong to C_k. Convexity implies
+y∈C_k for every k, a contradiction. Thus m≤d+1. This standard Radon proof is
+borrowed mathematics and works for strict/open, closed or relatively open convex
+sets without any endpoint regularization.

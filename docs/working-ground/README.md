@@ -36,5 +36,13 @@ mathematical proofs, numerical checks and formal verification clearly distinguis
 [Robust disclosure orders over polytopes](research/robust_order_polytope_2026_09_19/README.md)
 gives an exact certificate for a common zero-fine order, sharp counterexamples to
 vertex/local-summary shortcuts, and a no-adaptation result for the AND benchmark.
-The main question remains; variable-n order selection on rational segments is the
-next unresolved attack.
+The historical R09 result is preserved; R10 below resolves its next segment-selection attack.
+
+## Latest result — R10, September 19
+
+[Two-prefix selection](research/two_prefix_selection_2026_09_19/manuscript/RESEARCH_NOTE.md)
+proves that a common zero-fine order on a rational segment exists exactly when
+a prefix of at most two senders works. Selection is polynomial in input bit size.
+An implemented exact selector returns checkable success or all-pair rejection
+certificates. The dimension-d bound d+1 is proved and attained for d=0,1,2,3;
+general sharpness beyond that remains open.

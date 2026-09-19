@@ -302,3 +302,23 @@ tangencies, shared/endpoint roots and a feasible interval narrower than 10^-29.
 No Lean verification or implementation bit-complexity guarantee. The polynomial
 algorithm reduction credits Helly and established root-isolation machinery.
 Higher-dimensional sharpness testing continues after this completed segment milestone.
+
+## R10b — September 19: completed segment selector and dimension sharpness
+
+Following milestone `ce06375`, completed the
+[research note](research/two_prefix_selection_2026_09_19/manuscript/RESEARCH_NOTE.md),
+source audit and completion audit. Preserved the first execution receipt and added
+105 checks for algebraic roots, symmetries and large endpoint denominators.
+Normal/optimized runs agree on the original 2,271 checks and certificates.
+
+**Sharpness:** a four-sender triangle needs a three-prefix: all 12 pairs have exact
+vertex witnesses, while weighted AM-GM certifies a successful triple everywhere
+on the triangle. A five-sender, dimension-three hull likewise needs a four-prefix;
+all 60 ordered triples have certified witnesses. These retain R08's strategic
+model but choose new admissible payoff parameters. General d≥4 tightness remains
+open; a bounded d=4 search was inconclusive, not a nonexistence result.
+
+**Question retained:** segment selection is now solved by borrowed geometry and
+root machinery plus the move-to-front argument. Next attack: general within-game
+sharpness, including whether keeping a particular receiver threshold changes the
+bound. No historical novelty, formal verification or production performance claim.

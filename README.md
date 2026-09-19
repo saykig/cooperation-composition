@@ -17,6 +17,6 @@ This is an abstract mathematical question, but the structure appears in real sec
 
 The [research working ground](docs/working-ground/README.md) collects the mathematical research, progress ledger, counterexamples and evidence, beginning August 13, 2026.
 
-The latest [robust-order investigation](docs/working-ground/research/robust_order_polytope_2026_09_19/manuscript/RESEARCH_NOTE.md)
-characterizes zero enforcement over jointly constrained probability families and
-identifies exactly where simple summaries and ordering rules fail.
+The latest [two-prefix investigation](docs/working-ground/research/two_prefix_selection_2026_09_19/manuscript/RESEARCH_NOTE.md)
+gives an exact polynomial-time way to select a robust disclosure order on rational
+segments, with checkable certificates and sharp higher-dimensional counterexamples.
