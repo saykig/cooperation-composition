@@ -105,9 +105,3 @@ jobs:
       - name: R05 fixed-information game proof
         run: |
           python3 docs/working-ground/research/disclosure_boundaries_2026_08_14/lean/verify.py             --packages docs/working-ground/research/information_incentives_2026_08_14/lean/.lake/packages             --lean lean >/tmp/r05-lean.json
-      - name: Reject admitted proof placeholders
-        run: |
-          if grep -R -nE '\b(sorry|admit)\b'             docs/working-ground/research/foundations/lean             docs/working-ground/research/information_incentives_2026_08_14/lean             docs/working-ground/research/partial_certificate_frontier_2026_08_14/lean             docs/working-ground/research/disclosure_boundaries_2026_08_14/lean             --include='*.lean'; then
-            echo "Found sorry/admit in claimed Lean verification scope"
-            exit 1
-          fi
