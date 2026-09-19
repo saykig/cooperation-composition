@@ -66,6 +66,14 @@ measurement, not a scalability benchmark. See `evidence/results.json` for exact
 versions, timings and source identities, and `evidence/certificates.json` for
 replayable complete outputs. No old phase artifacts are modified.
 
+Run `python additional_checks.py` for saved-bundle replay, 132 direct full-order
+comparisons (including 48 transformed triangle orders), 42 comparisons with R10's
+independent Sturm implementation, the narrow polygon, and three solver-free
+AM-GM certificates. `evidence/additional-results.json` records this audit. Its
+baseline source hashes are bound to milestone `0f94556`; resolve that identity
+explicitly if later repairs change the baseline executable. Do not rewrite old
+receipts to claim they tested new code.
+
 ## Failed implementation approaches retained as lessons
 
 * Comparing Z3 `to_smt2()` strings failed because temporary internal expression

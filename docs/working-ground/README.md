@@ -59,12 +59,13 @@ fixed-threshold versions of this particular construction fail. Arbitrary-family
 sharpness at fixed τ=2/3 remains open. The next algorithmic target is exact
 selection over rational polygons; sharpness does not imply hardness.
 
-## Current work — R12, September 19
+## Latest result — R12, September 19
 
 [Fixed-dimensional selection](research/fixed_dimension_selection_2026_09_19/README.md)
 proves polynomial-time exact order selection for each fixed affine dimension under
 explicit rational V/H input. The polygon implementation has independent exact
 backend checks and auditable outputs; success certificates retain solver trust.
-The final replay audit is in progress. A separate sharpness investigation tightens
+The independent replay audit passed, including prior Sturm comparisons and three
+solver-free AM-GM success certificates. A separate sharpness investigation tightens
 the existing ansatz's singleton threshold and constructive margin, without claiming
 fixed-threshold general sharpness.

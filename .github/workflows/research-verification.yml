@@ -84,6 +84,24 @@ jobs:
           pip install -r docs/working-ground/research/general_sharpness_2026_09_19/experiments/requirements.txt
           python3 docs/working-ground/research/general_sharpness_2026_09_19/experiments/resolve_prefixes.py >/tmp/r11-prefixes.json
 
+  exact-polygon:
+    name: R12 exact backends and independent certificates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned algebraic backends
+        run: pip install -r docs/working-ground/research/fixed_dimension_selection_2026_09_19/experiments/requirements.txt
+      - name: Polygon and independent replay
+        working-directory: docs/working-ground/research/fixed_dimension_selection_2026_09_19/experiments
+        run: |
+          python3 check.py >/tmp/r12-check.json
+          python3 -O check.py >/tmp/r12-check-O.json
+          python3 additional_checks.py >/tmp/r12-additional.json
+          python3 ../side_investigation/check.py >/tmp/r12-side.json
+
   lean-existing:
     name: Existing Lean proof scope
     runs-on: ubuntu-latest

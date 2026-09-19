@@ -62,6 +62,20 @@ The point is implementation diversity, not speed.
 
 **Current status:** not implemented.
 
+### R12 polygon certificate boundary
+
+R12 now supplies a different-backend, different-encoding exact replay (Z3 intrinsic
+coordinates versus cvc5 original convex weights), plus independent Sturm checks
+on segment slices. General success bundles still trust exact algebraic backends;
+the CPC skeletons are not externally kernel-checked. Three special weighted-AM–GM
+certificates are checked with rational arithmetic and a short written proof.
+
+A general solver-free polygon emptiness checker is not implemented. Formalizing
+the small AM-GM sufficiency statement would be tractable, but would certify only
+that certificate format and would not close the more consequential R08 strategic
+gap. Keep the priority order above. See
+[R12's certificate statement](research/fixed_dimension_selection_2026_09_19/math/CERTIFICATES.md).
+
 ## Priority 2 — useful but not currently thesis-critical
 
 - R09: formalize the weighted-certificate **sufficiency** and projection

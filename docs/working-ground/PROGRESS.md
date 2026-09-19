@@ -377,3 +377,29 @@ The final direct-order/Sturm replay and synthesis remain to close this gate.
 The separately delegated review proves an exact threshold for avoiding one
 singleton obstruction in R11's ansatz, plus improved all-d construction parameters
 and margins. It does not resolve full sharpness at a fixed receiver threshold.
+
+## R12b — September 19: fixed-dimensional gate closed at stated trust level
+
+Following `0f94556`, replayed all 14 stored bundles and compared the primary and
+independent methods directly on 132 full orders, including symmetry/redundant-vertex
+variants. Forty-two segment/point orders also agree with the prior exact Sturm
+checker. A genuinely two-dimensional strip narrower than 10^-30 has an exact
+witness. Three weighted-AM-GM certificates independently prove the key zero-margin
+successes with rational arithmetic alone. Normal and optimized Python agree.
+
+The [final note](research/fixed_dimension_selection_2026_09_19/manuscript/RESEARCH_NOTE.md)
+distinguishes the polynomial-bit theorem, measured fixture runtime, general
+solver-trusted emptiness bundles and the special solver-free certificates. It
+retains the smallest fixed-order vertex-test counterexample and explicit novelty
+limits. No Lean or external CPC-kernel verification is claimed.
+
+The independent side review establishes the exact distinguished-singleton ansatz
+threshold, asymptotic deficit 2/m², and improved all-d construction parameters with
+sufficient deficit of order m^-6. Its proofs are supported by 2,955 exhaustive
+prefixes, 20 larger controls and 29 two-sided threshold checks; they are not a
+fixed-threshold general sharpness theorem.
+
+**Question retained.** Fixed affine dimension is settled algorithmically by the
+R10 reduction plus established mathematics. Next confidence attack: independently
+rederive/check R08's strategic bridge. Growing dimension remains the subsequent
+complexity frontier, without a hardness claim.

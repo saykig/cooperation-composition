@@ -173,3 +173,20 @@ are exact-backend replay certificates; CPC exports still contain trusted nonline
 steps. Requiring trust-free CPC failed. Preserve that limitation explicitly.
 Rational rejection witnesses need no solver to check their mathematical content.
 The strategic R08 bridge remains a separate formalization priority.
+
+## D36 — September 19, R12b: useful exact refinements beat more isolated dimensions
+
+The independent review characterizes exactly when the R11 ansatz's distinguished
+singleton can be defeated after choosing q,p₀, and improves constructive margins.
+Neither result proves full fixed-threshold sharpness. Record the order m^-2 versus
+m^-6 parameter gap as a possible later branch, while keeping the main selection
+question stable. More isolated dimensions add little after an all-d proof.
+
+## D37 — September 19, R12b: closed algorithmic gate, open strategic confidence gate
+
+Fixed-dimensional selection has a complete written complexity proof and auditable
+exact-backend implementation. Three AM-GM certificates remove solver dependence
+for the most important zero-margin fixtures, but not for every possible polygon.
+The next confidence gain should come from independent game-level R08 derivation,
+not more checks that merely reuse its cascade formula. Growing-dimension complexity
+is open and should not be inferred from the length of a sharp prefix.

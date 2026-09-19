@@ -1,0 +1,140 @@
+{
+  "evidence": "exact backend replay plus independent Sturm and rational AM-GM certificates",
+  "retained_bundles_replayed": 14,
+  "milestone": "0f94556",
+  "direct_full_order_comparisons": 84,
+  "independent_Sturm_comparisons": 42,
+  "narrow_polygon": {
+    "input": {
+      "vertices": [
+        [
+          "49/100",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "49/100",
+          "3/5",
+          "1/5"
+        ],
+        [
+          "51/100",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "51/100",
+          "3/5",
+          "1/5"
+        ]
+      ],
+      "r": [
+        "159999999999999999999999999999999999999999999999999999999999/1000000000000000000000000000000000000000000000000000000000000",
+        "2/5",
+        "1/10"
+      ],
+      "tau": "2/3"
+    },
+    "prefix": [
+      0,
+      1
+    ],
+    "witness": {
+      "coordinates": [
+        "316912650057057350374175801343/633825300114114700748351602688",
+        "1/2"
+      ],
+      "point": [
+        "1/2",
+        "633825300114114700748351602687/1584563250285286751870879006720",
+        "633825300114114700748351602689/1584563250285286751870879006720"
+      ],
+      "weights": [
+        {
+          "vertex": 0,
+          "weight": "1/633825300114114700748351602688"
+        },
+        {
+          "vertex": 1,
+          "weight": "316912650057057350374175801343/633825300114114700748351602688"
+        },
+        {
+          "vertex": 2,
+          "weight": "1/2"
+        }
+      ]
+    }
+  },
+  "symmetry_comparisons": [
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "full_orders": 24,
+      "successful": 1
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "full_orders": 24,
+      "successful": 1
+    }
+  ],
+  "portable_AMGM_certificates": {
+    "triangle_three": {
+      "prefix": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "center": [
+        "99/100",
+        "4/5",
+        "4/5",
+        "4/5"
+      ]
+    },
+    "tangent_polygon": {
+      "prefix": [
+        0
+      ],
+      "weights": [
+        1
+      ],
+      "center": [
+        "1/2",
+        "2/5",
+        "2/5"
+      ]
+    },
+    "changing_blocker": {
+      "prefix": [
+        0,
+        1
+      ],
+      "weights": [
+        7,
+        3
+      ],
+      "center": [
+        "13/20",
+        "7/20",
+        "2/5"
+      ]
+    }
+  },
+  "seconds": 2.227963,
+  "source_sha256": "10499ee56ea6227150442ef72e90277b8e85f93b7d7ab8986d7c1b7c32d89f91"
+}
