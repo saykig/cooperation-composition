@@ -158,3 +158,18 @@ beyond m=10. For fixed τ<1 it also fails in sufficiently large m regardless of 
 at τ≤2/3 it has a singleton blocker for every m≥2. These obstructions depend on
 its special budget and cost equations. Arbitrary families at τ=2/3 remain an open
 problem; R08 already prevents a universal singleton conclusion. No hardness claim.
+
+## D34 — September 19, R12a: fixed dimension is already algorithmically tractable
+
+R10 plus established effective real-algebraic geometry yields polynomial-bit exact
+selection for every fixed affine dimension after rational affine reduction. The
+question is now dependable implementation and growing dimension, not whether
+polygons are theoretically tractable. Do not infer hardness from sharp prefixes.
+
+## D35 — September 19, R12a: exact solver replay is not an external proof kernel
+
+The polygon selector uses Z3 and cvc5 with distinct encodings. Its success outputs
+are exact-backend replay certificates; CPC exports still contain trusted nonlinear
+steps. Requiring trust-free CPC failed. Preserve that limitation explicitly.
+Rational rejection witnesses need no solver to check their mathematical content.
+The strategic R08 bridge remains a separate formalization priority.

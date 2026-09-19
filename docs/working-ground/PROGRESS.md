@@ -360,3 +360,20 @@ is exact common-order selection on rational polygons; prefix sharpness alone doe
 not imply computational hardness. See the
 [note](research/general_sharpness_2026_09_19/manuscript/RESEARCH_NOTE.md) and
 [goal audit](research/general_sharpness_2026_09_19/AUDIT.md).
+
+## R12a — September 19: fixed-dimension theorem and first polygon milestone
+
+The [new gate](research/fixed_dimension_selection_2026_09_19/README.md) proves
+polynomial-bit selection for every fixed affine dimension, on explicit rational
+V/H polytopes. This combines the existing short-prefix reduction with borrowed
+effective quantifier elimination. It does not settle growing dimension.
+
+An exact polygon/segment/point implementation returns rational rejection witnesses
+or an emptiness bundle replayed with Z3 and independent barycentric cvc5. CPC
+skeletons include trusted covering steps: no external kernel or Lean claim.
+Fourteen designed fixtures agree with all 84 independently checked full orders.
+The final direct-order/Sturm replay and synthesis remain to close this gate.
+
+The separately delegated review proves an exact threshold for avoiding one
+singleton obstruction in R11's ansatz, plus improved all-d construction parameters
+and margins. It does not resolve full sharpness at a fixed receiver threshold.

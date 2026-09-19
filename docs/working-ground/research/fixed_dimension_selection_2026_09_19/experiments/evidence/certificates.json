@@ -1,0 +1,1986 @@
+{
+  "triangle_three": {
+    "input": {
+      "vertices": [
+        [
+          "99/100",
+          "1/100",
+          "9/10",
+          "299/300"
+        ],
+        [
+          "99/100",
+          "3/4",
+          "49/50",
+          "209/300"
+        ],
+        [
+          "99/100",
+          "47/50",
+          "63/100",
+          "13/15"
+        ]
+      ],
+      "r": [
+        "64/125",
+        "16/25",
+        "4/5",
+        "1/100"
+      ],
+      "tau": "999/1000"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "bd21115124cf6add9465b1af3e6226e4321c3b4a9c6575fc01fdbd54bb43047e",
+      "dimension": 2,
+      "status": "zero",
+      "prefix": [
+        0,
+        1,
+        2
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(declare-const w0 Real)\n(declare-const w1 Real)\n(assert (>= w0 0.0))\n(assert (>= w1 0.0))\n(assert (>= (- 1.0 (+ w0 w1)) 0.0))\n(assert (let ((_let_1 (- 1.0 (+ w0 w1)))) (> (* (+ (* w0 (/ 1 100)) (* w1 (/ 3 4)) (* _let_1 (/ 47 50))) (* (+ (* w0 (/ 9 10)) (* w1 (/ 49 50)) (* _let_1 (/ 63 100))) (* (+ (* w0 (/ 299 300)) (* w1 (/ 209 300)) (* _let_1 (/ 13 15))) 1.0))) (/ 64 125))))\n(assert (let ((_let_1 (- 1.0 (+ w0 w1)))) (> (* (+ (* w0 (/ 9 10)) (* w1 (/ 49 50)) (* _let_1 (/ 63 100))) (* (+ (* w0 (/ 299 300)) (* w1 (/ 209 300)) (* _let_1 (/ 13 15))) 1.0)) (/ 16 25))))\n(assert (> (* (+ (* w0 (/ 299 300)) (* w1 (/ 209 300)) (* (- 1.0 (+ w0 w1)) (/ 13 15))) 1.0) (/ 4 5)))\n(check-sat)\n",
+        "proof_cpc": "(\n(declare-const w1 Real)\n(declare-const w0 Real)\n(define @t1 () (>= w0 0/1))\n(define @t2 () (>= w1 0/1))\n(define @t3 () (+ w0 w1))\n(define @t4 () (- 1/1 @t3))\n(define @t5 () (>= @t4 0/1))\n(define @t6 () (* @t4 13/15))\n(define @t7 () (* w1 209/300))\n(define @t8 () (* w0 299/300))\n(define @t9 () (+ @t8 @t7 @t6))\n(define @t10 () (* @t9 1/1))\n(define @t11 () (* @t4 63/100))\n(define @t12 () (* w1 49/50))\n(define @t13 () (* w0 9/10))\n(define @t14 () (+ @t13 @t12 @t11))\n(define @t15 () (* @t14 @t10))\n(define @t16 () (* @t4 47/50))\n(define @t17 () (* w1 3/4))\n(define @t18 () (* w0 1/100))\n(define @t19 () (+ @t18 @t17 @t16))\n(define @t20 () (* @t19 @t15))\n(define @t21 () (* w0 w0))\n(define @t22 () (* -1 @t21))\n(define @t23 () (>= @t22 0))\n(define @t24 () (not @t23))\n(define @t25 () (= w0 0/1))\n(define @t26 () (not @t25))\n(define @t27 () (not @t26))\n(define @t28 () (>= 0/1 @t21))\n(define @t29 () (> @t21 0/1))\n(define @t30 () (>= @t21 0))\n(define @t31 () (= (* 1/1 (- @t21 0/1)) (* 1/1 (- @t21 0))))\n(define @t32 () (>= @t21 0/1))\n(define @t33 () (= @t32 @t30))\n(define @t34 () (< @t21 0/1))\n(define @t35 () (not true))\n(define @t36 () (>= 0/1 0/1))\n(define @t37 () (* -1/1 0/1))\n(define @t38 () (+ 0/1 @t37))\n(define @t39 () (* -1/1 @t21))\n(define @t40 () (= @t39 @t22))\n(define @t41 () (+ @t21 @t39))\n(define @t42 () (>= @t41 @t38))\n(define @t43 () (< -1/1 0/1))\n(define @t44 () (* w0 w0 w0))\n(define @t45 () (* -1 @t44))\n(define @t46 () (>= @t45 0))\n(define @t47 () (not @t46))\n(define @t48 () (* -1 w0))\n(define @t49 () (>= @t48 0))\n(define @t50 () (not @t49))\n(define @t51 () (not @t50))\n(define @t52 () (>= 0/1 @t44))\n(define @t53 () (>= 0/1 w0))\n(define @t54 () (<= w0 0/1))\n(define @t55 () (> @t44 0/1))\n(define @t56 () (> w0 0/1))\n(define @t57 () (* -1 w1))\n(define @t58 () (+ @t48 @t57))\n(define @t59 () (* 1/1 (- @t58 -1)))\n(define @t60 () (+ 1 @t48 @t57))\n(define @t61 () (>= @t58 -1))\n(define @t62 () (* -1/1 @t3))\n(define @t63 () (+ 1/1 @t62))\n(define @t64 () (>= w1 1))\n(define @t65 () (not @t64))\n(define @t66 () (not @t61))\n(define @t67 () (+ -1/1 1/1 0/1))\n(define @t68 () (* -1/1 1/1))\n(define @t69 () (+ @t68 1/1 @t37))\n(define @t70 () (+ @t57 @t48 w1 w0))\n(define @t71 () (= @t70 0/1))\n(define @t72 () (* -1/1 w0))\n(define @t73 () (* -1/1 w1))\n(define @t74 () (+ @t73 @t3 @t72))\n(define @t75 () (>= @t74 @t69))\n(define @t76 () (= (* 1/1 @t4) @t59))\n(define @t77 () (= (>= 1/1 @t3) @t61))\n(define @t78 () (>= w1 1/1))\n(define @t79 () (= (* -1/1 (- w1 1/1)) (* -1/1 (- w1 1))))\n(define @t80 () (= @t78 @t64))\n(define @t81 () (* w1 w1 w1))\n(define @t82 () (* w0 w1 w1))\n(define @t83 () (* w0 w0 w1))\n(define @t84 () (* w1 w1))\n(define @t85 () (* w0 w1))\n(define @t86 () (+ w0 (* -121079/316251 w1) (* 2229/1802 @t21) (* 121447/105417 @t85) (* 21511/48654 @t84) (* 279/1802 @t44) (* 2099/70278 @t83) (* -55411/210834 @t82) (* -665/12402 @t81)))\n(define @t87 () (+ 12831/25000 (* -105417/500000 w0) (* 121079/1500000 w1) (* -260793/1000000 @t21) (* -121447/500000 @t85) (* -279643/3000000 @t84) (* -32643/1000000 @t44) (* -6297/1000000 @t83) (* 55411/1000000 @t82) (* 2261/200000 @t81)))\n(define @t88 () (>= @t86 620/105417))\n(define @t89 () (+ 273/500 (* 3159/10000 w0) (* 5887/30000 w1) (* 351/10000 @t21) (* -1/2500 @t85) (* -119/2000 @t84)))\n(define @t90 () (+ 47/50 (* -93/100 w0) (* -19/100 w1)))\n(define @t91 () (+ 13/15 (* 13/100 w0) (* -17/100 w1)))\n(define @t92 () (+ 63/100 (* 27/100 w0) (* 7/20 w1)))\n(define @t93 () (+ 13/15 (* -13/15 w0) (* -13/15 w1)))\n(define @t94 () (* 209/300 w1))\n(define @t95 () (* 299/300 w0))\n(define @t96 () (+ 63/100 (* -63/100 w0) (* -63/100 w1)))\n(define @t97 () (* 49/50 w1))\n(define @t98 () (* 9/10 w0))\n(define @t99 () (+ 47/50 (* -47/50 w0) (* -47/50 w1)))\n(define @t100 () (* 3/4 w1))\n(define @t101 () (* 1/100 w0))\n(define @t102 () (<= @t20 64/125))\n(define @t103 () (+ @t48 (* -5887/9477 w1) (* -1/9 @t21) (* 4/3159 @t85) (* 595/3159 @t84)))\n(define @t104 () (- @t103 -940/3159))\n(define @t105 () (>= @t103 -940/3159))\n(define @t106 () (<= @t15 16/25))\n(define @t107 () (+ @t48 (* 17/13 w1)))\n(define @t108 () (- @t107 20/39))\n(define @t109 () (>= @t107 20/39))\n(define @t110 () (<= @t10 4/5))\n(define @t111 () (>= w0 1))\n(define @t112 () (not @t111))\n(define @t113 () (not @t109))\n(define @t114 () (not @t113))\n(define @t115 () (not @t105))\n(define @t116 () (not @t115))\n(define @t117 () (not @t88))\n(define @t118 () (not @t117))\n(define @t119 () (^ w0 2/1))\n(define @t120 () (* 7518564/1 @t119))\n(define @t121 () (^ w0 3/1))\n(define @t122 () (+ 707618893457219392369/1 (* -11179621730825131060764/1 w0) (* -5113310847037179064740/1 @t119) (* -12517907423458879061280/1 @t121) (* -2654596339425928596240/1 (^ w0 4/1)) (* 2448721315961290691136/1 (^ w0 5/1)) (* 425015435394724590144/1 (^ w0 6/1))))\n(define @t123 () (^ w1 2/1))\n(define @t124 () (+ -3720/1 (* 632502/1 w0) (* 782379/1 @t119) (* 97929/1 @t121) (* -242158/1 w1) (* (* 728682/1 w1) w0) (* (* 18891/1 w1) @t119) (* 279643/1 @t123) (* (* -166233/1 @t123) w0) (* -33915/1 (^ w1 3/1))))\n(define @t125 () (<= w1 0/1))\n(define @t126 () (@indexed_root_predicate 1 @t2 (+ -20/1 (* -39/1 w0) (* 51/1 w1))))\n(define @t127 () (* 2742/1 w0))\n(define @t128 () (+ -167/1 @t127))\n(define @t129 () (@indexed_root_predicate 2 @t56 (+ 14521969/1 (* 67524492/1 w0) @t120)))\n(define @t130 () (@indexed_root_predicate 1 @t125 (+ 2820/1 (* -9477/1 w0) (* -1053/1 @t119) (* -5887/1 w1) (* (* 12/1 w1) w0) (* 1785/1 @t123))))\n(define @t131 () (< w0 0/1))\n(define @t132 () (+ 75/1 (* -489784/1 w0) (* -291476/1 @t119) (* 26640/1 @t121)))\n(define @t133 () (* 1/1 w0))\n(define @t134 () (> w1 0/1))\n(define @t135 () (>= w1 0))\n(define @t136 () (= w1 0/1))\n(define @t137 () (not @t135))\n(define @t138 () (not @t136))\n(define @t139 () (not @t138))\n(define @t140 () (+ @t72 @t3 @t73))\n(define @t141 () (>= @t140 @t69))\n(define @t142 () (>= w0 1/1))\n(define @t143 () (= (* -1/1 (- w0 1/1)) (* -1/1 (- w0 1))))\n(define @t144 () (= @t142 @t111))\n(define @t145 () (= 0/1 0/1))\n(define @t146 () (= (* w0 w0 0/1) 0/1))\n(define @t147 () (= @t83 0/1))\n(define @t148 () (* 0/1 0/1 0/1))\n(define @t149 () (= @t81 0/1))\n(define @t150 () (= (* w0 0/1 0/1) 0/1))\n(define @t151 () (= @t82 0/1))\n(define @t152 () (* 0/1 0/1))\n(define @t153 () (= @t152 0/1))\n(define @t154 () (= @t84 0/1))\n(define @t155 () (= (* w0 0/1) 0/1))\n(define @t156 () (= @t85 0/1))\n(define @t157 () (not @t156))\n(define @t158 () (not @t154))\n(define @t159 () (not @t151))\n(define @t160 () (not @t149))\n(define @t161 () (not @t30))\n(define @t162 () (not @t147))\n(define @t163 () (* 34594/4845 1/1))\n(define @t164 () (* -39949/4845 0/1))\n(define @t165 () (* -32643/11305 0/1))\n(define @t166 () (* -6297/11305 0/1))\n(define @t167 () (* 55411/11305 0/1))\n(define @t168 () (* -242894/11305 0/1))\n(define @t169 () (* 12402/665 620/105417))\n(define @t170 () (* -260793/11305 0/1))\n(define @t171 () (* -12402/665 1/1))\n(define @t172 () (+ 0/1 @t171 @t170 @t169 @t168 @t167 @t166 @t165 @t164 @t163))\n(define @t173 () (* 34594/4845 w1))\n(define @t174 () (* -39949/4845 @t84))\n(define @t175 () (* -32643/11305 @t44))\n(define @t176 () (* -6297/11305 @t83))\n(define @t177 () (* 55411/11305 @t82))\n(define @t178 () (* -242894/11305 @t85))\n(define @t179 () (+ (* 12402/665 w0) (* -34594/4845 w1) (* 260793/11305 @t21) (* 242894/11305 @t85) (* 39949/4845 @t84) (* 32643/11305 @t44) (* 6297/11305 @t83) (* -55411/11305 @t82) (* -1 @t81)))\n(define @t180 () (* -260793/11305 @t21))\n(define @t181 () (* -12402/665 w0))\n(define @t182 () (* 12402/665 @t86))\n(define @t183 () (+ @t81 @t181 @t180 @t182 @t178 @t177 @t176 @t175 @t174 @t173))\n(define @t184 () (>= @t183 @t172))\n(define @t185 () (and @t65 @t154 @t47 @t147 @t151 @t156 @t117 @t30 @t111 @t149))\n(define @t186 () (>= w0 0))\n(define @t187 () (not @t186))\n(define @t188 () (= @t21 0/1))\n(define @t189 () (@list false))\n(define @t190 () (= (* -1/1 (- @t21 1/1)) (* -1/1 (- @t21 1))))\n(define @t191 () (>= @t21 1))\n(define @t192 () (>= @t21 1/1))\n(define @t193 () (= @t192 @t191))\n(define @t194 () (not @t192))\n(define @t195 () (+ @t68 0/1))\n(define @t196 () (+ @t39 @t21))\n(define @t197 () (not @t191))\n(define @t198 () (* 3159/4 0/1))\n(define @t199 () (* 5887/12 0/1))\n(define @t200 () (* 351/4 1/1))\n(define @t201 () (* -3159/4 940/3159))\n(define @t202 () (* -595/4 0/1))\n(define @t203 () (+ @t37 @t202 @t201 @t200 @t199 @t198))\n(define @t204 () (* 3159/4 w0))\n(define @t205 () (* 5887/12 w1))\n(define @t206 () (* 351/4 @t21))\n(define @t207 () (+ (* -3159/4 w0) (* -5887/12 w1) (* -351/4 @t21) @t85 (* 595/4 @t84)))\n(define @t208 () (* -595/4 @t84))\n(define @t209 () (* -1 @t85))\n(define @t210 () (+ w0 (* 5887/9477 w1) (* 1/9 @t21) (* -4/3159 @t85) (* -595/3159 @t84)))\n(define @t211 () (* -3159/4 @t210))\n(define @t212 () (* -1/1 @t85))\n(define @t213 () (+ @t212 @t208 @t211 @t206 @t205 @t204))\n(define @t214 () (>= @t213 @t203))\n(define @t215 () (> @t210 940/3159))\n(define @t216 () (= (* 940/3159 (- 940/3159 @t210)) (* 940/3159 @t104)))\n(define @t217 () (>= 940/3159 @t210))\n(define @t218 () (= @t217 @t105))\n(define @t219 () (not (<= @t210 940/3159)))\n(define @t220 () (not @t217))\n(define @t221 () (and @t25 @t136 @t197 @t115 @t154 @t156))\n(define @t222 () (* -1 @t84))\n(define @t223 () (>= @t222 0))\n(define @t224 () (not @t223))\n(define @t225 () (>= 0/1 @t84))\n(define @t226 () (> @t84 0/1))\n(define @t227 () (not @t188))\n(define @t228 () (* -17/13 w1))\n(define @t229 () (+ w0 @t228))\n(define @t230 () (>= -20/39 @t229))\n(define @t231 () (> @t229 -20/39))\n(define @t232 () (* 1377/5887 0/1))\n(define @t233 () (* 18280/5887 0/1))\n(define @t234 () (* -12393/5887 940/3159))\n(define @t235 () (* -4335/10933 0/1))\n(define @t236 () (* -204/76531 0/1))\n(define @t237 () (* -1/1 -20/39))\n(define @t238 () (+ @t237 @t236 @t235 @t234 @t233 @t232))\n(define @t239 () (* 1377/5887 @t21))\n(define @t240 () (* 18280/5887 w0))\n(define @t241 () (+ (* -12393/5887 w0) @t228 (* -1377/5887 @t21) (* 204/76531 @t85) (* 4335/10933 @t84)))\n(define @t242 () (* -4335/10933 @t84))\n(define @t243 () (* -204/76531 @t85))\n(define @t244 () (* -12393/5887 @t210))\n(define @t245 () (* -1/1 @t229))\n(define @t246 () (+ @t245 @t243 @t242 @t244 @t240 @t239))\n(define @t247 () (>= @t246 @t238))\n(define @t248 () (and @t188 @t25 @t115 @t224 @t156 @t113))\n(define @t249 () (= (* 0/1 w1) 0/1))\n(assume @p1 @t1)\n(assume @p2 @t2)\n(assume @p3 @t5)\n(assume @p4 (> @t20 64/125))\n(assume @p5 (> @t15 16/25))\n(assume @p6 (> @t10 4/5))\n(step @p7 :rule refl :args (@t24))\n(step @p8 :rule bool-double-not-elim :args (@t25))\n(step @p9 :rule nary_cong :premises (@p8 @p7) :args ((or @t27 @t24)))\n(step @p10 :rule arith_poly_norm :args ((= (* -1/1 (- 0/1 @t21)) (* -1/1 (- @t22 0)))))\n(step @p11 :rule arith_poly_norm_rel :premises (@p10) :args ((= @t28 @t23)))\n(step @p12 :rule arith-elim-leq :args (@t21 0/1))\n(step @p13 :rule trans :premises (@p12 @p11))\n(step @p14 :rule cong :premises (@p13) :args ((not (<= @t21 0/1))))\n(step @p15 :rule symm :premises (@p12))\n(step @p16 :rule cong :premises (@p15) :args ((not @t28)))\n(step @p17 :rule arith-elim-gt :args (@t21 0/1))\n(step @p18 :rule trans :premises (@p17 @p16))\n(step @p19 :rule trans :premises (@p18 @p14))\n(step @p20 :rule refl :args (@t26))\n(step @p21 :rule cong :premises (@p20 @p19) :args ((=> @t26 @t29)))\n(step @p22 :rule arith_mult_sign :args (@t26 @t21))\n(step @p23 :rule eq_resolve :premises (@p22 @p21))\n(step @p24 :rule implies_elim :premises (@p23))\n(step @p25 :rule eq_resolve :premises (@p24 @p9))\n(step @p26 :rule refl :args (@t30))\n(step @p27 :rule bool-double-not-elim :args (@t23))\n(step @p28 :rule nary_cong :premises (@p27 @p26) :args ((or (not @t24) @t30)))\n(assume-push @p965 @t24)\n(assume-push @p966 @t24)\n(step @p31 :rule arith_poly_norm :args (@t31))\n(step @p32 :rule arith_poly_norm_rel :premises (@p31) :args (@t33))\n(step @p33 :rule symm :premises (@p32))\n(step @p34 :rule bool-double-not-elim :args (@t30))\n(step @p35 :rule cong :premises (@p32) :args ((not @t32)))\n(step @p36 :rule arith-elim-lt :args (@t21 0/1))\n(step @p37 :rule trans :premises (@p36 @p35))\n(step @p38 :rule cong :premises (@p37) :args ((not @t34)))\n(step @p39 :rule trans :premises (@p38 @p34))\n(step @p40 :rule trans :premises (@p39 @p33))\n(assume-push @p967 @t34)\n(step @p42 :rule evaluate :args (@t35))\n(step @p43 :rule evaluate :args (@t36))\n(step @p44 :rule evaluate :args ((+ 0/1 0/1)))\n(step @p45 :rule evaluate :args (@t37))\n(step @p46 :rule refl :args (0/1))\n(step @p47 :rule nary_cong :premises (@p46 @p45) :args (@t38))\n(step @p48 :rule trans :premises (@p47 @p44))\n(step @p49 :rule arith_poly_norm :args ((= (+ @t21 @t22) 0/1)))\n(step @p50 :rule arith_poly_norm :args (@t40))\n(step @p51 :rule refl :args (@t21))\n(step @p52 :rule nary_cong :premises (@p51 @p50) :args (@t41))\n(step @p53 :rule trans :premises (@p52 @p49))\n(step @p54 :rule cong :premises (@p53 @p48) :args (@t42))\n(step @p55 :rule trans :premises (@p54 @p43))\n(step @p56 :rule cong :premises (@p55) :args ((not @t42)))\n(step @p57 :rule trans :premises (@p56 @p42))\n(step @p58 :rule arith-elim-lt :args (@t41 @t38))\n(step @p59 :rule trans :premises (@p58 @p57))\n(step @p60 :rule arith_mult_neg :args (-1/1 @t29))\n(step @p61 :rule symm :premises (@p19))\n(step @p62 :rule eq_resolve :premises (@p965 @p61))\n(step @p63 :rule evaluate :args (@t43))\n(step @p64 :rule true_elim :premises (@p63))\n(step @p65 :rule and_intro :premises (@p64 @p62))\n(step @p66 :rule modus_ponens :premises (@p65 @p60))\n(step @p67 :rule arith_sum_ub :premises (@p967 @p66))\n(step @p68 false :rule eq_resolve :premises (@p67 @p59))\n(step-pop @p968 :rule scope :premises (@p68))\n(step @p69 :rule process_scope :premises (@p968) :args (false))\n(step @p71 :rule eq_resolve :premises (@p69 @p40))\n(step @p72 :rule eq_resolve :premises (@p71 @p32))\n(step-pop @p969 :rule scope :premises (@p72))\n(step @p73 :rule process_scope :premises (@p969) :args (@t30))\n(step @p75 :rule modus_ponens :premises (@p965 @p73))\n(step-pop @p970 :rule scope :premises (@p75))\n(step @p76 :rule process_scope :premises (@p970) :args (@t30))\n(step @p78 :rule implies_elim :premises (@p76))\n(step @p79 :rule eq_resolve :premises (@p78 @p28))\n(step @p80 :rule reordering :premises (@p79) :args ((or @t30 @t23)))\n(step @p81 :rule refl :args (@t47))\n(step @p82 :rule bool-double-not-elim :args (@t49))\n(step @p83 :rule nary_cong :premises (@p82 @p81) :args ((or @t51 @t47)))\n(step @p84 :rule arith_poly_norm :args ((= (* -1/1 (- 0/1 @t44)) (* -1/1 (- @t45 0)))))\n(step @p85 :rule arith_poly_norm_rel :premises (@p84) :args ((= @t52 @t46)))\n(step @p86 :rule arith-elim-leq :args (@t44 0/1))\n(step @p87 :rule trans :premises (@p86 @p85))\n(step @p88 :rule cong :premises (@p87) :args ((not (<= @t44 0/1))))\n(step @p89 :rule symm :premises (@p86))\n(step @p90 :rule cong :premises (@p89) :args ((not @t52)))\n(step @p91 :rule arith-elim-gt :args (@t44 0/1))\n(step @p92 :rule trans :premises (@p91 @p90))\n(step @p93 :rule trans :premises (@p92 @p88))\n(step @p94 :rule arith_poly_norm :args ((= (* -1/1 (- 0/1 w0)) (* -1/1 (- @t48 0)))))\n(step @p95 :rule arith_poly_norm_rel :premises (@p94) :args ((= @t53 @t49)))\n(step @p96 :rule arith-elim-leq :args (w0 0/1))\n(step @p97 :rule trans :premises (@p96 @p95))\n(step @p98 :rule cong :premises (@p97) :args ((not @t54)))\n(step @p99 :rule symm :premises (@p96))\n(step @p100 :rule cong :premises (@p99) :args ((not @t53)))\n(step @p101 :rule arith-elim-gt :args (w0 0/1))\n(step @p102 :rule trans :premises (@p101 @p100))\n(step @p103 :rule trans :premises (@p102 @p98))\n(step @p104 :rule cong :premises (@p103 @p93) :args ((=> @t56 @t55)))\n(step @p105 :rule arith_mult_sign :args (@t56 @t44))\n(step @p106 :rule eq_resolve :premises (@p105 @p104))\n(step @p107 :rule implies_elim :premises (@p106))\n(step @p108 :rule eq_resolve :premises (@p107 @p83))\n(step @p109 :rule arith_poly_norm :args ((= (* 1/1 (- @t60 0/1)) @t59)))\n(step @p110 :rule arith_poly_norm_rel :premises (@p109) :args ((= (>= @t60 0/1) @t61)))\n(step @p46 :rule refl :args (0/1))\n(step @p111 :rule arith_poly_norm :args ((= (+ 1/1 @t58) @t60)))\n(step @p112 :rule arith_poly_norm :args ((= @t62 @t58)))\n(step @p113 :rule refl :args (1/1))\n(step @p114 :rule nary_cong :premises (@p113 @p112) :args (@t63))\n(step @p115 :rule trans :premises (@p114 @p111))\n(step @p116 :rule arith_poly_norm :args ((= @t4 @t63)))\n(step @p117 :rule trans :premises (@p116 @p115))\n(step @p118 :rule cong :premises (@p117 @p46) :args (@t5))\n(step @p119 :rule trans :premises (@p118 @p110))\n(step @p120 :rule eq_resolve :premises (@p3 @p119))\n(step @p121 :rule refl :args (@t65))\n(step @p122 :rule refl :args (@t66))\n(step @p123 :rule nary_cong :premises (@p122 @p82 @p121) :args ((or @t66 @t51 @t65)))\n(assume-push @p971 @t61)\n(assume-push @p972 @t50)\n(assume-push @p973 @t64)\n(step @p42 :rule evaluate :args (@t35))\n(step @p43 :rule evaluate :args (@t36))\n(step @p127 :rule evaluate :args (@t67))\n(step @p45 :rule evaluate :args (@t37))\n(step @p128 :rule evaluate :args (@t68))\n(step @p129 :rule nary_cong :premises (@p128 @p113 @p45) :args (@t69))\n(step @p130 :rule trans :premises (@p129 @p127))\n(step @p131 :rule arith_poly_norm :args (@t71))\n(step @p132 :rule arith_poly_norm :args ((= @t74 @t70)))\n(step @p133 :rule trans :premises (@p132 @p131))\n(step @p134 :rule cong :premises (@p133 @p130) :args (@t75))\n(step @p135 :rule trans :premises (@p134 @p43))\n(step @p136 :rule cong :premises (@p135) :args ((not @t75)))\n(step @p137 :rule trans :premises (@p136 @p42))\n(step @p138 :rule arith-elim-lt :args (@t74 @t69))\n(step @p139 :rule trans :premises (@p138 @p137))\n(step @p140 :rule arith_mult_neg :args (-1/1 @t56))\n(step @p141 :rule symm :premises (@p103))\n(step @p142 :rule eq_resolve :premises (@p972 @p141))\n(step @p63 :rule evaluate :args (@t43))\n(step @p64 :rule true_elim :premises (@p63))\n(step @p143 :rule and_intro :premises (@p64 @p142))\n(step @p144 :rule modus_ponens :premises (@p143 @p140))\n(step @p145 :rule arith_poly_norm :args (@t76))\n(step @p146 :rule arith_poly_norm_rel :premises (@p145) :args (@t77))\n(step @p147 :rule arith-elim-leq :args (@t3 1/1))\n(step @p148 :rule trans :premises (@p147 @p146))\n(step @p149 :rule symm :premises (@p148))\n(step @p150 :rule eq_resolve :premises (@p3 @p119))\n(step @p151 :rule eq_resolve :premises (@p150 @p149))\n(step @p152 :rule arith_mult_neg :args (-1/1 @t78))\n(step @p153 :rule arith_poly_norm :args (@t79))\n(step @p154 :rule arith_poly_norm_rel :premises (@p153) :args (@t80))\n(step @p155 :rule symm :premises (@p154))\n(step @p156 :rule eq_resolve :premises (@p973 @p155))\n(step @p157 :rule and_intro :premises (@p64 @p156))\n(step @p158 :rule modus_ponens :premises (@p157 @p152))\n(step @p159 :rule arith_sum_ub :premises (@p158 @p151 @p144))\n(step @p160 false :rule eq_resolve :premises (@p159 @p139))\n(step-pop @p974 :rule scope :premises (@p160))\n(step-pop @p975 :rule scope :premises (@p974))\n(step-pop @p976 :rule scope :premises (@p975))\n(step @p161 :rule process_scope :premises (@p976) :args (false))\n(step @p165 :rule not_and :premises (@p161))\n(step @p166 :rule eq_resolve :premises (@p165 @p123))\n(step @p167 :rule arith_poly_norm :args ((= (* -620/105417 (- 64/125 @t87)) (* -31/25000 (- @t86 620/105417)))))\n(step @p168 :rule arith_poly_norm_rel :premises (@p167) :args ((= (>= 64/125 @t87) @t88)))\n(step @p169 :rule arith-elim-leq :args (@t87 64/125))\n(step @p170 :rule trans :premises (@p169 @p168))\n(step @p171 :rule refl :args (64/125))\n(step @p172 :rule arith_poly_norm :args ((= (* @t90 @t89) @t87)))\n(step @p173 :rule arith_poly_norm :args ((= (* @t92 @t91) @t89)))\n(step @p174 :rule arith_poly_norm :args ((= (* @t91 1/1) @t91)))\n(step @p175 :rule arith_poly_norm :args ((= (+ @t95 @t94 @t93) @t91)))\n(step @p176 :rule arith_poly_norm :args ((= (* @t60 13/15) @t93)))\n(step @p177 :rule refl :args (13/15))\n(step @p178 :rule nary_cong :premises (@p117 @p177) :args (@t6))\n(step @p179 :rule trans :premises (@p178 @p176))\n(step @p180 :rule arith_poly_norm :args ((= @t7 @t94)))\n(step @p181 :rule arith_poly_norm :args ((= @t8 @t95)))\n(step @p182 :rule nary_cong :premises (@p181 @p180 @p179) :args (@t9))\n(step @p183 :rule trans :premises (@p182 @p175))\n(step @p184 :rule nary_cong :premises (@p183 @p113) :args (@t10))\n(step @p185 :rule trans :premises (@p184 @p174))\n(step @p186 :rule arith_poly_norm :args ((= (+ @t98 @t97 @t96) @t92)))\n(step @p187 :rule arith_poly_norm :args ((= (* @t60 63/100) @t96)))\n(step @p188 :rule refl :args (63/100))\n(step @p189 :rule nary_cong :premises (@p117 @p188) :args (@t11))\n(step @p190 :rule trans :premises (@p189 @p187))\n(step @p191 :rule arith_poly_norm :args ((= @t12 @t97)))\n(step @p192 :rule arith_poly_norm :args ((= @t13 @t98)))\n(step @p193 :rule nary_cong :premises (@p192 @p191 @p190) :args (@t14))\n(step @p194 :rule trans :premises (@p193 @p186))\n(step @p195 :rule nary_cong :premises (@p194 @p185) :args (@t15))\n(step @p196 :rule trans :premises (@p195 @p173))\n(step @p197 :rule arith_poly_norm :args ((= (+ @t101 @t100 @t99) @t90)))\n(step @p198 :rule arith_poly_norm :args ((= (* @t60 47/50) @t99)))\n(step @p199 :rule refl :args (47/50))\n(step @p200 :rule nary_cong :premises (@p117 @p199) :args (@t16))\n(step @p201 :rule trans :premises (@p200 @p198))\n(step @p202 :rule arith_poly_norm :args ((= @t17 @t100)))\n(step @p203 :rule arith_poly_norm :args ((= @t18 @t101)))\n(step @p204 :rule nary_cong :premises (@p203 @p202 @p201) :args (@t19))\n(step @p205 :rule trans :premises (@p204 @p197))\n(step @p206 :rule nary_cong :premises (@p205 @p196) :args (@t20))\n(step @p207 :rule trans :premises (@p206 @p172))\n(step @p208 :rule cong :premises (@p207 @p171) :args (@t102))\n(step @p209 :rule trans :premises (@p208 @p170))\n(step @p210 :rule cong :premises (@p209) :args ((not @t102)))\n(step @p211 :rule arith-elim-leq :args (@t20 64/125))\n(step @p212 :rule symm :premises (@p211))\n(step @p213 :rule cong :premises (@p212) :args ((not (>= 64/125 @t20))))\n(step @p214 :rule arith-elim-gt :args (@t20 64/125))\n(step @p215 :rule trans :premises (@p214 @p213))\n(step @p216 :rule trans :premises (@p215 @p210))\n(step @p217 :rule eq_resolve :premises (@p4 @p216))\n(step @p218 :rule arith_poly_norm :args ((= (* 940/3159 (- 16/25 @t89)) (* 47/500 @t104))))\n(step @p219 :rule arith_poly_norm_rel :premises (@p218) :args ((= (>= 16/25 @t89) @t105)))\n(step @p220 :rule arith-elim-leq :args (@t89 16/25))\n(step @p221 :rule trans :premises (@p220 @p219))\n(step @p222 :rule refl :args (16/25))\n(step @p223 :rule cong :premises (@p196 @p222) :args (@t106))\n(step @p224 :rule trans :premises (@p223 @p221))\n(step @p225 :rule cong :premises (@p224) :args ((not @t106)))\n(step @p226 :rule arith-elim-leq :args (@t15 16/25))\n(step @p227 :rule symm :premises (@p226))\n(step @p228 :rule cong :premises (@p227) :args ((not (>= 16/25 @t15))))\n(step @p229 :rule arith-elim-gt :args (@t15 16/25))\n(step @p230 :rule trans :premises (@p229 @p228))\n(step @p231 :rule trans :premises (@p230 @p225))\n(step @p232 :rule eq_resolve :premises (@p5 @p231))\n(step @p233 :rule arith_poly_norm :args ((= (* -20/39 (- 4/5 @t91)) (* -1/15 @t108))))\n(step @p234 :rule arith_poly_norm_rel :premises (@p233) :args ((= (>= 4/5 @t91) @t109)))\n(step @p235 :rule arith-elim-leq :args (@t91 4/5))\n(step @p236 :rule trans :premises (@p235 @p234))\n(step @p237 :rule refl :args (4/5))\n(step @p238 :rule cong :premises (@p185 @p237) :args (@t110))\n(step @p239 :rule trans :premises (@p238 @p236))\n(step @p240 :rule cong :premises (@p239) :args ((not @t110)))\n(step @p241 :rule arith-elim-leq :args (@t10 4/5))\n(step @p242 :rule symm :premises (@p241))\n(step @p243 :rule cong :premises (@p242) :args ((not (>= 4/5 @t10))))\n(step @p244 :rule arith-elim-gt :args (@t10 4/5))\n(step @p245 :rule trans :premises (@p244 @p243))\n(step @p246 :rule trans :premises (@p245 @p240))\n(step @p247 :rule eq_resolve :premises (@p6 @p246))\n(step @p248 :rule bool-double-not-elim :args (@t111))\n(step @p249 :rule bool-double-not-elim :args (@t109))\n(step @p250 :rule bool-double-not-elim :args (@t105))\n(step @p251 :rule bool-double-not-elim :args (@t88))\n(step @p252 :rule nary_cong :premises (@p122 @p251 @p250 @p249 @p82 @p248) :args ((or @t66 @t118 @t116 @t114 @t51 (not @t112))))\n(assume-push @p977 @t61)\n(assume-push @p978 @t117)\n(assume-push @p979 @t115)\n(assume-push @p980 @t113)\n(assume-push @p981 @t50)\n(assume-push @p982 @t112)\n(assume-push @p983 (@indexed_root_predicate 2 @t56 (+ -312791/1 (* 4677852/1 w0) @t120)))\n(assume-push @p984 (@indexed_root_predicate 3 @t25 @t122))\n(assume-push @p985 (@indexed_root_predicate 2 @t125 @t124))\n(step @p262 :rule eq_resolve :premises (@p4 @p216))\n; WARNING: add trust step for TRUST\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p263 false :rule trust :premises (@p983 @p984 @p985 @p262) :args (false))\n(step-pop @p986 :rule scope :premises (@p263))\n(step @p264 :rule process_scope :premises (@p986) :args (false))\n(assume-push @p987 @t126)\n(step @p267 :rule eq_resolve :premises (@p6 @p246))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p268 false :rule trust :premises (@p983 @p984 @p987 @p267) :args (false))\n(step-pop @p988 :rule scope :premises (@p268))\n(step @p269 :rule process_scope :premises (@p988) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p271 false :rule trust :premises (@p983 @p984 @p269 @p264) :args (false))\n(step-pop @p989 :rule scope :premises (@p271))\n(step-pop @p990 :rule scope :premises (@p989))\n(step @p272 :rule process_scope :premises (@p990) :args (false))\n(assume-push @p991 (@indexed_root_predicate 1 @t25 @t128))\n(assume-push @p992 @t129)\n(assume-push @p993 @t130)\n(step @p278 :rule eq_resolve :premises (@p5 @p231))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p279 false :rule trust :premises (@p991 @p992 @p993 @p278) :args (false))\n(step-pop @p994 :rule scope :premises (@p279))\n(step @p280 :rule process_scope :premises (@p994) :args (false))\n(assume-push @p995 @t126)\n(step @p283 :rule eq_resolve :premises (@p6 @p246))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p284 false :rule trust :premises (@p991 @p992 @p995 @p283) :args (false))\n(step-pop @p996 :rule scope :premises (@p284))\n(step @p285 :rule process_scope :premises (@p996) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p287 false :rule trust :premises (@p991 @p992 @p285 @p280) :args (false))\n(step-pop @p997 :rule scope :premises (@p287))\n(step-pop @p998 :rule scope :premises (@p997))\n(step @p288 :rule process_scope :premises (@p998) :args (false))\n(assume-push @p999 (@indexed_root_predicate 1 @t56 @t128))\n(assume-push @p1000 (@indexed_root_predicate 1 @t56 (+ 593/1 @t127)))\n(assume-push @p1001 (@indexed_root_predicate 1 @t56 (+ 1873/1 @t127)))\n(assume-push @p1002 @t129)\n(assume-push @p1003 (@indexed_root_predicate 2 @t56 @t122))\n(assume-push @p1004 (@indexed_root_predicate 3 @t131 @t122))\n(assume-push @p1005 (@indexed_root_predicate 2 @t2 @t124))\n(assume-push @p1006 (@indexed_root_predicate 3 @t125 @t124))\n(step @p299 :rule eq_resolve :premises (@p4 @p216))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p300 false :rule trust :premises (@p999 @p1000 @p1001 @p1002 @p1003 @p1004 @p1005 @p1006 @p299) :args (false))\n(step-pop @p1007 :rule scope :premises (@p300))\n(step-pop @p1008 :rule scope :premises (@p1007))\n(step @p301 :rule process_scope :premises (@p1008) :args (false))\n(assume-push @p1009 @t130)\n(step @p305 :rule eq_resolve :premises (@p5 @p231))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p306 false :rule trust :premises (@p999 @p1000 @p1001 @p1002 @p1003 @p1004 @p1009 @p305) :args (false))\n(step-pop @p1010 :rule scope :premises (@p306))\n(step @p307 :rule process_scope :premises (@p1010) :args (false))\n(assume-push @p1011 @t126)\n(step @p310 :rule eq_resolve :premises (@p6 @p246))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p311 false :rule trust :premises (@p999 @p1000 @p1001 @p1002 @p1003 @p1004 @p1011 @p310) :args (false))\n(step-pop @p1012 :rule scope :premises (@p311))\n(step @p312 :rule process_scope :premises (@p1012) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p314 false :rule trust :premises (@p999 @p1000 @p1001 @p1002 @p1003 @p1004 @p312 @p307 @p301) :args (false))\n(step-pop @p1013 :rule scope :premises (@p314))\n(step-pop @p1014 :rule scope :premises (@p1013))\n(step-pop @p1015 :rule scope :premises (@p1014))\n(step-pop @p1016 :rule scope :premises (@p1015))\n(step-pop @p1017 :rule scope :premises (@p1016))\n(step-pop @p1018 :rule scope :premises (@p1017))\n(step @p315 :rule process_scope :premises (@p1018) :args (false))\n(assume-push @p1019 (@indexed_root_predicate 1 @t131 @t128))\n(assume-push @p1020 @t129)\n(assume-push @p1021 @t130)\n(step @p325 :rule eq_resolve :premises (@p5 @p231))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p326 false :rule trust :premises (@p1019 @p1020 @p1021 @p325) :args (false))\n(step-pop @p1022 :rule scope :premises (@p326))\n(step @p327 :rule process_scope :premises (@p1022) :args (false))\n(assume-push @p1023 @t126)\n(step @p330 :rule eq_resolve :premises (@p6 @p246))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p331 false :rule trust :premises (@p1019 @p1020 @p1023 @p330) :args (false))\n(step-pop @p1024 :rule scope :premises (@p331))\n(step @p332 :rule process_scope :premises (@p1024) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p334 false :rule trust :premises (@p1019 @p1020 @p332 @p327) :args (false))\n(step-pop @p1025 :rule scope :premises (@p334))\n(step-pop @p1026 :rule scope :premises (@p1025))\n(step @p335 :rule process_scope :premises (@p1026) :args (false))\n(assume-push @p1027 (@indexed_root_predicate 2 @t56 @t132))\n(assume-push @p1028 (@indexed_root_predicate 3 @t131 @t132))\n(assume-push @p1029 (@indexed_root_predicate 3 @t56 @t122))\n(assume-push @p1030 (@indexed_root_predicate 4 @t131 @t122))\n(assume-push @p1031 (@indexed_root_predicate 1 @t125 @t124))\n(step @p343 :rule eq_resolve :premises (@p4 @p216))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p344 false :rule trust :premises (@p1027 @p1028 @p1029 @p1030 @p1031 @p343) :args (false))\n(step-pop @p1032 :rule scope :premises (@p344))\n(step @p345 :rule process_scope :premises (@p1032) :args (false))\n(assume-push @p1033 (@indexed_root_predicate 1 @t134 (+ -1/1 @t133 (* 1/1 w1))))\n(step @p348 :rule eq_resolve :premises (@p3 @p119))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p349 false :rule trust :premises (@p1027 @p1028 @p1029 @p1030 @p1033 @p348) :args (false))\n(step-pop @p1034 :rule scope :premises (@p349))\n(step @p350 :rule process_scope :premises (@p1034) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p352 false :rule trust :premises (@p1027 @p1028 @p1029 @p1030 @p350 @p345) :args (false))\n(step-pop @p1035 :rule scope :premises (@p352))\n(step-pop @p1036 :rule scope :premises (@p1035))\n(step-pop @p1037 :rule scope :premises (@p1036))\n(step-pop @p1038 :rule scope :premises (@p1037))\n(step @p353 :rule process_scope :premises (@p1038) :args (false))\n(assume-push @p1039 (@indexed_root_predicate 1 @t1 (+ -1/1 @t133)))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p359 false :rule trust :premises (@p1039 @p982) :args (false))\n(step-pop @p1040 :rule scope :premises (@p359))\n(step @p360 :rule process_scope :premises (@p1040) :args (false))\n(assume-push @p1041 (@indexed_root_predicate 1 @t54 (* -1/1 w0)))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p363 false :rule trust :premises (@p1041 @p981) :args (false))\n(step-pop @p1042 :rule scope :premises (@p363))\n(step @p364 :rule process_scope :premises (@p1042) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p366 false :rule trust :premises (@p364 @p360 @p353 @p335 @p315 @p288 @p272) :args (false))\n(step-pop @p1043 :rule scope :premises (@p366))\n(step-pop @p1044 :rule scope :premises (@p1043))\n(step-pop @p1045 :rule scope :premises (@p1044))\n(step-pop @p1046 :rule scope :premises (@p1045))\n(step-pop @p1047 :rule scope :premises (@p1046))\n(step-pop @p1048 :rule scope :premises (@p1047))\n(step @p367 :rule process_scope :premises (@p1048) :args (false))\n(step @p374 :rule not_and :premises (@p367))\n(step @p375 :rule eq_resolve :premises (@p374 @p252))\n(step @p376 :rule reordering :premises (@p375) :args ((or @t88 @t105 @t109 @t66 @t49 @t111)))\n(step @p377 :rule arith_poly_norm :args ((= (* 1/1 (- w1 0/1)) (* 1/1 (- w1 0)))))\n(step @p378 :rule arith_poly_norm_rel :premises (@p377) :args ((= @t2 @t135)))\n(step @p379 :rule eq_resolve :premises (@p2 @p378))\n(step @p380 :rule refl :args (@t112))\n(step @p381 :rule bool-double-not-elim :args (@t136))\n(step @p382 :rule refl :args (@t137))\n(step @p383 :rule nary_cong :premises (@p122 @p382 @p381 @p380) :args ((or @t66 @t137 @t139 @t112)))\n(assume-push @p1049 @t61)\n(assume-push @p1050 @t135)\n(assume-push @p1051 @t138)\n(assume-push @p1052 @t111)\n(step @p42 :rule evaluate :args (@t35))\n(step @p43 :rule evaluate :args (@t36))\n(step @p127 :rule evaluate :args (@t67))\n(step @p45 :rule evaluate :args (@t37))\n(step @p128 :rule evaluate :args (@t68))\n(step @p129 :rule nary_cong :premises (@p128 @p113 @p45) :args (@t69))\n(step @p130 :rule trans :premises (@p129 @p127))\n(step @p131 :rule arith_poly_norm :args (@t71))\n(step @p388 :rule arith_poly_norm :args ((= @t140 @t70)))\n(step @p389 :rule trans :premises (@p388 @p131))\n(step @p390 :rule cong :premises (@p389 @p130) :args (@t141))\n(step @p391 :rule trans :premises (@p390 @p43))\n(step @p392 :rule cong :premises (@p391) :args ((not @t141)))\n(step @p393 :rule trans :premises (@p392 @p42))\n(step @p394 :rule arith-elim-lt :args (@t140 @t69))\n(step @p395 :rule trans :premises (@p394 @p393))\n(step @p396 :rule arith_mult_neg :args (-1/1 @t134))\n(step @p397 :rule arith_trichotomy :premises (@p2 @p1051))\n(step @p63 :rule evaluate :args (@t43))\n(step @p64 :rule true_elim :premises (@p63))\n(step @p398 :rule and_intro :premises (@p64 @p397))\n(step @p399 :rule modus_ponens :premises (@p398 @p396))\n(step @p145 :rule arith_poly_norm :args (@t76))\n(step @p146 :rule arith_poly_norm_rel :premises (@p145) :args (@t77))\n(step @p147 :rule arith-elim-leq :args (@t3 1/1))\n(step @p148 :rule trans :premises (@p147 @p146))\n(step @p149 :rule symm :premises (@p148))\n(step @p400 :rule eq_resolve :premises (@p3 @p119))\n(step @p401 :rule eq_resolve :premises (@p400 @p149))\n(step @p402 :rule arith_mult_neg :args (-1/1 @t142))\n(step @p403 :rule arith_poly_norm :args (@t143))\n(step @p404 :rule arith_poly_norm_rel :premises (@p403) :args (@t144))\n(step @p405 :rule symm :premises (@p404))\n(step @p406 :rule eq_resolve :premises (@p1052 @p405))\n(step @p407 :rule and_intro :premises (@p64 @p406))\n(step @p408 :rule modus_ponens :premises (@p407 @p402))\n(step @p409 :rule arith_sum_ub :premises (@p408 @p401 @p399))\n(step @p410 false :rule eq_resolve :premises (@p409 @p395))\n(step-pop @p1053 :rule scope :premises (@p410))\n(step-pop @p1054 :rule scope :premises (@p1053))\n(step-pop @p1055 :rule scope :premises (@p1054))\n(step-pop @p1056 :rule scope :premises (@p1055))\n(step @p411 :rule process_scope :premises (@p1056) :args (false))\n(step @p416 :rule not_and :premises (@p411))\n(step @p417 :rule eq_resolve :premises (@p416 @p383))\n(step @p418 :rule reordering :premises (@p417) :args ((or @t137 @t66 @t136 @t112)))\n(assume-push @p1057 @t136)\n(step @p420 :rule evaluate :args (@t145))\n(step @p421 :rule arith_poly_norm :args (@t146))\n(step @p422 :rule cong :premises (@p421 @p46) :args (@t146))\n(step @p423 :rule trans :premises (@p422 @p420))\n(step @p424 :rule refl :args (w0))\n(step @p425 :rule nary_cong :premises (@p424 @p424 @p1057) :args (@t83))\n(step @p426 :rule cong :premises (@p425 @p46) :args (@t147))\n(step @p427 :rule trans :premises (@p426 @p423))\n(step @p428 :rule true_elim :premises (@p427))\n(step-pop @p1058 :rule scope :premises (@p428))\n(step @p429 :rule process_scope :premises (@p1058) :args (@t147))\n(step @p431 :rule implies_elim :premises (@p429))\n(step @p432 :rule reordering :premises (@p431) :args ((or @t147 @t138)))\n(assume-push @p1059 @t136)\n(step @p420 :rule evaluate :args (@t145))\n(step @p434 :rule evaluate :args (@t148))\n(step @p435 :rule cong :premises (@p434 @p46) :args ((= @t148 0/1)))\n(step @p436 :rule trans :premises (@p435 @p420))\n(step @p437 :rule nary_cong :premises (@p1059 @p1059 @p1059) :args (@t81))\n(step @p438 :rule cong :premises (@p437 @p46) :args (@t149))\n(step @p439 :rule trans :premises (@p438 @p436))\n(step @p440 :rule true_elim :premises (@p439))\n(step-pop @p1060 :rule scope :premises (@p440))\n(step @p441 :rule process_scope :premises (@p1060) :args (@t149))\n(step @p443 :rule implies_elim :premises (@p441))\n(assume-push @p1061 @t136)\n(step @p420 :rule evaluate :args (@t145))\n(step @p445 :rule arith_poly_norm :args (@t150))\n(step @p446 :rule cong :premises (@p445 @p46) :args (@t150))\n(step @p447 :rule trans :premises (@p446 @p420))\n(step @p424 :rule refl :args (w0))\n(step @p448 :rule nary_cong :premises (@p424 @p1061 @p1061) :args (@t82))\n(step @p449 :rule cong :premises (@p448 @p46) :args (@t151))\n(step @p450 :rule trans :premises (@p449 @p447))\n(step @p451 :rule true_elim :premises (@p450))\n(step-pop @p1062 :rule scope :premises (@p451))\n(step @p452 :rule process_scope :premises (@p1062) :args (@t151))\n(step @p454 :rule implies_elim :premises (@p452))\n(assume-push @p1063 @t136)\n(step @p420 :rule evaluate :args (@t145))\n(step @p456 :rule evaluate :args (@t152))\n(step @p457 :rule cong :premises (@p456 @p46) :args (@t153))\n(step @p458 :rule trans :premises (@p457 @p420))\n(step @p459 :rule nary_cong :premises (@p1063 @p1063) :args (@t84))\n(step @p460 :rule cong :premises (@p459 @p46) :args (@t154))\n(step @p461 :rule trans :premises (@p460 @p458))\n(step @p462 :rule true_elim :premises (@p461))\n(step-pop @p1064 :rule scope :premises (@p462))\n(step @p463 :rule process_scope :premises (@p1064) :args (@t154))\n(step @p465 :rule implies_elim :premises (@p463))\n(assume-push @p1065 @t136)\n(step @p420 :rule evaluate :args (@t145))\n(step @p467 :rule arith_poly_norm :args (@t155))\n(step @p468 :rule cong :premises (@p467 @p46) :args (@t155))\n(step @p469 :rule trans :premises (@p468 @p420))\n(step @p424 :rule refl :args (w0))\n(step @p470 :rule nary_cong :premises (@p424 @p1065) :args (@t85))\n(step @p471 :rule cong :premises (@p470 @p46) :args (@t156))\n(step @p472 :rule trans :premises (@p471 @p469))\n(step @p473 :rule true_elim :premises (@p472))\n(step-pop @p1066 :rule scope :premises (@p473))\n(step @p474 :rule process_scope :premises (@p1066) :args (@t156))\n(step @p476 :rule implies_elim :premises (@p474))\n(step @p477 :rule refl :args (@t157))\n(step @p478 :rule refl :args (@t158))\n(step @p479 :rule refl :args (@t159))\n(step @p480 :rule refl :args (@t160))\n(step @p481 :rule refl :args (@t161))\n(step @p482 :rule bool-double-not-elim :args (@t64))\n(step @p483 :rule refl :args (@t162))\n(step @p484 :rule bool-double-not-elim :args (@t46))\n(step @p485 :rule nary_cong :premises (@p251 @p484 @p483 @p380 @p482 @p481 @p480 @p479 @p478 @p477) :args ((or @t118 (not @t47) @t162 @t112 (not @t65) @t161 @t160 @t159 @t158 @t157)))\n(assume-push @p1067 @t65)\n(assume-push @p1068 @t154)\n(assume-push @p1069 @t47)\n(assume-push @p1070 @t147)\n(assume-push @p1071 @t151)\n(assume-push @p1072 @t156)\n(assume-push @p1073 @t117)\n(assume-push @p1074 @t30)\n(assume-push @p1075 @t111)\n(assume-push @p1076 @t149)\n(assume-push @p1077 @t149)\n(step @p42 :rule evaluate :args (@t35))\n(step @p497 :rule evaluate :args ((>= 0/1 -55232/4845)))\n(step @p498 :rule evaluate :args ((+ 0/1 -12402/665 0/1 248/2261 0/1 0/1 0/1 0/1 0/1 34594/4845)))\n(step @p499 :rule evaluate :args (@t163))\n(step @p500 :rule evaluate :args (@t164))\n(step @p501 :rule evaluate :args (@t165))\n(step @p502 :rule evaluate :args (@t166))\n(step @p503 :rule evaluate :args (@t167))\n(step @p504 :rule evaluate :args (@t168))\n(step @p505 :rule evaluate :args (@t169))\n(step @p506 :rule evaluate :args (@t170))\n(step @p507 :rule evaluate :args (@t171))\n(step @p508 :rule nary_cong :premises (@p46 @p507 @p506 @p505 @p504 @p503 @p502 @p501 @p500 @p499) :args (@t172))\n(step @p509 :rule trans :premises (@p508 @p498))\n(step @p510 :rule arith_poly_norm :args ((= (+ @t81 @t181 @t180 @t179 @t178 @t177 @t176 @t175 @t174 @t173) 0/1)))\n(step @p511 :rule refl :args (@t173))\n(step @p512 :rule refl :args (@t174))\n(step @p513 :rule refl :args (@t175))\n(step @p514 :rule refl :args (@t176))\n(step @p515 :rule refl :args (@t177))\n(step @p516 :rule refl :args (@t178))\n(step @p517 :rule arith_poly_norm :args ((= @t182 @t179)))\n(step @p518 :rule refl :args (@t180))\n(step @p519 :rule refl :args (@t181))\n(step @p520 :rule refl :args (@t81))\n(step @p521 :rule nary_cong :premises (@p520 @p519 @p518 @p517 @p516 @p515 @p514 @p513 @p512 @p511) :args (@t183))\n(step @p522 :rule trans :premises (@p521 @p510))\n(step @p523 :rule cong :premises (@p522 @p509) :args (@t184))\n(step @p524 :rule trans :premises (@p523 @p497))\n(step @p525 :rule cong :premises (@p524) :args ((not @t184)))\n(step @p526 :rule trans :premises (@p525 @p42))\n(step @p527 :rule arith-elim-lt :args (@t183 @t172))\n(step @p528 :rule trans :premises (@p527 @p526))\n(step @p529 :rule arith_mult_pos :args (34594/4845 (< w1 1/1)))\n(step @p153 :rule arith_poly_norm :args (@t79))\n(step @p154 :rule arith_poly_norm_rel :premises (@p153) :args (@t80))\n(step @p530 :rule cong :premises (@p154) :args ((not @t78)))\n(step @p531 :rule arith-elim-lt :args (w1 1/1))\n(step @p532 :rule trans :premises (@p531 @p530))\n(step @p533 :rule symm :premises (@p532))\n(step @p534 :rule eq_resolve :premises (@p1067 @p533))\n(step @p535 :rule evaluate :args ((> 34594/4845 0/1)))\n(step @p536 :rule true_elim :premises (@p535))\n(step @p537 :rule and_intro :premises (@p536 @p534))\n(step @p538 :rule modus_ponens :premises (@p537 @p529))\n(step @p539 :rule arith_mult_neg :args (-39949/4845 @t154))\n(step @p540 :rule evaluate :args ((< -39949/4845 0/1)))\n(step @p541 :rule true_elim :premises (@p540))\n(step @p542 :rule and_intro :premises (@p541 @p1068))\n(step @p543 :rule modus_ponens :premises (@p542 @p539))\n(step @p544 :rule arith_mult_neg :args (-32643/11305 @t55))\n(step @p545 :rule symm :premises (@p93))\n(step @p546 :rule eq_resolve :premises (@p1069 @p545))\n(step @p547 :rule evaluate :args ((< -32643/11305 0/1)))\n(step @p548 :rule true_elim :premises (@p547))\n(step @p549 :rule and_intro :premises (@p548 @p546))\n(step @p550 :rule modus_ponens :premises (@p549 @p544))\n(step @p551 :rule arith_mult_neg :args (-6297/11305 @t147))\n(step @p552 :rule evaluate :args ((< -6297/11305 0/1)))\n(step @p553 :rule true_elim :premises (@p552))\n(step @p554 :rule and_intro :premises (@p553 @p1070))\n(step @p555 :rule modus_ponens :premises (@p554 @p551))\n(step @p556 :rule arith_mult_pos :args (55411/11305 @t151))\n(step @p557 :rule evaluate :args ((> 55411/11305 0/1)))\n(step @p558 :rule true_elim :premises (@p557))\n(step @p559 :rule and_intro :premises (@p558 @p1071))\n(step @p560 :rule modus_ponens :premises (@p559 @p556))\n(step @p561 :rule arith_mult_neg :args (-242894/11305 @t156))\n(step @p562 :rule evaluate :args ((< -242894/11305 0/1)))\n(step @p563 :rule true_elim :premises (@p562))\n(step @p564 :rule and_intro :premises (@p563 @p1072))\n(step @p565 :rule modus_ponens :premises (@p564 @p561))\n(step @p566 :rule arith_mult_pos :args (12402/665 (< @t86 620/105417)))\n(step @p567 :rule arith-elim-lt :args (@t86 620/105417))\n(step @p568 :rule symm :premises (@p567))\n(step @p569 :rule eq_resolve :premises (@p4 @p216))\n(step @p570 :rule eq_resolve :premises (@p569 @p568))\n(step @p571 :rule evaluate :args ((> 12402/665 0/1)))\n(step @p572 :rule true_elim :premises (@p571))\n(step @p573 :rule and_intro :premises (@p572 @p570))\n(step @p574 :rule modus_ponens :premises (@p573 @p566))\n(step @p575 :rule arith_mult_neg :args (-260793/11305 @t32))\n(step @p31 :rule arith_poly_norm :args (@t31))\n(step @p32 :rule arith_poly_norm_rel :premises (@p31) :args (@t33))\n(step @p33 :rule symm :premises (@p32))\n(step @p576 :rule eq_resolve :premises (@p1074 @p33))\n(step @p577 :rule evaluate :args ((< -260793/11305 0/1)))\n(step @p578 :rule true_elim :premises (@p577))\n(step @p579 :rule and_intro :premises (@p578 @p576))\n(step @p580 :rule modus_ponens :premises (@p579 @p575))\n(step @p581 :rule arith_mult_neg :args (-12402/665 @t142))\n(step @p403 :rule arith_poly_norm :args (@t143))\n(step @p404 :rule arith_poly_norm_rel :premises (@p403) :args (@t144))\n(step @p405 :rule symm :premises (@p404))\n(step @p582 :rule eq_resolve :premises (@p1075 @p405))\n(step @p583 :rule evaluate :args ((< -12402/665 0/1)))\n(step @p584 :rule true_elim :premises (@p583))\n(step @p585 :rule and_intro :premises (@p584 @p582))\n(step @p586 :rule modus_ponens :premises (@p585 @p581))\n(step @p587 :rule arith_sum_ub :premises (@p1076 @p586 @p580 @p574 @p565 @p560 @p555 @p550 @p543 @p538))\n(step @p588 false :rule eq_resolve :premises (@p587 @p528))\n(step-pop @p1078 :rule scope :premises (@p588))\n(step @p589 :rule process_scope :premises (@p1078) :args (false))\n(step @p591 false :rule contra :premises (@p1076 @p589))\n(step-pop @p1079 :rule scope :premises (@p591))\n(step-pop @p1080 :rule scope :premises (@p1079))\n(step-pop @p1081 :rule scope :premises (@p1080))\n(step-pop @p1082 :rule scope :premises (@p1081))\n(step-pop @p1083 :rule scope :premises (@p1082))\n(step-pop @p1084 :rule scope :premises (@p1083))\n(step-pop @p1085 :rule scope :premises (@p1084))\n(step-pop @p1086 :rule scope :premises (@p1085))\n(step-pop @p1087 :rule scope :premises (@p1086))\n(step-pop @p1088 :rule scope :premises (@p1087))\n(step @p592 :rule process_scope :premises (@p1088) :args (false))\n(assume-push @p1089 @t117)\n(assume-push @p1090 @t47)\n(assume-push @p1091 @t147)\n(assume-push @p1092 @t111)\n(assume-push @p1093 @t65)\n(assume-push @p1094 @t30)\n(assume-push @p1095 @t149)\n(assume-push @p1096 @t151)\n(assume-push @p1097 @t154)\n(assume-push @p1098 @t156)\n(step @p613 :rule eq_resolve :premises (@p4 @p216))\n(step @p614 :rule and_intro :premises (@p1093 @p1097 @p1090 @p1091 @p1096 @p1098 @p613 @p1094 @p1092 @p1095))\n(step-pop @p1099 :rule scope :premises (@p614))\n(step-pop @p1100 :rule scope :premises (@p1099))\n(step-pop @p1101 :rule scope :premises (@p1100))\n(step-pop @p1102 :rule scope :premises (@p1101))\n(step-pop @p1103 :rule scope :premises (@p1102))\n(step-pop @p1104 :rule scope :premises (@p1103))\n(step-pop @p1105 :rule scope :premises (@p1104))\n(step-pop @p1106 :rule scope :premises (@p1105))\n(step-pop @p1107 :rule scope :premises (@p1106))\n(step-pop @p1108 :rule scope :premises (@p1107))\n(step @p615 :rule process_scope :premises (@p1108) :args (@t185))\n(step @p626 :rule implies_elim :premises (@p615))\n(step @p627 :rule resolution :premises (@p626 @p592) :args (true @t185))\n(step @p628 :rule not_and :premises (@p627))\n(step @p629 :rule eq_resolve :premises (@p628 @p485))\n(step @p630 :rule chain_resolution :premises (@p629 @p217 @p476 @p465 @p454 @p443 @p432) :args ((@list true false false false false false) (@list @t88 @t156 @t154 @t151 @t149 @t147)))\n(step @p631 :rule factoring :premises (@p630))\n(step @p632 :rule chain_resolution :premises (@p631 @p418 @p120 @p379) :args ((@list false false false) (@list @t136 @t61 @t135)))\n(step @p633 :rule factoring :premises (@p632))\n(step @p634 :rule chain_resolution :premises (@p633 @p376 @p247 @p232 @p217 @p120 @p166 @p120 @p108) :args ((@list false true true true false true false true) (@list @t111 @t109 @t105 @t88 @t61 @t64 @t61 @t46)))\n(step @p635 :rule factoring :premises (@p634))\n(step @p636 :rule reordering :premises (@p635) :args ((or @t49 @t161)))\n(step @p637 :rule arith_poly_norm :args ((= (* 1/1 (- w0 0/1)) (* 1/1 (- w0 0)))))\n(step @p638 :rule arith_poly_norm_rel :premises (@p637) :args ((= @t1 @t186)))\n(step @p639 :rule eq_resolve :premises (@p1 @p638))\n(step @p640 :rule refl :args (@t50))\n(step @p641 :rule refl :args (@t187))\n(step @p642 :rule nary_cong :premises (@p641 @p8 @p640) :args ((or @t187 @t27 @t50)))\n(assume-push @p1109 @t186)\n(assume-push @p1110 @t26)\n(assume-push @p1111 @t49)\n(step @p646 :rule arith_trichotomy :premises (@p1 @p1110))\n(step @p647 :rule eq_resolve :premises (@p646 @p102))\n(step @p648 :rule symm :premises (@p97))\n(step @p649 :rule eq_resolve :premises (@p1111 @p648))\n(step @p650 false :rule contra :premises (@p649 @p647))\n(step-pop @p1112 :rule scope :premises (@p650))\n(step-pop @p1113 :rule scope :premises (@p1112))\n(step-pop @p1114 :rule scope :premises (@p1113))\n(step @p651 :rule process_scope :premises (@p1114) :args (false))\n(step @p655 :rule not_and :premises (@p651))\n(step @p656 :rule eq_resolve :premises (@p655 @p642))\n(step @p657 :rule chain_resolution :premises (@p656 @p639 @p636 @p80 @p25) :args ((@list false false false true) (@list @t186 @t49 @t30 @t23)))\n(step @p658 :rule factoring :premises (@p657))\n(assume-push @p1115 @t25)\n(step @p420 :rule evaluate :args (@t145))\n(step @p456 :rule evaluate :args (@t152))\n(step @p457 :rule cong :premises (@p456 @p46) :args (@t153))\n(step @p458 :rule trans :premises (@p457 @p420))\n(step @p660 :rule nary_cong :premises (@p1115 @p1115) :args (@t21))\n(step @p661 :rule cong :premises (@p660 @p46) :args (@t188))\n(step @p662 :rule trans :premises (@p661 @p458))\n(step @p663 :rule true_elim :premises (@p662))\n(step-pop @p1116 :rule scope :premises (@p663))\n(step @p664 :rule process_scope :premises (@p1116) :args (@t188))\n(step @p666 :rule implies_elim :premises (@p664))\n(step @p667 :rule reordering :premises (@p666) :args ((or @t188 @t26)))\n(step @p668 :rule chain_resolution :premises (@p667 @p658) :args (@t189 (@list @t25)))\n(assume-push @p1117 @t188)\n(assume-push @p1118 @t188)\n(step @p671 :rule arith_poly_norm :args (@t190))\n(step @p672 :rule arith_poly_norm_rel :premises (@p671) :args (@t193))\n(step @p673 :rule cong :premises (@p672) :args (@t194))\n(step @p674 :rule arith-elim-lt :args (@t21 1/1))\n(step @p675 :rule trans :premises (@p674 @p673))\n(step @p676 :rule symm :premises (@p675))\n(step @p677 :rule trans :premises (@p673 @p676))\n(assume-push @p1119 @t192)\n(step @p679 :rule evaluate :args ((<= 0/1 -1/1)))\n(step @p680 :rule evaluate :args ((+ -1/1 0/1)))\n(step @p128 :rule evaluate :args (@t68))\n(step @p681 :rule nary_cong :premises (@p128 @p46) :args (@t195))\n(step @p682 :rule trans :premises (@p681 @p680))\n(step @p683 :rule arith_poly_norm :args ((= (+ @t22 @t21) 0/1)))\n(step @p51 :rule refl :args (@t21))\n(step @p50 :rule arith_poly_norm :args (@t40))\n(step @p684 :rule nary_cong :premises (@p50 @p51) :args (@t196))\n(step @p685 :rule trans :premises (@p684 @p683))\n(step @p686 :rule cong :premises (@p685 @p682) :args ((<= @t196 @t195)))\n(step @p687 :rule trans :premises (@p686 @p679))\n(step @p688 :rule arith_mult_neg :args (-1/1 @t192))\n(step @p63 :rule evaluate :args (@t43))\n(step @p64 :rule true_elim :premises (@p63))\n(step @p689 :rule and_intro :premises (@p64 @p1119))\n(step @p690 :rule modus_ponens :premises (@p689 @p688))\n(step @p691 :rule arith_sum_ub :premises (@p690 @p1117))\n(step @p692 false :rule eq_resolve :premises (@p691 @p687))\n(step-pop @p1120 :rule scope :premises (@p692))\n(step @p693 :rule process_scope :premises (@p1120) :args (false))\n(step @p695 :rule eq_resolve :premises (@p693 @p677))\n(step @p696 :rule eq_resolve :premises (@p695 @p675))\n(step-pop @p1121 :rule scope :premises (@p696))\n(step @p697 :rule process_scope :premises (@p1121) :args (@t197))\n(step @p699 :rule modus_ponens :premises (@p1117 @p697))\n(step-pop @p1122 :rule scope :premises (@p699))\n(step @p700 :rule process_scope :premises (@p1122) :args (@t197))\n(step @p702 :rule implies_elim :premises (@p700))\n(step @p703 :rule chain_resolution :premises (@p702 @p668) :args (@t189 (@list @t188)))\n(step @p704 :rule bool-double-not-elim :args (@t191))\n(step @p705 :rule refl :args (@t138))\n(step @p706 :rule nary_cong :premises (@p250 @p20 @p705 @p704 @p478 @p477) :args ((or @t116 @t26 @t138 (not @t197) @t158 @t157)))\n(assume-push @p1123 @t25)\n(assume-push @p1124 @t136)\n(assume-push @p1125 @t197)\n(assume-push @p1126 @t115)\n(assume-push @p1127 @t154)\n(assume-push @p1128 @t156)\n(assume-push @p1129 @t156)\n(step @p42 :rule evaluate :args (@t35))\n(step @p714 :rule evaluate :args ((>= 0/1 -589/4)))\n(step @p715 :rule evaluate :args ((+ 0/1 0/1 -235/1 351/4 0/1 0/1)))\n(step @p716 :rule evaluate :args (@t198))\n(step @p717 :rule evaluate :args (@t199))\n(step @p718 :rule evaluate :args (@t200))\n(step @p719 :rule evaluate :args (@t201))\n(step @p720 :rule evaluate :args (@t202))\n(step @p45 :rule evaluate :args (@t37))\n(step @p721 :rule nary_cong :premises (@p45 @p720 @p719 @p718 @p717 @p716) :args (@t203))\n(step @p722 :rule trans :premises (@p721 @p715))\n(step @p723 :rule arith_poly_norm :args ((= (+ @t209 @t208 @t207 @t206 @t205 @t204) 0/1)))\n(step @p724 :rule refl :args (@t204))\n(step @p725 :rule refl :args (@t205))\n(step @p726 :rule refl :args (@t206))\n(step @p727 :rule arith_poly_norm :args ((= @t211 @t207)))\n(step @p728 :rule refl :args (@t208))\n(step @p729 :rule arith_poly_norm :args ((= @t212 @t209)))\n(step @p730 :rule nary_cong :premises (@p729 @p728 @p727 @p726 @p725 @p724) :args (@t213))\n(step @p731 :rule trans :premises (@p730 @p723))\n(step @p732 :rule cong :premises (@p731 @p722) :args (@t214))\n(step @p733 :rule trans :premises (@p732 @p714))\n(step @p734 :rule cong :premises (@p733) :args ((not @t214)))\n(step @p735 :rule trans :premises (@p734 @p42))\n(step @p736 :rule arith-elim-lt :args (@t213 @t203))\n(step @p737 :rule trans :premises (@p736 @p735))\n(step @p738 :rule arith_mult_pos :args (3159/4 @t25))\n(step @p739 :rule evaluate :args ((> 3159/4 0/1)))\n(step @p740 :rule true_elim :premises (@p739))\n(step @p741 :rule and_intro :premises (@p740 @p1123))\n(step @p742 :rule modus_ponens :premises (@p741 @p738))\n(step @p743 :rule arith_mult_pos :args (5887/12 @t136))\n(step @p744 :rule evaluate :args ((> 5887/12 0/1)))\n(step @p745 :rule true_elim :premises (@p744))\n(step @p746 :rule and_intro :premises (@p745 @p1124))\n(step @p747 :rule modus_ponens :premises (@p746 @p743))\n(step @p748 :rule arith_mult_pos :args (351/4 (< @t21 1/1)))\n(step @p671 :rule arith_poly_norm :args (@t190))\n(step @p672 :rule arith_poly_norm_rel :premises (@p671) :args (@t193))\n(step @p673 :rule cong :premises (@p672) :args (@t194))\n(step @p674 :rule arith-elim-lt :args (@t21 1/1))\n(step @p675 :rule trans :premises (@p674 @p673))\n(step @p676 :rule symm :premises (@p675))\n(step @p749 :rule eq_resolve :premises (@p1125 @p676))\n(step @p750 :rule evaluate :args ((> 351/4 0/1)))\n(step @p751 :rule true_elim :premises (@p750))\n(step @p752 :rule and_intro :premises (@p751 @p749))\n(step @p753 :rule modus_ponens :premises (@p752 @p748))\n(step @p754 :rule arith_mult_neg :args (-3159/4 @t215))\n(step @p755 :rule arith_poly_norm :args (@t216))\n(step @p756 :rule arith_poly_norm_rel :premises (@p755) :args (@t218))\n(step @p757 :rule arith-elim-leq :args (@t210 940/3159))\n(step @p758 :rule trans :premises (@p757 @p756))\n(step @p759 :rule cong :premises (@p758) :args (@t219))\n(step @p760 :rule symm :premises (@p757))\n(step @p761 :rule cong :premises (@p760) :args (@t220))\n(step @p762 :rule arith-elim-gt :args (@t210 940/3159))\n(step @p763 :rule trans :premises (@p762 @p761))\n(step @p764 :rule trans :premises (@p763 @p759))\n(step @p765 :rule symm :premises (@p764))\n(step @p766 :rule eq_resolve :premises (@p5 @p231))\n(step @p767 :rule eq_resolve :premises (@p766 @p765))\n(step @p768 :rule evaluate :args ((< -3159/4 0/1)))\n(step @p769 :rule true_elim :premises (@p768))\n(step @p770 :rule and_intro :premises (@p769 @p767))\n(step @p771 :rule modus_ponens :premises (@p770 @p754))\n(step @p772 :rule arith_mult_neg :args (-595/4 @t154))\n(step @p773 :rule evaluate :args ((< -595/4 0/1)))\n(step @p774 :rule true_elim :premises (@p773))\n(step @p775 :rule and_intro :premises (@p774 @p1127))\n(step @p776 :rule modus_ponens :premises (@p775 @p772))\n(step @p777 :rule arith_mult_neg :args (-1/1 @t156))\n(step @p63 :rule evaluate :args (@t43))\n(step @p64 :rule true_elim :premises (@p63))\n(step @p778 :rule and_intro :premises (@p64 @p1128))\n(step @p779 :rule modus_ponens :premises (@p778 @p777))\n(step @p780 :rule arith_sum_ub :premises (@p779 @p776 @p771 @p753 @p747 @p742))\n(step @p781 false :rule eq_resolve :premises (@p780 @p737))\n(step-pop @p1130 :rule scope :premises (@p781))\n(step @p782 :rule process_scope :premises (@p1130) :args (false))\n(step @p784 false :rule contra :premises (@p1128 @p782))\n(step-pop @p1131 :rule scope :premises (@p784))\n(step-pop @p1132 :rule scope :premises (@p1131))\n(step-pop @p1133 :rule scope :premises (@p1132))\n(step-pop @p1134 :rule scope :premises (@p1133))\n(step-pop @p1135 :rule scope :premises (@p1134))\n(step-pop @p1136 :rule scope :premises (@p1135))\n(step @p785 :rule process_scope :premises (@p1136) :args (false))\n(assume-push @p1137 @t115)\n(assume-push @p1138 @t25)\n(assume-push @p1139 @t136)\n(assume-push @p1140 @t197)\n(assume-push @p1141 @t154)\n(assume-push @p1142 @t156)\n(step @p798 :rule eq_resolve :premises (@p5 @p231))\n(step @p799 :rule and_intro :premises (@p1138 @p1139 @p1140 @p798 @p1141 @p1142))\n(step-pop @p1143 :rule scope :premises (@p799))\n(step-pop @p1144 :rule scope :premises (@p1143))\n(step-pop @p1145 :rule scope :premises (@p1144))\n(step-pop @p1146 :rule scope :premises (@p1145))\n(step-pop @p1147 :rule scope :premises (@p1146))\n(step-pop @p1148 :rule scope :premises (@p1147))\n(step @p800 :rule process_scope :premises (@p1148) :args (@t221))\n(step @p807 :rule implies_elim :premises (@p800))\n(step @p808 :rule resolution :premises (@p807 @p785) :args (true @t221))\n(step @p809 :rule not_and :premises (@p808))\n(step @p810 :rule eq_resolve :premises (@p809 @p706))\n(step @p811 :rule chain_resolution :premises (@p810 @p703 @p658 @p232 @p476 @p465) :args ((@list true false true false false) (@list @t191 @t25 @t105 @t156 @t154)))\n(step @p812 :rule factoring :premises (@p811))\n(step @p813 :rule refl :args (@t224))\n(step @p814 :rule nary_cong :premises (@p381 @p813) :args ((or @t139 @t224)))\n(step @p815 :rule arith_poly_norm :args ((= (* -1/1 (- 0/1 @t84)) (* -1/1 (- @t222 0)))))\n(step @p816 :rule arith_poly_norm_rel :premises (@p815) :args ((= @t225 @t223)))\n(step @p817 :rule arith-elim-leq :args (@t84 0/1))\n(step @p818 :rule trans :premises (@p817 @p816))\n(step @p819 :rule cong :premises (@p818) :args ((not (<= @t84 0/1))))\n(step @p820 :rule symm :premises (@p817))\n(step @p821 :rule cong :premises (@p820) :args ((not @t225)))\n(step @p822 :rule arith-elim-gt :args (@t84 0/1))\n(step @p823 :rule trans :premises (@p822 @p821))\n(step @p824 :rule trans :premises (@p823 @p819))\n(step @p825 :rule cong :premises (@p705 @p824) :args ((=> @t138 @t226)))\n(step @p826 :rule arith_mult_sign :args (@t138 @t84))\n(step @p827 :rule eq_resolve :premises (@p826 @p825))\n(step @p828 :rule implies_elim :premises (@p827))\n(step @p829 :rule eq_resolve :premises (@p828 @p814))\n(step @p830 :rule chain_resolution :premises (@p829 @p812) :args ((@list true) (@list @t136)))\n(step @p831 :rule bool-double-not-elim :args (@t223))\n(step @p832 :rule refl :args (@t227))\n(step @p833 :rule nary_cong :premises (@p250 @p249 @p20 @p832 @p831 @p477) :args ((or @t116 @t114 @t26 @t227 (not @t224) @t157)))\n(assume-push @p1149 @t188)\n(assume-push @p1150 @t25)\n(assume-push @p1151 @t115)\n(assume-push @p1152 @t224)\n(assume-push @p1153 @t156)\n(assume-push @p1154 @t113)\n(step @p840 :rule arith_poly_norm :args ((= (* -20/39 (- -20/39 @t229)) (* -20/39 @t108))))\n(step @p841 :rule arith_poly_norm_rel :premises (@p840) :args ((= @t230 @t109)))\n(step @p842 :rule arith-elim-leq :args (@t229 -20/39))\n(step @p843 :rule trans :premises (@p842 @p841))\n(step @p844 :rule cong :premises (@p843) :args ((not (<= @t229 -20/39))))\n(step @p845 :rule symm :premises (@p842))\n(step @p846 :rule cong :premises (@p845) :args ((not @t230)))\n(step @p847 :rule arith-elim-gt :args (@t229 -20/39))\n(step @p848 :rule trans :premises (@p847 @p846))\n(step @p849 :rule trans :premises (@p848 @p844))\n(step @p850 :rule cong :premises (@p849) :args ((not @t231)))\n(step @p851 :rule trans :premises (@p850 @p249))\n(step @p852 :rule symm :premises (@p851))\n(step @p853 :rule trans :premises (@p843 @p852))\n(step @p854 :rule symm :premises (@p843))\n(step @p855 :rule trans :premises (@p851 @p854))\n(assume-push @p1155 @t231)\n(step @p42 :rule evaluate :args (@t35))\n(step @p857 :rule evaluate :args ((>= 0/1 -26080/229593)))\n(step @p858 :rule evaluate :args ((+ 20/39 0/1 0/1 -47940/76531 0/1 0/1)))\n(step @p859 :rule evaluate :args (@t232))\n(step @p860 :rule evaluate :args (@t233))\n(step @p861 :rule evaluate :args (@t234))\n(step @p862 :rule evaluate :args (@t235))\n(step @p863 :rule evaluate :args (@t236))\n(step @p864 :rule evaluate :args (@t237))\n(step @p865 :rule nary_cong :premises (@p864 @p863 @p862 @p861 @p860 @p859) :args (@t238))\n(step @p866 :rule trans :premises (@p865 @p858))\n(step @p867 :rule arith_poly_norm :args ((= (+ @t107 @t243 @t242 @t241 @t240 @t239) 0/1)))\n(step @p868 :rule refl :args (@t239))\n(step @p869 :rule refl :args (@t240))\n(step @p870 :rule arith_poly_norm :args ((= @t244 @t241)))\n(step @p871 :rule refl :args (@t242))\n(step @p872 :rule refl :args (@t243))\n(step @p873 :rule arith_poly_norm :args ((= @t245 @t107)))\n(step @p874 :rule nary_cong :premises (@p873 @p872 @p871 @p870 @p869 @p868) :args (@t246))\n(step @p875 :rule trans :premises (@p874 @p867))\n(step @p876 :rule cong :premises (@p875 @p866) :args (@t247))\n(step @p877 :rule trans :premises (@p876 @p857))\n(step @p878 :rule cong :premises (@p877) :args ((not @t247)))\n(step @p879 :rule trans :premises (@p878 @p42))\n(step @p880 :rule arith-elim-lt :args (@t246 @t238))\n(step @p881 :rule trans :premises (@p880 @p879))\n(step @p882 :rule arith_mult_pos :args (1377/5887 @t188))\n(step @p883 :rule evaluate :args ((> 1377/5887 0/1)))\n(step @p884 :rule true_elim :premises (@p883))\n(step @p885 :rule and_intro :premises (@p884 @p1149))\n(step @p886 :rule modus_ponens :premises (@p885 @p882))\n(step @p887 :rule arith_mult_pos :args (18280/5887 @t25))\n(step @p888 :rule evaluate :args ((> 18280/5887 0/1)))\n(step @p889 :rule true_elim :premises (@p888))\n(step @p890 :rule and_intro :premises (@p889 @p1150))\n(step @p891 :rule modus_ponens :premises (@p890 @p887))\n(step @p892 :rule arith_mult_neg :args (-12393/5887 @t215))\n(step @p755 :rule arith_poly_norm :args (@t216))\n(step @p756 :rule arith_poly_norm_rel :premises (@p755) :args (@t218))\n(step @p757 :rule arith-elim-leq :args (@t210 940/3159))\n(step @p758 :rule trans :premises (@p757 @p756))\n(step @p759 :rule cong :premises (@p758) :args (@t219))\n(step @p760 :rule symm :premises (@p757))\n(step @p761 :rule cong :premises (@p760) :args (@t220))\n(step @p762 :rule arith-elim-gt :args (@t210 940/3159))\n(step @p763 :rule trans :premises (@p762 @p761))\n(step @p764 :rule trans :premises (@p763 @p759))\n(step @p765 :rule symm :premises (@p764))\n(step @p893 :rule eq_resolve :premises (@p5 @p231))\n(step @p894 :rule eq_resolve :premises (@p893 @p765))\n(step @p895 :rule evaluate :args ((< -12393/5887 0/1)))\n(step @p896 :rule true_elim :premises (@p895))\n(step @p897 :rule and_intro :premises (@p896 @p894))\n(step @p898 :rule modus_ponens :premises (@p897 @p892))\n(step @p899 :rule arith_mult_neg :args (-4335/10933 @t226))\n(step @p900 :rule symm :premises (@p824))\n(step @p901 :rule eq_resolve :premises (@p1152 @p900))\n(step @p902 :rule evaluate :args ((< -4335/10933 0/1)))\n(step @p903 :rule true_elim :premises (@p902))\n(step @p904 :rule and_intro :premises (@p903 @p901))\n(step @p905 :rule modus_ponens :premises (@p904 @p899))\n(step @p906 :rule arith_mult_neg :args (-204/76531 @t156))\n(step @p907 :rule evaluate :args ((< -204/76531 0/1)))\n(step @p908 :rule true_elim :premises (@p907))\n(step @p909 :rule and_intro :premises (@p908 @p1153))\n(step @p910 :rule modus_ponens :premises (@p909 @p906))\n(step @p911 :rule arith_mult_neg :args (-1/1 @t231))\n(step @p63 :rule evaluate :args (@t43))\n(step @p64 :rule true_elim :premises (@p63))\n(step @p912 :rule and_intro :premises (@p64 @p1155))\n(step @p913 :rule modus_ponens :premises (@p912 @p911))\n(step @p914 :rule arith_sum_ub :premises (@p913 @p910 @p905 @p898 @p891 @p886))\n(step @p915 false :rule eq_resolve :premises (@p914 @p881))\n(step-pop @p1156 :rule scope :premises (@p915))\n(step @p916 :rule process_scope :premises (@p1156) :args (false))\n(step @p918 :rule eq_resolve :premises (@p916 @p855))\n(step @p919 :rule eq_resolve :premises (@p918 @p853))\n(step @p920 :rule symm :premises (@p849))\n(step @p921 :rule eq_resolve :premises (@p6 @p246))\n(step @p922 :rule eq_resolve :premises (@p921 @p920))\n(step @p923 false :rule contra :premises (@p922 @p919))\n(step-pop @p1157 :rule scope :premises (@p923))\n(step-pop @p1158 :rule scope :premises (@p1157))\n(step-pop @p1159 :rule scope :premises (@p1158))\n(step-pop @p1160 :rule scope :premises (@p1159))\n(step-pop @p1161 :rule scope :premises (@p1160))\n(step-pop @p1162 :rule scope :premises (@p1161))\n(step @p924 :rule process_scope :premises (@p1162) :args (false))\n(assume-push @p1163 @t115)\n(assume-push @p1164 @t113)\n(assume-push @p1165 @t25)\n(assume-push @p1166 @t188)\n(assume-push @p1167 @t224)\n(assume-push @p1168 @t156)\n(step @p937 :rule eq_resolve :premises (@p6 @p246))\n(step @p938 :rule eq_resolve :premises (@p5 @p231))\n(step @p939 :rule and_intro :premises (@p1166 @p1165 @p938 @p1167 @p1168 @p937))\n(step-pop @p1169 :rule scope :premises (@p939))\n(step-pop @p1170 :rule scope :premises (@p1169))\n(step-pop @p1171 :rule scope :premises (@p1170))\n(step-pop @p1172 :rule scope :premises (@p1171))\n(step-pop @p1173 :rule scope :premises (@p1172))\n(step-pop @p1174 :rule scope :premises (@p1173))\n(step @p940 :rule process_scope :premises (@p1174) :args (@t248))\n(step @p947 :rule implies_elim :premises (@p940))\n(step @p948 :rule resolution :premises (@p947 @p924) :args (true @t248))\n(step @p949 :rule not_and :premises (@p948))\n(step @p950 :rule eq_resolve :premises (@p949 @p833))\n(step @p951 :rule chain_resolution :premises (@p950 @p232 @p247 @p658 @p668 @p830) :args ((@list true true false false true) (@list @t105 @t109 @t25 @t188 @t223)))\n(assume-push @p1175 @t25)\n(step @p420 :rule evaluate :args (@t145))\n(step @p953 :rule arith_poly_norm :args (@t249))\n(step @p954 :rule cong :premises (@p953 @p46) :args (@t249))\n(step @p955 :rule trans :premises (@p954 @p420))\n(step @p956 :rule refl :args (w1))\n(step @p957 :rule nary_cong :premises (@p1175 @p956) :args (@t85))\n(step @p958 :rule cong :premises (@p957 @p46) :args (@t156))\n(step @p959 :rule trans :premises (@p958 @p955))\n(step @p960 :rule true_elim :premises (@p959))\n(step-pop @p1176 :rule scope :premises (@p960))\n(step @p961 :rule process_scope :premises (@p1176) :args (@t156))\n(step @p963 :rule implies_elim :premises (@p961))\n(step @p964 false :rule chain_resolution :premises (@p963 @p951 @p658) :args ((@list true false) (@list @t156 @t25)))\n)\n",
+        "proof_sha256": "7ff06ecfd0828e2216d20de0bc47764be590343465949600f66a6cd042747548",
+        "rules": {
+          "ProofRule.AND_INTRO": 30,
+          "ProofRule.ARITH_MULT_NEG": 19,
+          "ProofRule.ARITH_MULT_POS": 8,
+          "ProofRule.ARITH_MULT_SIGN": 3,
+          "ProofRule.ARITH_POLY_NORM": 53,
+          "ProofRule.ARITH_POLY_NORM_REL": 17,
+          "ProofRule.ARITH_SUM_UB": 7,
+          "ProofRule.ARITH_TRICHOTOMY": 2,
+          "ProofRule.ASSUME": 98,
+          "ProofRule.CHAIN_RESOLUTION": 10,
+          "ProofRule.CONG": 56,
+          "ProofRule.CONTRA": 4,
+          "ProofRule.DSL_REWRITE": 45,
+          "ProofRule.EQ_RESOLVE": 72,
+          "ProofRule.EVALUATE": 57,
+          "ProofRule.FACTORING": 5,
+          "ProofRule.IMPLIES_ELIM": 15,
+          "ProofRule.MODUS_PONENS": 29,
+          "ProofRule.NARY_CONG": 39,
+          "ProofRule.NOT_AND": 7,
+          "ProofRule.REFL": 47,
+          "ProofRule.REORDERING": 6,
+          "ProofRule.RESOLUTION": 3,
+          "ProofRule.SCOPE": 46,
+          "ProofRule.SYMM": 25,
+          "ProofRule.TRANS": 97,
+          "ProofRule.TRUE_ELIM": 27,
+          "ProofRule.TRUST": 19
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(declare-fun x1 () Real)\n(declare-fun x0 () Real)\n(assert (> (+ 0.0 0.0 (* 0.0 x0) (* 1.0 x1)) 0.0))\n(assert (> (+ 1.0 0.0 (* (- 1.0) x0) (* (- 1.0) x1)) 0.0))\n(assert (> (+ 0.0 0.0 (* 1.0 x0) (* 0.0 x1)) 0.0))\n(assert (< (/ 64.0 125.0)\n   (* 1.0\n      (+ (/ 1.0 100.0) 0.0 (* (/ 37.0 50.0) x0) (* (/ 93.0 100.0) x1))\n      (+ (/ 9.0 10.0) 0.0 (* (/ 2.0 25.0) x0) (* (- (/ 27.0 100.0)) x1))\n      (+ (/ 299.0 300.0) 0.0 (* (- (/ 3.0 10.0)) x0) (* (- (/ 13.0 100.0)) x1)))))\n(assert (< (/ 16.0 25.0)\n   (* 1.0\n      (+ (/ 9.0 10.0) 0.0 (* (/ 2.0 25.0) x0) (* (- (/ 27.0 100.0)) x1))\n      (+ (/ 299.0 300.0) 0.0 (* (- (/ 3.0 10.0)) x0) (* (- (/ 13.0 100.0)) x1)))))\n(assert (< (/ 4.0 5.0)\n   (* 1.0\n      (+ (/ 299.0 300.0) 0.0 (* (- (/ 3.0 10.0)) x0) (* (- (/ 13.0 100.0)) x1)))))\n\n(check-sat)\n",
+      "rejected_before_success": [
+        {
+          "prefix": [
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "15/32",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "263/320",
+              "321/400",
+              "3797/4800"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/32"
+              },
+              {
+                "vertex": 1,
+                "weight": "15/32"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "33/50",
+              "157/200",
+              "257/300"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "3/256",
+              "63/64"
+            ],
+            "point": [
+              "99/100",
+              "11957/12800",
+              "813/1280",
+              "33223/38400"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/256"
+              },
+              {
+                "vertex": 1,
+                "weight": "3/256"
+              },
+              {
+                "vertex": 2,
+                "weight": "63/64"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            3
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "33/50",
+              "157/200",
+              "257/300"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            0,
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1799/4096",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "163843/204800",
+              "40967/51200",
+              "491461/614400"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "249/4096"
+              },
+              {
+                "vertex": 1,
+                "weight": "1799/4096"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            0,
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "3/128",
+              "31/32"
+            ],
+            "point": [
+              "99/100",
+              "5941/6400",
+              "2049/3200",
+              "16583/19200"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/128"
+              },
+              {
+                "vertex": 1,
+                "weight": "3/128"
+              },
+              {
+                "vertex": 2,
+                "weight": "31/32"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            0,
+            3
+          ],
+          "witness": {
+            "coordinates": [
+              "15/32",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "263/320",
+              "321/400",
+              "3797/4800"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/32"
+              },
+              {
+                "vertex": 1,
+                "weight": "15/32"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1,
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "33/50",
+              "157/200",
+              "257/300"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1,
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "33/50",
+              "157/200",
+              "257/300"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1,
+            3
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "33/50",
+              "157/200",
+              "257/300"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2,
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "3/256",
+              "63/64"
+            ],
+            "point": [
+              "99/100",
+              "11957/12800",
+              "813/1280",
+              "33223/38400"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/256"
+              },
+              {
+                "vertex": 1,
+                "weight": "3/256"
+              },
+              {
+                "vertex": 2,
+                "weight": "63/64"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2,
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "3/256",
+              "63/64"
+            ],
+            "point": [
+              "99/100",
+              "11957/12800",
+              "813/1280",
+              "33223/38400"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/256"
+              },
+              {
+                "vertex": 1,
+                "weight": "3/256"
+              },
+              {
+                "vertex": 2,
+                "weight": "63/64"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2,
+            3
+          ],
+          "witness": {
+            "coordinates": [
+              "3/256",
+              "63/64"
+            ],
+            "point": [
+              "99/100",
+              "11957/12800",
+              "813/1280",
+              "33223/38400"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/256"
+              },
+              {
+                "vertex": 1,
+                "weight": "3/256"
+              },
+              {
+                "vertex": 2,
+                "weight": "63/64"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            3,
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "33/50",
+              "157/200",
+              "257/300"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            3,
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "33/50",
+              "157/200",
+              "257/300"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            3,
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "15/32",
+              "1/2"
+            ],
+            "point": [
+              "99/100",
+              "263/320",
+              "321/400",
+              "3797/4800"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/32"
+              },
+              {
+                "vertex": 1,
+                "weight": "15/32"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        }
+      ],
+      "z3_version": "4.15.3"
+    }
+  },
+  "vertex_miss_polygon": {
+    "input": {
+      "vertices": [
+        [
+          "49/100",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "49/100",
+          "3/5",
+          "1/5"
+        ],
+        [
+          "51/100",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "51/100",
+          "3/5",
+          "1/5"
+        ]
+      ],
+      "r": [
+        "3/20",
+        "1/10",
+        "1/10"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "5df0699e95a61495003d6a8a2ac8cc7d112fd34b0a1a4f5200317698942e9577",
+      "dimension": 2,
+      "status": "positive",
+      "fine": "B",
+      "rejected": [
+        {
+          "prefix": [
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            0,
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            0,
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1,
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1,
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2,
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2,
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2",
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "0"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 2,
+                "weight": "1/2"
+              }
+            ]
+          }
+        }
+      ],
+      "z3_version": "4.15.3"
+    }
+  },
+  "vertex_miss_segment": {
+    "input": {
+      "vertices": [
+        [
+          "1/2",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "1/2",
+          "3/5",
+          "1/5"
+        ]
+      ],
+      "r": [
+        "3/20",
+        "1/10",
+        "1/10"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "735bff22728bb71e5a83e53e3fbf05b96810f21a9f18da2eb167b484ae7b6b52",
+      "dimension": 1,
+      "status": "positive",
+      "fine": "B",
+      "rejected": [
+        {
+          "prefix": [
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            0,
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            0,
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1,
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1,
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2,
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2,
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        }
+      ],
+      "z3_version": "4.15.3"
+    }
+  },
+  "tangent_polygon": {
+    "input": {
+      "vertices": [
+        [
+          "49/100",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "49/100",
+          "3/5",
+          "1/5"
+        ],
+        [
+          "51/100",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "51/100",
+          "3/5",
+          "1/5"
+        ]
+      ],
+      "r": [
+        "4/25",
+        "1/10",
+        "1/10"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "befe6a8f71f748c2d67edeb02d73d4770f2d539d893969013ce9c29f1783d5ae",
+      "dimension": 2,
+      "status": "zero",
+      "prefix": [
+        0
+      ],
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(declare-const w0 Real)\n(declare-const w1 Real)\n(declare-const w2 Real)\n(assert (>= w0 0.0))\n(assert (>= w1 0.0))\n(assert (>= w2 0.0))\n(assert (>= (- 1.0 (+ w0 w1 w2)) 0.0))\n(assert (let ((_let_1 (- 1.0 (+ w0 w1 w2)))) (> (* (+ (* w0 (/ 1 5)) (* w1 (/ 3 5)) (* w2 (/ 1 5)) (* _let_1 (/ 3 5))) (* (+ (* w0 (/ 3 5)) (* w1 (/ 1 5)) (* w2 (/ 3 5)) (* _let_1 (/ 1 5))) 1.0)) (/ 4 25))))\n(check-sat)\n",
+        "proof_cpc": "(\n(declare-const w2 Real)\n(declare-const w1 Real)\n(declare-const w0 Real)\n(define @t1 () (+ w0 w1 w2))\n(define @t2 () (- 1/1 @t1))\n(define @t3 () (* @t2 1/5))\n(define @t4 () (* w2 3/5))\n(define @t5 () (* w1 1/5))\n(define @t6 () (* w0 3/5))\n(define @t7 () (+ @t6 @t5 @t4 @t3))\n(define @t8 () (* @t7 1/1))\n(define @t9 () (* @t2 3/5))\n(define @t10 () (* w2 1/5))\n(define @t11 () (* w1 3/5))\n(define @t12 () (* w0 1/5))\n(define @t13 () (+ @t12 @t11 @t10 @t9))\n(define @t14 () (* @t13 @t8))\n(define @t15 () (* w2 w2))\n(define @t16 () (* w0 w2))\n(define @t17 () (* w0 w0))\n(define @t18 () (* -1 w2))\n(define @t19 () (* -1 w0))\n(define @t20 () (+ @t19 @t18 @t17 (* 2 @t16) @t15))\n(define @t21 () (+ 3/25 (* 4/25 w0) (* 4/25 w2) (* -4/25 @t17) (* -8/25 @t16) (* -4/25 @t15)))\n(define @t22 () (>= @t20 -1/4))\n(define @t23 () (+ 1/5 (* 2/5 w0) (* 2/5 w2)))\n(define @t24 () (+ 3/5 (* -2/5 w0) (* -2/5 w2)))\n(define @t25 () (+ 1/5 (* -1/5 w0) (* -1/5 w1) (* -1/5 w2)))\n(define @t26 () (* 3/5 w2))\n(define @t27 () (* 1/5 w1))\n(define @t28 () (* 3/5 w0))\n(define @t29 () (* -1 w1))\n(define @t30 () (+ 1 @t19 @t29 @t18))\n(define @t31 () (+ @t19 @t29 @t18))\n(define @t32 () (* -1/1 @t1))\n(define @t33 () (+ 1/1 @t32))\n(define @t34 () (+ 3/5 (* -3/5 w0) (* -3/5 w1) (* -3/5 w2)))\n(define @t35 () (* 1/5 w2))\n(define @t36 () (* 3/5 w1))\n(define @t37 () (* 1/5 w0))\n(define @t38 () (<= @t14 4/25))\n(assume @p1 (>= w0 0/1))\n(assume @p2 (>= w1 0/1))\n(assume @p3 (>= w2 0/1))\n(assume @p4 (>= @t2 0/1))\n(assume @p5 (> @t14 4/25))\n(step @p6 :rule arith_poly_norm :args ((= (* 1/4 (- 4/25 @t21)) (* 1/25 (- @t20 -1/4)))))\n(step @p7 :rule arith_poly_norm_rel :premises (@p6) :args ((= (>= 4/25 @t21) @t22)))\n(step @p8 :rule arith-elim-leq :args (@t21 4/25))\n(step @p9 :rule trans :premises (@p8 @p7))\n(step @p10 :rule refl :args (4/25))\n(step @p11 :rule arith_poly_norm :args ((= (* @t24 @t23) @t21)))\n(step @p12 :rule arith_poly_norm :args ((= (* @t23 1/1) @t23)))\n(step @p13 :rule refl :args (1/1))\n(step @p14 :rule arith_poly_norm :args ((= (+ @t28 @t27 @t26 @t25) @t23)))\n(step @p15 :rule arith_poly_norm :args ((= (* @t30 1/5) @t25)))\n(step @p16 :rule refl :args (1/5))\n(step @p17 :rule arith_poly_norm :args ((= (+ 1/1 @t31) @t30)))\n(step @p18 :rule arith_poly_norm :args ((= @t32 @t31)))\n(step @p19 :rule nary_cong :premises (@p13 @p18) :args (@t33))\n(step @p20 :rule trans :premises (@p19 @p17))\n(step @p21 :rule arith_poly_norm :args ((= @t2 @t33)))\n(step @p22 :rule trans :premises (@p21 @p20))\n(step @p23 :rule nary_cong :premises (@p22 @p16) :args (@t3))\n(step @p24 :rule trans :premises (@p23 @p15))\n(step @p25 :rule arith_poly_norm :args ((= @t4 @t26)))\n(step @p26 :rule arith_poly_norm :args ((= @t5 @t27)))\n(step @p27 :rule arith_poly_norm :args ((= @t6 @t28)))\n(step @p28 :rule nary_cong :premises (@p27 @p26 @p25 @p24) :args (@t7))\n(step @p29 :rule trans :premises (@p28 @p14))\n(step @p30 :rule nary_cong :premises (@p29 @p13) :args (@t8))\n(step @p31 :rule trans :premises (@p30 @p12))\n(step @p32 :rule arith_poly_norm :args ((= (+ @t37 @t36 @t35 @t34) @t24)))\n(step @p33 :rule arith_poly_norm :args ((= (* @t30 3/5) @t34)))\n(step @p34 :rule refl :args (3/5))\n(step @p35 :rule nary_cong :premises (@p22 @p34) :args (@t9))\n(step @p36 :rule trans :premises (@p35 @p33))\n(step @p37 :rule arith_poly_norm :args ((= @t10 @t35)))\n(step @p38 :rule arith_poly_norm :args ((= @t11 @t36)))\n(step @p39 :rule arith_poly_norm :args ((= @t12 @t37)))\n(step @p40 :rule nary_cong :premises (@p39 @p38 @p37 @p36) :args (@t13))\n(step @p41 :rule trans :premises (@p40 @p32))\n(step @p42 :rule nary_cong :premises (@p41 @p31) :args (@t14))\n(step @p43 :rule trans :premises (@p42 @p11))\n(step @p44 :rule cong :premises (@p43 @p10) :args (@t38))\n(step @p45 :rule trans :premises (@p44 @p9))\n(step @p46 :rule cong :premises (@p45) :args ((not @t38)))\n(step @p47 :rule arith-elim-leq :args (@t14 4/25))\n(step @p48 :rule symm :premises (@p47))\n(step @p49 :rule cong :premises (@p48) :args ((not (>= 4/25 @t14))))\n(step @p50 :rule arith-elim-gt :args (@t14 4/25))\n(step @p51 :rule trans :premises (@p50 @p49))\n(step @p52 :rule trans :premises (@p51 @p46))\n(step @p53 :rule eq_resolve :premises (@p5 @p52))\n(step @p54 :rule bool-double-not-elim :args (@t22))\n(assume-push @p64 (not @t22))\n(step @p56 :rule eq_resolve :premises (@p5 @p52))\n; WARNING: add trust step for TRUST\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p57 false :rule trust :premises (@p56) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p59 false :rule trust :premises (@p57) :args (false))\n(step-pop @p65 :rule scope :premises (@p59))\n(step @p60 :rule process_scope :premises (@p65) :args (false))\n(step @p62 :rule eq_resolve :premises (@p60 @p54))\n(step @p63 false :rule chain_resolution :premises (@p62 @p53) :args ((@list true) (@list @t22)))\n)\n",
+        "proof_sha256": "42155faac89c2febad9e1b1b62ae45ac7bde4ea4c83d91d5b7bedfb892e4a139",
+        "rules": {
+          "ProofRule.ARITH_POLY_NORM": 16,
+          "ProofRule.ARITH_POLY_NORM_REL": 1,
+          "ProofRule.ASSUME": 1,
+          "ProofRule.CHAIN_RESOLUTION": 1,
+          "ProofRule.CONG": 3,
+          "ProofRule.DSL_REWRITE": 4,
+          "ProofRule.EQ_RESOLVE": 3,
+          "ProofRule.NARY_CONG": 7,
+          "ProofRule.REFL": 4,
+          "ProofRule.SCOPE": 4,
+          "ProofRule.SYMM": 1,
+          "ProofRule.TRANS": 12,
+          "ProofRule.TRUST": 2
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(declare-fun x1 () Real)\n(declare-fun x0 () Real)\n(assert (> (+ 0.0 0.0 (* 0.0 x0) (* 1.0 x1)) 0.0))\n(assert (> (+ 1.0 0.0 (* (- 1.0) x0) (* 0.0 x1)) 0.0))\n(assert (> (+ 1.0 0.0 (* 0.0 x0) (* (- 1.0) x1)) 0.0))\n(assert (> (+ 0.0 0.0 (* 1.0 x0) (* 0.0 x1)) 0.0))\n(assert (< (/ 4.0 25.0)\n   (* 1.0\n      (+ (/ 1.0 5.0) 0.0 (* (/ 2.0 5.0) x0) (* 0.0 x1))\n      (+ (/ 3.0 5.0) 0.0 (* (- (/ 2.0 5.0)) x0) (* 0.0 x1)))))\n\n(check-sat)\n",
+      "rejected_before_success": [],
+      "z3_version": "4.15.3"
+    }
+  },
+  "narrow_segment": {
+    "input": {
+      "vertices": [
+        [
+          "1/2",
+          "3/5",
+          "1/5"
+        ],
+        [
+          "1/2",
+          "1/5",
+          "3/5"
+        ]
+      ],
+      "r": [
+        "159999999999999999999999999999999999999999999999999999999999/1000000000000000000000000000000000000000000000000000000000000",
+        "2/5",
+        "1/10"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "64a25f11236a8a479519dd6962893222836db4f98533ba7831ecb0c8a64f513b",
+      "dimension": 1,
+      "status": "zero",
+      "prefix": [
+        1
+      ],
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(declare-const w0 Real)\n(assert (>= w0 0.0))\n(assert (>= (- 1.0 w0) 0.0))\n(assert (let ((_let_1 (- 1.0 w0))) (> (* (+ (* w0 (/ 1 2)) (* _let_1 (/ 1 2))) (* (+ (* w0 (/ 1 5)) (* _let_1 (/ 3 5))) 1.0)) (/ 2 5))))\n(check-sat)\n",
+        "proof_cpc": "(\n(declare-const w0 Real)\n(define @t1 () (>= w0 0/1))\n(define @t2 () (- 1/1 w0))\n(define @t3 () (* @t2 3/5))\n(define @t4 () (* w0 1/5))\n(define @t5 () (+ @t4 @t3))\n(define @t6 () (* @t5 1/1))\n(define @t7 () (* @t2 1/2))\n(define @t8 () (* w0 1/2))\n(define @t9 () (+ @t8 @t7))\n(define @t10 () (* @t9 @t6))\n(define @t11 () (>= w0 0))\n(define @t12 () (+ 3/10 (* -1/5 w0)))\n(define @t13 () (>= w0 -1/2))\n(define @t14 () (+ 3/5 (* -2/5 w0)))\n(define @t15 () (+ 3/5 (* -3/5 w0)))\n(define @t16 () (* 1/5 w0))\n(define @t17 () (* -1 w0))\n(define @t18 () (+ 1 @t17))\n(define @t19 () (* -1/1 w0))\n(define @t20 () (+ 1/1 @t19))\n(define @t21 () (+ 1/2 (* -1/2 w0)))\n(define @t22 () (* 1/2 w0))\n(define @t23 () (<= @t10 2/5))\n(define @t24 () (not @t11))\n(define @t25 () (not @t13))\n(define @t26 () (< w0 -1/2))\n(define @t27 () (* -1/1 0/1))\n(define @t28 () (+ -1/2 @t27))\n(define @t29 () (+ w0 @t19))\n(define @t30 () (>= @t29 @t28))\n(define @t31 () (and @t25 @t11))\n(assume @p1 @t1)\n(assume @p2 (>= @t2 0/1))\n(assume @p3 (> @t10 2/5))\n(step @p4 :rule arith_poly_norm :args ((= (* 1/1 (- w0 0/1)) (* 1/1 (- w0 0)))))\n(step @p5 :rule arith_poly_norm_rel :premises (@p4) :args ((= @t1 @t11)))\n(step @p6 :rule eq_resolve :premises (@p1 @p5))\n(step @p7 :rule arith_poly_norm :args ((= (* 1/2 (- 2/5 @t12)) (* 1/10 (- w0 -1/2)))))\n(step @p8 :rule arith_poly_norm_rel :premises (@p7) :args ((= (>= 2/5 @t12) @t13)))\n(step @p9 :rule arith-elim-leq :args (@t12 2/5))\n(step @p10 :rule trans :premises (@p9 @p8))\n(step @p11 :rule refl :args (2/5))\n(step @p12 :rule arith_poly_norm :args ((= (* 1/2 @t14) @t12)))\n(step @p13 :rule arith_poly_norm :args ((= (* @t14 1/1) @t14)))\n(step @p14 :rule refl :args (1/1))\n(step @p15 :rule arith_poly_norm :args ((= (+ @t16 @t15) @t14)))\n(step @p16 :rule arith_poly_norm :args ((= (* @t18 3/5) @t15)))\n(step @p17 :rule refl :args (3/5))\n(step @p18 :rule arith_poly_norm :args ((= (+ 1/1 @t17) @t18)))\n(step @p19 :rule arith_poly_norm :args ((= @t19 @t17)))\n(step @p20 :rule nary_cong :premises (@p14 @p19) :args (@t20))\n(step @p21 :rule trans :premises (@p20 @p18))\n(step @p22 :rule arith_poly_norm :args ((= @t2 @t20)))\n(step @p23 :rule trans :premises (@p22 @p21))\n(step @p24 :rule nary_cong :premises (@p23 @p17) :args (@t3))\n(step @p25 :rule trans :premises (@p24 @p16))\n(step @p26 :rule arith_poly_norm :args ((= @t4 @t16)))\n(step @p27 :rule nary_cong :premises (@p26 @p25) :args (@t5))\n(step @p28 :rule trans :premises (@p27 @p15))\n(step @p29 :rule nary_cong :premises (@p28 @p14) :args (@t6))\n(step @p30 :rule trans :premises (@p29 @p13))\n(step @p31 :rule arith_poly_norm :args ((= (+ @t22 @t21) 1/2)))\n(step @p32 :rule arith_poly_norm :args ((= (* @t18 1/2) @t21)))\n(step @p33 :rule refl :args (1/2))\n(step @p34 :rule nary_cong :premises (@p23 @p33) :args (@t7))\n(step @p35 :rule trans :premises (@p34 @p32))\n(step @p36 :rule arith_poly_norm :args ((= @t8 @t22)))\n(step @p37 :rule nary_cong :premises (@p36 @p35) :args (@t9))\n(step @p38 :rule trans :premises (@p37 @p31))\n(step @p39 :rule nary_cong :premises (@p38 @p30) :args (@t10))\n(step @p40 :rule trans :premises (@p39 @p12))\n(step @p41 :rule cong :premises (@p40 @p11) :args (@t23))\n(step @p42 :rule trans :premises (@p41 @p10))\n(step @p43 :rule cong :premises (@p42) :args ((not @t23)))\n(step @p44 :rule arith-elim-leq :args (@t10 2/5))\n(step @p45 :rule symm :premises (@p44))\n(step @p46 :rule cong :premises (@p45) :args ((not (>= 2/5 @t10))))\n(step @p47 :rule arith-elim-gt :args (@t10 2/5))\n(step @p48 :rule trans :premises (@p47 @p46))\n(step @p49 :rule trans :premises (@p48 @p43))\n(step @p50 :rule eq_resolve :premises (@p3 @p49))\n(step @p51 :rule bool-double-not-elim :args (@t13))\n(step @p52 :rule refl :args (@t24))\n(step @p53 :rule nary_cong :premises (@p52 @p51) :args ((or @t24 (not @t25))))\n(assume-push @p106 @t25)\n(assume-push @p107 @t11)\n(step @p56 :rule eq_resolve :premises (@p3 @p49))\n(step @p57 :rule arith-elim-lt :args (w0 -1/2))\n(step @p58 :rule cong :premises (@p57) :args ((not @t26)))\n(step @p59 :rule trans :premises (@p58 @p51))\n(assume-push @p108 @t26)\n(step @p61 :rule evaluate :args ((not true)))\n(step @p62 :rule evaluate :args ((>= 0/1 -1/2)))\n(step @p63 :rule evaluate :args ((+ -1/2 0/1)))\n(step @p64 :rule evaluate :args (@t27))\n(step @p65 :rule refl :args (-1/2))\n(step @p66 :rule nary_cong :premises (@p65 @p64) :args (@t28))\n(step @p67 :rule trans :premises (@p66 @p63))\n(step @p68 :rule arith_poly_norm :args ((= (+ w0 @t17) 0/1)))\n(step @p69 :rule refl :args (w0))\n(step @p70 :rule nary_cong :premises (@p69 @p19) :args (@t29))\n(step @p71 :rule trans :premises (@p70 @p68))\n(step @p72 :rule cong :premises (@p71 @p67) :args (@t30))\n(step @p73 :rule trans :premises (@p72 @p62))\n(step @p74 :rule cong :premises (@p73) :args ((not @t30)))\n(step @p75 :rule trans :premises (@p74 @p61))\n(step @p76 :rule arith-elim-lt :args (@t29 @t28))\n(step @p77 :rule trans :premises (@p76 @p75))\n(step @p78 :rule arith_mult_neg :args (-1/1 @t1))\n(step @p79 :rule evaluate :args ((< -1/1 0/1)))\n(step @p80 :rule true_elim :premises (@p79))\n(step @p81 :rule and_intro :premises (@p80 @p1))\n(step @p82 :rule modus_ponens :premises (@p81 @p78))\n(step @p83 :rule arith_sum_ub :premises (@p108 @p82))\n(step @p84 false :rule eq_resolve :premises (@p83 @p77))\n(step-pop @p109 :rule scope :premises (@p84))\n(step @p85 :rule process_scope :premises (@p109) :args (false))\n(step @p87 :rule eq_resolve :premises (@p85 @p59))\n(step @p88 false :rule contra :premises (@p87 @p56))\n(step-pop @p110 :rule scope :premises (@p88))\n(step-pop @p111 :rule scope :premises (@p110))\n(step @p89 :rule process_scope :premises (@p111) :args (false))\n(assume-push @p112 @t11)\n(assume-push @p113 @t25)\n(step @p94 :rule eq_resolve :premises (@p1 @p5))\n(step @p95 :rule eq_resolve :premises (@p3 @p49))\n(step @p96 :rule and_intro :premises (@p95 @p94))\n(step-pop @p114 :rule scope :premises (@p96))\n(step-pop @p115 :rule scope :premises (@p114))\n(step @p97 :rule process_scope :premises (@p115) :args (@t31))\n(step @p100 :rule implies_elim :premises (@p97))\n(step @p101 :rule resolution :premises (@p100 @p89) :args (true @t31))\n(step @p102 :rule not_and :premises (@p101))\n(step @p103 :rule eq_resolve :premises (@p102 @p53))\n(step @p104 :rule reordering :premises (@p103) :args ((or @t13 @t24)))\n(step @p105 false :rule chain_resolution :premises (@p104 @p50 @p6) :args ((@list true false) (@list @t13 @t11)))\n)\n",
+        "proof_sha256": "25f842b3021357a1e2e7a803e112377f888b48eaafda7b25407b8bafcd9b27d1",
+        "rules": {
+          "ProofRule.AND_INTRO": 2,
+          "ProofRule.ARITH_MULT_NEG": 1,
+          "ProofRule.ARITH_POLY_NORM": 14,
+          "ProofRule.ARITH_POLY_NORM_REL": 2,
+          "ProofRule.ARITH_SUM_UB": 1,
+          "ProofRule.ASSUME": 4,
+          "ProofRule.CHAIN_RESOLUTION": 1,
+          "ProofRule.CONG": 6,
+          "ProofRule.CONTRA": 1,
+          "ProofRule.DSL_REWRITE": 6,
+          "ProofRule.EQ_RESOLVE": 8,
+          "ProofRule.EVALUATE": 5,
+          "ProofRule.IMPLIES_ELIM": 1,
+          "ProofRule.MODUS_PONENS": 1,
+          "ProofRule.NARY_CONG": 10,
+          "ProofRule.NOT_AND": 1,
+          "ProofRule.REFL": 7,
+          "ProofRule.REORDERING": 1,
+          "ProofRule.RESOLUTION": 1,
+          "ProofRule.SCOPE": 5,
+          "ProofRule.SYMM": 1,
+          "ProofRule.TRANS": 18,
+          "ProofRule.TRUE_ELIM": 1
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(declare-fun x0 () Real)\n(assert (> (+ 0.0 0.0 (* 1.0 x0)) 0.0))\n(assert (> (+ 1.0 0.0 (* (- 1.0) x0)) 0.0))\n(assert (< (/ 2.0 5.0)\n   (* 1.0 (+ (/ 1.0 2.0) 0.0 (* 0.0 x0)) (+ (/ 1.0 5.0) 0.0 (* (/ 2.0 5.0) x0)))))\n\n(check-sat)\n",
+      "rejected_before_success": [
+        {
+          "prefix": [
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "1/2",
+              "2/5",
+              "2/5"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        }
+      ],
+      "z3_version": "4.15.3"
+    }
+  },
+  "changing_blocker": {
+    "input": {
+      "vertices": [
+        [
+          "13/20",
+          "3/5",
+          "1/5"
+        ],
+        [
+          "13/20",
+          "3/80",
+          "13/20"
+        ]
+      ],
+      "r": [
+        "7/50",
+        "2/5",
+        "1/10"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "6892c41f7c830875cf08c77b1ff0eac681cd447ad542f98a570aa3f79f418108",
+      "dimension": 1,
+      "status": "zero",
+      "prefix": [
+        0,
+        1
+      ],
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(declare-const w0 Real)\n(assert (>= w0 0.0))\n(assert (>= (- 1.0 w0) 0.0))\n(assert (let ((_let_1 (- 1.0 w0))) (> (* (+ (* w0 (/ 3 5)) (* _let_1 (/ 3 80))) (* (+ (* w0 (/ 1 5)) (* _let_1 (/ 13 20))) 1.0)) (/ 7 50))))\n(assert (> (* (+ (* w0 (/ 1 5)) (* (- 1.0 w0) (/ 13 20))) 1.0) (/ 2 5)))\n(check-sat)\n",
+        "proof_cpc": "(\n(declare-const w0 Real)\n(define @t1 () (>= w0 0/1))\n(define @t2 () (- 1/1 w0))\n(define @t3 () (* @t2 13/20))\n(define @t4 () (* w0 1/5))\n(define @t5 () (+ @t4 @t3))\n(define @t6 () (* @t5 1/1))\n(define @t7 () (* @t2 3/80))\n(define @t8 () (* w0 3/5))\n(define @t9 () (+ @t8 @t7))\n(define @t10 () (* @t9 @t6))\n(define @t11 () (* w0 w0))\n(define @t12 () (* -1 w0))\n(define @t13 () (+ @t12 (* 45/62 @t11)))\n(define @t14 () (+ 39/1600 (* 279/800 w0) (* -81/320 @t11)))\n(define @t15 () (>= @t13 -185/558))\n(define @t16 () (+ 13/20 (* -9/20 w0)))\n(define @t17 () (+ 3/80 (* 9/16 w0)))\n(define @t18 () (+ 13/20 (* -13/20 w0)))\n(define @t19 () (* 1/5 w0))\n(define @t20 () (+ 1 @t12))\n(define @t21 () (* -1/1 w0))\n(define @t22 () (+ 1/1 @t21))\n(define @t23 () (+ 3/80 (* -3/80 w0)))\n(define @t24 () (* 3/5 w0))\n(define @t25 () (<= @t10 7/50))\n(define @t26 () (>= w0 5/9))\n(define @t27 () (<= @t6 2/5))\n(define @t28 () (not @t26))\n(define @t29 () (not @t15))\n(assume @p1 @t1)\n(assume @p2 (>= @t2 0/1))\n(assume @p3 (> @t10 7/50))\n(assume @p4 (> @t6 2/5))\n(step @p5 :rule arith_poly_norm :args ((= (* 185/558 (- 7/50 @t14)) (* 37/320 (- @t13 -185/558)))))\n(step @p6 :rule arith_poly_norm_rel :premises (@p5) :args ((= (>= 7/50 @t14) @t15)))\n(step @p7 :rule arith-elim-leq :args (@t14 7/50))\n(step @p8 :rule trans :premises (@p7 @p6))\n(step @p9 :rule refl :args (7/50))\n(step @p10 :rule arith_poly_norm :args ((= (* @t17 @t16) @t14)))\n(step @p11 :rule arith_poly_norm :args ((= (* @t16 1/1) @t16)))\n(step @p12 :rule refl :args (1/1))\n(step @p13 :rule arith_poly_norm :args ((= (+ @t19 @t18) @t16)))\n(step @p14 :rule arith_poly_norm :args ((= (* @t20 13/20) @t18)))\n(step @p15 :rule refl :args (13/20))\n(step @p16 :rule arith_poly_norm :args ((= (+ 1/1 @t12) @t20)))\n(step @p17 :rule arith_poly_norm :args ((= @t21 @t12)))\n(step @p18 :rule nary_cong :premises (@p12 @p17) :args (@t22))\n(step @p19 :rule trans :premises (@p18 @p16))\n(step @p20 :rule arith_poly_norm :args ((= @t2 @t22)))\n(step @p21 :rule trans :premises (@p20 @p19))\n(step @p22 :rule nary_cong :premises (@p21 @p15) :args (@t3))\n(step @p23 :rule trans :premises (@p22 @p14))\n(step @p24 :rule arith_poly_norm :args ((= @t4 @t19)))\n(step @p25 :rule nary_cong :premises (@p24 @p23) :args (@t5))\n(step @p26 :rule trans :premises (@p25 @p13))\n(step @p27 :rule nary_cong :premises (@p26 @p12) :args (@t6))\n(step @p28 :rule trans :premises (@p27 @p11))\n(step @p29 :rule arith_poly_norm :args ((= (+ @t24 @t23) @t17)))\n(step @p30 :rule arith_poly_norm :args ((= (* @t20 3/80) @t23)))\n(step @p31 :rule refl :args (3/80))\n(step @p32 :rule nary_cong :premises (@p21 @p31) :args (@t7))\n(step @p33 :rule trans :premises (@p32 @p30))\n(step @p34 :rule arith_poly_norm :args ((= @t8 @t24)))\n(step @p35 :rule nary_cong :premises (@p34 @p33) :args (@t9))\n(step @p36 :rule trans :premises (@p35 @p29))\n(step @p37 :rule nary_cong :premises (@p36 @p28) :args (@t10))\n(step @p38 :rule trans :premises (@p37 @p10))\n(step @p39 :rule cong :premises (@p38 @p9) :args (@t25))\n(step @p40 :rule trans :premises (@p39 @p8))\n(step @p41 :rule cong :premises (@p40) :args ((not @t25)))\n(step @p42 :rule arith-elim-leq :args (@t10 7/50))\n(step @p43 :rule symm :premises (@p42))\n(step @p44 :rule cong :premises (@p43) :args ((not (>= 7/50 @t10))))\n(step @p45 :rule arith-elim-gt :args (@t10 7/50))\n(step @p46 :rule trans :premises (@p45 @p44))\n(step @p47 :rule trans :premises (@p46 @p41))\n(step @p48 :rule eq_resolve :premises (@p3 @p47))\n(step @p49 :rule arith_poly_norm :args ((= (* -5/9 (- 2/5 @t16)) (* -1/4 (- w0 5/9)))))\n(step @p50 :rule arith_poly_norm_rel :premises (@p49) :args ((= (>= 2/5 @t16) @t26)))\n(step @p51 :rule arith-elim-leq :args (@t16 2/5))\n(step @p52 :rule trans :premises (@p51 @p50))\n(step @p53 :rule refl :args (2/5))\n(step @p54 :rule cong :premises (@p28 @p53) :args (@t27))\n(step @p55 :rule trans :premises (@p54 @p52))\n(step @p56 :rule cong :premises (@p55) :args ((not @t27)))\n(step @p57 :rule arith-elim-leq :args (@t6 2/5))\n(step @p58 :rule symm :premises (@p57))\n(step @p59 :rule cong :premises (@p58) :args ((not (>= 2/5 @t6))))\n(step @p60 :rule arith-elim-gt :args (@t6 2/5))\n(step @p61 :rule trans :premises (@p60 @p59))\n(step @p62 :rule trans :premises (@p61 @p56))\n(step @p63 :rule eq_resolve :premises (@p4 @p62))\n(step @p64 :rule bool-double-not-elim :args (@t26))\n(step @p65 :rule bool-double-not-elim :args (@t15))\n(step @p66 :rule nary_cong :premises (@p65 @p64) :args ((or (not @t29) (not @t28))))\n(assume-push @p86 @t29)\n(assume-push @p87 @t28)\n(assume-push @p88 (@indexed_root_predicate 1 (<= w0 0/1) (+ 185/1 (* -558/1 w0) (* 405/1 (^ w0 2/1)))))\n(step @p70 :rule eq_resolve :premises (@p3 @p47))\n; WARNING: add trust step for TRUST\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p71 false :rule trust :premises (@p88 @p70) :args (false))\n(step-pop @p89 :rule scope :premises (@p71))\n(step @p72 :rule process_scope :premises (@p89) :args (false))\n(assume-push @p90 (@indexed_root_predicate 1 @t1 (+ -5/1 (* 9/1 w0))))\n(step @p75 :rule eq_resolve :premises (@p4 @p62))\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p76 false :rule trust :premises (@p90 @p75) :args (false))\n(step-pop @p91 :rule scope :premises (@p76))\n(step @p77 :rule process_scope :premises (@p91) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p79 false :rule trust :premises (@p77 @p72) :args (false))\n(step-pop @p92 :rule scope :premises (@p79))\n(step-pop @p93 :rule scope :premises (@p92))\n(step @p80 :rule process_scope :premises (@p93) :args (false))\n(step @p83 :rule not_and :premises (@p80))\n(step @p84 :rule eq_resolve :premises (@p83 @p66))\n(step @p85 false :rule chain_resolution :premises (@p84 @p63 @p48) :args ((@list true true) (@list @t26 @t15)))\n)\n",
+        "proof_sha256": "c5c5f625621c4c61d4a0e56de1672bab66a8716c9dc76be0d62f4829fc47459f",
+        "rules": {
+          "ProofRule.ARITH_POLY_NORM": 13,
+          "ProofRule.ARITH_POLY_NORM_REL": 2,
+          "ProofRule.ASSUME": 4,
+          "ProofRule.CHAIN_RESOLUTION": 1,
+          "ProofRule.CONG": 6,
+          "ProofRule.DSL_REWRITE": 8,
+          "ProofRule.EQ_RESOLVE": 5,
+          "ProofRule.NARY_CONG": 8,
+          "ProofRule.NOT_AND": 1,
+          "ProofRule.REFL": 5,
+          "ProofRule.SCOPE": 5,
+          "ProofRule.SYMM": 2,
+          "ProofRule.TRANS": 16,
+          "ProofRule.TRUST": 3
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(declare-fun x0 () Real)\n(assert (> (+ 0.0 0.0 (* 1.0 x0)) 0.0))\n(assert (> (+ 1.0 0.0 (* (- 1.0) x0)) 0.0))\n(assert (< (/ 7.0 50.0)\n   (* 1.0\n      (+ (/ 3.0 5.0) 0.0 (* (- (/ 9.0 16.0)) x0))\n      (+ (/ 1.0 5.0) 0.0 (* (/ 9.0 20.0) x0)))))\n(assert (< (/ 2.0 5.0) (* 1.0 (+ (/ 1.0 5.0) 0.0 (* (/ 9.0 20.0) x0)))))\n\n(check-sat)\n",
+      "rejected_before_success": [
+        {
+          "prefix": [
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4"
+            ],
+            "point": [
+              "13/20",
+              "147/320",
+              "5/16"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "3/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "15/16"
+            ],
+            "point": [
+              "13/20",
+              "93/1280",
+              "199/320"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/16"
+              },
+              {
+                "vertex": 1,
+                "weight": "15/16"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "13/20",
+              "51/160",
+              "17/40"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        }
+      ],
+      "z3_version": "4.15.3"
+    }
+  },
+  "distinct_witnesses": {
+    "input": {
+      "vertices": [
+        [
+          "1/10",
+          "3/5"
+        ],
+        [
+          "3/5",
+          "1/10"
+        ]
+      ],
+      "r": [
+        "2/5",
+        "3/10"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "f452494a815fcaf52144faec75fd3087da270772749b59f7921fcccf06424f42",
+      "dimension": 1,
+      "status": "positive",
+      "fine": "B",
+      "rejected": [
+        {
+          "prefix": [
+            0
+          ],
+          "witness": {
+            "coordinates": [
+              "1/4"
+            ],
+            "point": [
+              "9/40",
+              "19/40"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "3/4"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/4"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1
+          ],
+          "witness": {
+            "coordinates": [
+              "1/2"
+            ],
+            "point": [
+              "7/20",
+              "7/20"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1/2"
+              },
+              {
+                "vertex": 1,
+                "weight": "1/2"
+              }
+            ]
+          }
+        }
+      ],
+      "z3_version": "4.15.3"
+    }
+  },
+  "point_tie": {
+    "input": {
+      "vertices": [
+        [
+          "1/2",
+          "2/5",
+          "3/10"
+        ]
+      ],
+      "r": [
+        "3/25",
+        "1/100",
+        "1/100"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "8bd785d79eb5b7058aee71f2561228488317a6f4a64ff702080f6745412a47d1",
+      "dimension": 0,
+      "status": "zero",
+      "prefix": [
+        0
+      ],
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(assert (>= (- 1.0 0.0) 0.0))\n(assert (let ((_let_1 (- 1.0 0.0))) (> (* (* _let_1 (/ 2 5)) (* (* _let_1 (/ 3 10)) 1.0)) (/ 3 25))))\n(check-sat)\n",
+        "proof_cpc": "(\n(define @t1 () (- 1/1 0/1))\n(define @t2 () (> (* (* @t1 2/5) (* (* @t1 3/10) 1/1)) 3/25))\n(assume @p1 (>= @t1 0/1))\n(assume @p2 @t2)\n(step @p3 :rule evaluate :args (@t2))\n(step @p4 false :rule eq_resolve :premises (@p2 @p3))\n)\n",
+        "proof_sha256": "7a55ea021ae127997108834ec0f6b07bfdea5b20e50fed29a5da5d6a2063336f",
+        "rules": {
+          "ProofRule.ASSUME": 1,
+          "ProofRule.EQ_RESOLVE": 1,
+          "ProofRule.EVALUATE": 1,
+          "ProofRule.SCOPE": 2
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(assert (< (/ 3.0 25.0) (* 1.0 (+ (/ 2.0 5.0) 0.0) (+ (/ 3.0 10.0) 0.0))))\n\n(check-sat)\n",
+      "rejected_before_success": [],
+      "z3_version": "4.15.3"
+    }
+  },
+  "point_strict": {
+    "input": {
+      "vertices": [
+        [
+          "1/2",
+          "2/5",
+          "3/10"
+        ]
+      ],
+      "r": [
+        "1/100",
+        "1/100",
+        "1/100"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "83b411d996b377f79ab5320c724b325795910b7d4cce483414b6eaae1c8aecc9",
+      "dimension": 0,
+      "status": "positive",
+      "fine": "B",
+      "rejected": [
+        {
+          "prefix": [
+            0
+          ],
+          "witness": {
+            "coordinates": [],
+            "point": [
+              "1/2",
+              "2/5",
+              "3/10"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            1
+          ],
+          "witness": {
+            "coordinates": [],
+            "point": [
+              "1/2",
+              "2/5",
+              "3/10"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1"
+              }
+            ]
+          }
+        },
+        {
+          "prefix": [
+            2
+          ],
+          "witness": {
+            "coordinates": [],
+            "point": [
+              "1/2",
+              "2/5",
+              "3/10"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "z3_version": "4.15.3"
+    }
+  },
+  "one_sender_tie": {
+    "input": {
+      "vertices": [
+        [
+          "1/2"
+        ]
+      ],
+      "r": [
+        "1"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "cca5c57d4b4fac2f42b416205bf07a0350d5280eba831b5f8f8e0bcedd69e6c1",
+      "dimension": 0,
+      "status": "zero",
+      "prefix": [
+        0
+      ],
+      "order": [
+        0
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(assert (>= (- 1.0 0.0) 0.0))\n(assert (> 1.0 1.0))\n(check-sat)\n",
+        "proof_cpc": "(\n(define @t1 () (> 1/1 1/1))\n(assume @p1 (>= (- 1/1 0/1) 0/1))\n(assume @p2 @t1)\n(step @p3 :rule evaluate :args (@t1))\n(step @p4 false :rule eq_resolve :premises (@p2 @p3))\n)\n",
+        "proof_sha256": "a0b338822ee4cf062ca7a0d30288c4561ab793e3bcced1aa9c9fda4be3029053",
+        "rules": {
+          "ProofRule.ASSUME": 1,
+          "ProofRule.EQ_RESOLVE": 1,
+          "ProofRule.EVALUATE": 1,
+          "ProofRule.SCOPE": 2
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(assert (> 1.0 1.0))\n\n(check-sat)\n",
+      "rejected_before_success": [],
+      "z3_version": "4.15.3"
+    }
+  },
+  "one_sender_strict": {
+    "input": {
+      "vertices": [
+        [
+          "1/2"
+        ]
+      ],
+      "r": [
+        "1/2"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "3747ee1670c15ca2e272d193acc34a20c3e77f883484bc8e75551e70a78ed326",
+      "dimension": 0,
+      "status": "positive",
+      "fine": "B",
+      "rejected": [
+        {
+          "prefix": [
+            0
+          ],
+          "witness": {
+            "coordinates": [],
+            "point": [
+              "1/2"
+            ],
+            "weights": [
+              {
+                "vertex": 0,
+                "weight": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "z3_version": "4.15.3"
+    }
+  },
+  "duplicate_collinear": {
+    "input": {
+      "vertices": [
+        [
+          "1/2",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "1/2",
+          "3/5",
+          "1/5"
+        ],
+        [
+          "1/2",
+          "1/5",
+          "3/5"
+        ],
+        [
+          "1/2",
+          "2/5",
+          "2/5"
+        ]
+      ],
+      "r": [
+        "4/25",
+        "1/10",
+        "1/10"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "011a7a407c92867bff4151ee4af4c2395399287eaadec880c410344b8e564478",
+      "dimension": 1,
+      "status": "zero",
+      "prefix": [
+        0
+      ],
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(declare-const w0 Real)\n(declare-const w1 Real)\n(declare-const w2 Real)\n(assert (>= w0 0.0))\n(assert (>= w1 0.0))\n(assert (>= w2 0.0))\n(assert (>= (- 1.0 (+ w0 w1 w2)) 0.0))\n(assert (let ((_let_1 (* (- 1.0 (+ w0 w1 w2)) (/ 2 5)))) (> (* (+ (* w0 (/ 1 5)) (* w1 (/ 3 5)) (* w2 (/ 1 5)) _let_1) (* (+ (* w0 (/ 3 5)) (* w1 (/ 1 5)) (* w2 (/ 3 5)) _let_1) 1.0)) (/ 4 25))))\n(check-sat)\n",
+        "proof_cpc": "(\n(declare-const w2 Real)\n(declare-const w1 Real)\n(declare-const w0 Real)\n(define @t1 () (+ w0 w1 w2))\n(define @t2 () (- 1/1 @t1))\n(define @t3 () (* @t2 2/5))\n(define @t4 () (* w2 3/5))\n(define @t5 () (* w1 1/5))\n(define @t6 () (* w0 3/5))\n(define @t7 () (+ @t6 @t5 @t4 @t3))\n(define @t8 () (* @t7 1/1))\n(define @t9 () (* w2 1/5))\n(define @t10 () (* w1 3/5))\n(define @t11 () (* w0 1/5))\n(define @t12 () (+ @t11 @t10 @t9 @t3))\n(define @t13 () (* @t12 @t8))\n(define @t14 () (* w2 w2))\n(define @t15 () (* w1 w2))\n(define @t16 () (* w1 w1))\n(define @t17 () (* w0 w2))\n(define @t18 () (* w0 w1))\n(define @t19 () (* w0 w0))\n(define @t20 () (+ @t19 (* -2 @t18) (* 2 @t17) @t16 (* -2 @t15) @t14))\n(define @t21 () (+ 4/25 (* -1/25 @t19) (* 2/25 @t18) (* -2/25 @t17) (* -1/25 @t16) (* 2/25 @t15) (* -1/25 @t14)))\n(define @t22 () (>= @t20 0))\n(define @t23 () (* 1/5 w2))\n(define @t24 () (* 1/5 w0))\n(define @t25 () (+ 2/5 @t24 (* -1/5 w1) @t23))\n(define @t26 () (* 1/5 w1))\n(define @t27 () (+ 2/5 (* -1/5 w0) @t26 (* -1/5 w2)))\n(define @t28 () (+ 2/5 (* -2/5 w0) (* -2/5 w1) (* -2/5 w2)))\n(define @t29 () (* 3/5 w2))\n(define @t30 () (* 3/5 w0))\n(define @t31 () (* -1 w2))\n(define @t32 () (* -1 w1))\n(define @t33 () (* -1 w0))\n(define @t34 () (+ 1 @t33 @t32 @t31))\n(define @t35 () (+ @t33 @t32 @t31))\n(define @t36 () (* -1/1 @t1))\n(define @t37 () (+ 1/1 @t36))\n(define @t38 () (* 3/5 w1))\n(define @t39 () (<= @t13 4/25))\n(assume @p1 (>= w0 0/1))\n(assume @p2 (>= w1 0/1))\n(assume @p3 (>= w2 0/1))\n(assume @p4 (>= @t2 0/1))\n(assume @p5 (> @t13 4/25))\n(step @p6 :rule arith_poly_norm :args ((= (* 1/1 (- 4/25 @t21)) (* 1/25 (- @t20 0)))))\n(step @p7 :rule arith_poly_norm_rel :premises (@p6) :args ((= (>= 4/25 @t21) @t22)))\n(step @p8 :rule arith-elim-leq :args (@t21 4/25))\n(step @p9 :rule trans :premises (@p8 @p7))\n(step @p10 :rule refl :args (4/25))\n(step @p11 :rule arith_poly_norm :args ((= (* @t27 @t25) @t21)))\n(step @p12 :rule arith_poly_norm :args ((= (* @t25 1/1) @t25)))\n(step @p13 :rule refl :args (1/1))\n(step @p14 :rule arith_poly_norm :args ((= (+ @t30 @t26 @t29 @t28) @t25)))\n(step @p15 :rule arith_poly_norm :args ((= (* @t34 2/5) @t28)))\n(step @p16 :rule refl :args (2/5))\n(step @p17 :rule arith_poly_norm :args ((= (+ 1/1 @t35) @t34)))\n(step @p18 :rule arith_poly_norm :args ((= @t36 @t35)))\n(step @p19 :rule nary_cong :premises (@p13 @p18) :args (@t37))\n(step @p20 :rule trans :premises (@p19 @p17))\n(step @p21 :rule arith_poly_norm :args ((= @t2 @t37)))\n(step @p22 :rule trans :premises (@p21 @p20))\n(step @p23 :rule nary_cong :premises (@p22 @p16) :args (@t3))\n(step @p24 :rule trans :premises (@p23 @p15))\n(step @p25 :rule arith_poly_norm :args ((= @t4 @t29)))\n(step @p26 :rule arith_poly_norm :args ((= @t5 @t26)))\n(step @p27 :rule arith_poly_norm :args ((= @t6 @t30)))\n(step @p28 :rule nary_cong :premises (@p27 @p26 @p25 @p24) :args (@t7))\n(step @p29 :rule trans :premises (@p28 @p14))\n(step @p30 :rule nary_cong :premises (@p29 @p13) :args (@t8))\n(step @p31 :rule trans :premises (@p30 @p12))\n(step @p32 :rule arith_poly_norm :args ((= (+ @t24 @t38 @t23 @t28) @t27)))\n(step @p33 :rule arith_poly_norm :args ((= @t9 @t23)))\n(step @p34 :rule arith_poly_norm :args ((= @t10 @t38)))\n(step @p35 :rule arith_poly_norm :args ((= @t11 @t24)))\n(step @p36 :rule nary_cong :premises (@p35 @p34 @p33 @p24) :args (@t12))\n(step @p37 :rule trans :premises (@p36 @p32))\n(step @p38 :rule nary_cong :premises (@p37 @p31) :args (@t13))\n(step @p39 :rule trans :premises (@p38 @p11))\n(step @p40 :rule cong :premises (@p39 @p10) :args (@t39))\n(step @p41 :rule trans :premises (@p40 @p9))\n(step @p42 :rule cong :premises (@p41) :args ((not @t39)))\n(step @p43 :rule arith-elim-leq :args (@t13 4/25))\n(step @p44 :rule symm :premises (@p43))\n(step @p45 :rule cong :premises (@p44) :args ((not (>= 4/25 @t13))))\n(step @p46 :rule arith-elim-gt :args (@t13 4/25))\n(step @p47 :rule trans :premises (@p46 @p45))\n(step @p48 :rule trans :premises (@p47 @p42))\n(step @p49 :rule eq_resolve :premises (@p5 @p48))\n(step @p50 :rule bool-double-not-elim :args (@t22))\n(assume-push @p62 (not @t22))\n(step @p52 :rule eq_resolve :premises (@p5 @p48))\n; WARNING: add trust step for TRUST\n; trust TRUST ARITH_NL_COVERING_DIRECT\n(step @p53 false :rule trust :premises (@p52) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p55 false :rule trust :premises (@p53) :args (false))\n; trust TRUST ARITH_NL_COVERING_RECURSIVE\n(step @p57 false :rule trust :premises (@p55) :args (false))\n(step-pop @p63 :rule scope :premises (@p57))\n(step @p58 :rule process_scope :premises (@p63) :args (false))\n(step @p60 :rule eq_resolve :premises (@p58 @p50))\n(step @p61 false :rule chain_resolution :premises (@p60 @p49) :args ((@list true) (@list @t22)))\n)\n",
+        "proof_sha256": "0694e6b2416be72569bde2630d2ecb197e872a4436a65376049437ee54174b83",
+        "rules": {
+          "ProofRule.ARITH_POLY_NORM": 15,
+          "ProofRule.ARITH_POLY_NORM_REL": 1,
+          "ProofRule.ASSUME": 1,
+          "ProofRule.CHAIN_RESOLUTION": 1,
+          "ProofRule.CONG": 3,
+          "ProofRule.DSL_REWRITE": 4,
+          "ProofRule.EQ_RESOLVE": 3,
+          "ProofRule.NARY_CONG": 6,
+          "ProofRule.REFL": 3,
+          "ProofRule.SCOPE": 5,
+          "ProofRule.SYMM": 1,
+          "ProofRule.TRANS": 11,
+          "ProofRule.TRUST": 3
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(declare-fun x0 () Real)\n(assert (> (+ 0.0 0.0 (* 1.0 x0)) 0.0))\n(assert (> (+ 1.0 0.0 (* (- 1.0) x0)) 0.0))\n(assert (< (/ 4.0 25.0)\n   (* 1.0\n      (+ (/ 1.0 5.0) 0.0 (* (/ 2.0 5.0) x0))\n      (+ (/ 3.0 5.0) 0.0 (* (- (/ 2.0 5.0)) x0)))))\n\n(check-sat)\n",
+      "rejected_before_success": [],
+      "z3_version": "4.15.3"
+    }
+  },
+  "endpoint_tie": {
+    "input": {
+      "vertices": [
+        [
+          "1/5",
+          "1/5"
+        ],
+        [
+          "1/5",
+          "3/5"
+        ]
+      ],
+      "r": [
+        "3/5",
+        "1/10"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "8de2f6a3b6be985edf459a4aafad27321b1e32fe2206af4c0149dbd06b3f006d",
+      "dimension": 1,
+      "status": "zero",
+      "prefix": [
+        0
+      ],
+      "order": [
+        0,
+        1
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(declare-const w0 Real)\n(assert (>= w0 0.0))\n(assert (>= (- 1.0 w0) 0.0))\n(assert (> (* (+ (* w0 (/ 1 5)) (* (- 1.0 w0) (/ 3 5))) 1.0) (/ 3 5)))\n(check-sat)\n",
+        "proof_cpc": "(\n(declare-const w0 Real)\n(define @t1 () (>= w0 0/1))\n(define @t2 () (- 1/1 w0))\n(define @t3 () (* @t2 3/5))\n(define @t4 () (* w0 1/5))\n(define @t5 () (+ @t4 @t3))\n(define @t6 () (* @t5 1/1))\n(define @t7 () (- w0 0))\n(define @t8 () (+ 3/5 (* -2/5 w0)))\n(define @t9 () (>= w0 0))\n(define @t10 () (+ 3/5 (* -3/5 w0)))\n(define @t11 () (* 1/5 w0))\n(define @t12 () (* -1 w0))\n(define @t13 () (+ 1 @t12))\n(define @t14 () (* -1/1 w0))\n(define @t15 () (+ 1/1 @t14))\n(define @t16 () (<= @t6 3/5))\n(assume @p1 @t1)\n(assume @p2 (>= @t2 0/1))\n(assume @p3 (> @t6 3/5))\n(step @p4 :rule arith_poly_norm :args ((= (* 1/1 (- 3/5 @t8)) (* 2/5 @t7))))\n(step @p5 :rule arith_poly_norm_rel :premises (@p4) :args ((= (>= 3/5 @t8) @t9)))\n(step @p6 :rule arith-elim-leq :args (@t8 3/5))\n(step @p7 :rule trans :premises (@p6 @p5))\n(step @p8 :rule refl :args (3/5))\n(step @p9 :rule arith_poly_norm :args ((= (* @t8 1/1) @t8)))\n(step @p10 :rule refl :args (1/1))\n(step @p11 :rule arith_poly_norm :args ((= (+ @t11 @t10) @t8)))\n(step @p12 :rule arith_poly_norm :args ((= (* @t13 3/5) @t10)))\n(step @p13 :rule arith_poly_norm :args ((= (+ 1/1 @t12) @t13)))\n(step @p14 :rule arith_poly_norm :args ((= @t14 @t12)))\n(step @p15 :rule nary_cong :premises (@p10 @p14) :args (@t15))\n(step @p16 :rule trans :premises (@p15 @p13))\n(step @p17 :rule arith_poly_norm :args ((= @t2 @t15)))\n(step @p18 :rule trans :premises (@p17 @p16))\n(step @p19 :rule nary_cong :premises (@p18 @p8) :args (@t3))\n(step @p20 :rule trans :premises (@p19 @p12))\n(step @p21 :rule arith_poly_norm :args ((= @t4 @t11)))\n(step @p22 :rule nary_cong :premises (@p21 @p20) :args (@t5))\n(step @p23 :rule trans :premises (@p22 @p11))\n(step @p24 :rule nary_cong :premises (@p23 @p10) :args (@t6))\n(step @p25 :rule trans :premises (@p24 @p9))\n(step @p26 :rule cong :premises (@p25 @p8) :args (@t16))\n(step @p27 :rule trans :premises (@p26 @p7))\n(step @p28 :rule cong :premises (@p27) :args ((not @t16)))\n(step @p29 :rule arith-elim-leq :args (@t6 3/5))\n(step @p30 :rule symm :premises (@p29))\n(step @p31 :rule cong :premises (@p30) :args ((not (>= 3/5 @t6))))\n(step @p32 :rule arith-elim-gt :args (@t6 3/5))\n(step @p33 :rule trans :premises (@p32 @p31))\n(step @p34 :rule trans :premises (@p33 @p28))\n(step @p35 :rule eq_resolve :premises (@p3 @p34))\n(step @p36 :rule arith_poly_norm :args ((= (* 1/1 (- w0 0/1)) (* 1/1 @t7))))\n(step @p37 :rule arith_poly_norm_rel :premises (@p36) :args ((= @t1 @t9)))\n(step @p38 :rule eq_resolve :premises (@p1 @p37))\n(step @p39 false :rule contra :premises (@p38 @p35))\n)\n",
+        "proof_sha256": "92185f3da0eda1dc4286a4d10792bbd6b29efafbbe9364bb3838b6282306ca9a",
+        "rules": {
+          "ProofRule.ARITH_POLY_NORM": 9,
+          "ProofRule.ARITH_POLY_NORM_REL": 2,
+          "ProofRule.ASSUME": 2,
+          "ProofRule.CONG": 3,
+          "ProofRule.CONTRA": 1,
+          "ProofRule.DSL_REWRITE": 3,
+          "ProofRule.EQ_RESOLVE": 2,
+          "ProofRule.NARY_CONG": 4,
+          "ProofRule.REFL": 2,
+          "ProofRule.SCOPE": 2,
+          "ProofRule.SYMM": 1,
+          "ProofRule.TRANS": 9
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(declare-fun x0 () Real)\n(assert (> (+ 0.0 0.0 (* 1.0 x0)) 0.0))\n(assert (> (+ 1.0 0.0 (* (- 1.0) x0)) 0.0))\n(assert (< (/ 3.0 5.0) (* 1.0 (+ (/ 1.0 5.0) 0.0 (* (/ 2.0 5.0) x0)))))\n\n(check-sat)\n",
+      "rejected_before_success": [],
+      "z3_version": "4.15.3"
+    }
+  },
+  "polygon_all_ties": {
+    "input": {
+      "vertices": [
+        [
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "3/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "1/5",
+          "3/5",
+          "1/5"
+        ]
+      ],
+      "r": [
+        "1",
+        "1",
+        "1"
+      ],
+      "tau": "2/3"
+    },
+    "result": {
+      "schema": 1,
+      "input_sha256": "fbf86be73cc6cbd8cfbf3b28bc5d79abe543eaeb0205af41224a00db0f0d9867",
+      "dimension": 2,
+      "status": "zero",
+      "prefix": [
+        0
+      ],
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "certificate": {
+        "kind": "exact-backend-emptiness",
+        "cvc5_version": "1.3.1",
+        "query": "(set-logic QF_NRA)\n(declare-const w0 Real)\n(declare-const w1 Real)\n(assert (>= w0 0.0))\n(assert (>= w1 0.0))\n(assert (>= (- 1.0 (+ w0 w1)) 0.0))\n(assert (let ((_let_1 (- 1.0 (+ w0 w1)))) (let ((_let_2 (* w1 (/ 1 5)))) (let ((_let_3 (* w0 (/ 1 5)))) (> (* (+ _let_3 _let_2 (* _let_1 (/ 3 5))) (* (+ _let_3 _let_2 (* _let_1 (/ 1 5))) 1.0)) 1.0)))))\n(check-sat)\n",
+        "proof_cpc": "(\n(declare-const w1 Real)\n(declare-const w0 Real)\n(define @t1 () (>= w0 0/1))\n(define @t2 () (>= w1 0/1))\n(define @t3 () (+ w0 w1))\n(define @t4 () (- 1/1 @t3))\n(define @t5 () (* @t4 1/5))\n(define @t6 () (* w1 1/5))\n(define @t7 () (* w0 1/5))\n(define @t8 () (+ @t7 @t6 @t5))\n(define @t9 () (* @t8 1/1))\n(define @t10 () (* @t4 3/5))\n(define @t11 () (+ @t7 @t6 @t10))\n(define @t12 () (* @t11 @t9))\n(define @t13 () (>= w0 0))\n(define @t14 () (>= w1 0))\n(define @t15 () (- @t3 -11))\n(define @t16 () (+ 3/25 (* -2/25 w0) (* -2/25 w1)))\n(define @t17 () (>= @t3 -11))\n(define @t18 () (+ 3/5 (* -2/5 w0) (* -2/5 w1)))\n(define @t19 () (+ 1/5 (* -1/5 w0) (* -1/5 w1)))\n(define @t20 () (* 1/5 w1))\n(define @t21 () (* 1/5 w0))\n(define @t22 () (* -1 w1))\n(define @t23 () (* -1 w0))\n(define @t24 () (+ 1 @t23 @t22))\n(define @t25 () (+ @t23 @t22))\n(define @t26 () (* -1/1 @t3))\n(define @t27 () (+ 1/1 @t26))\n(define @t28 () (+ 3/5 (* -3/5 w0) (* -3/5 w1)))\n(define @t29 () (<= @t12 1/1))\n(define @t30 () (not @t14))\n(define @t31 () (not @t13))\n(define @t32 () (not @t17))\n(define @t33 () (>= @t3 -11/1))\n(define @t34 () (< @t3 -11/1))\n(define @t35 () (* -1/1 0/1))\n(define @t36 () (+ -11/1 @t35 @t35))\n(define @t37 () (+ @t23 @t22 w1 w0))\n(define @t38 () (+ @t3 (* -1/1 w1) (* -1/1 w0)))\n(define @t39 () (>= @t38 @t36))\n(assume @p1 @t1)\n(assume @p2 @t2)\n(assume @p3 (>= @t4 0/1))\n(assume @p4 (> @t12 1/1))\n(step @p5 :rule arith_poly_norm :args ((= (* 1/1 (- w0 0/1)) (* 1/1 (- w0 0)))))\n(step @p6 :rule arith_poly_norm_rel :premises (@p5) :args ((= @t1 @t13)))\n(step @p7 :rule eq_resolve :premises (@p1 @p6))\n(step @p8 :rule arith_poly_norm :args ((= (* 1/1 (- w1 0/1)) (* 1/1 (- w1 0)))))\n(step @p9 :rule arith_poly_norm_rel :premises (@p8) :args ((= @t2 @t14)))\n(step @p10 :rule eq_resolve :premises (@p2 @p9))\n(step @p11 :rule arith_poly_norm :args ((= (* 11/1 (- 1/1 @t16)) (* 22/25 @t15))))\n(step @p12 :rule arith_poly_norm_rel :premises (@p11) :args ((= (>= 1/1 @t16) @t17)))\n(step @p13 :rule arith-elim-leq :args (@t16 1/1))\n(step @p14 :rule trans :premises (@p13 @p12))\n(step @p15 :rule refl :args (1/1))\n(step @p16 :rule arith_poly_norm :args ((= (* @t18 1/5) @t16)))\n(step @p17 :rule evaluate :args ((* 1/5 1/1)))\n(step @p18 :rule arith_poly_norm :args ((= (+ @t21 @t20 @t19) 1/5)))\n(step @p19 :rule arith_poly_norm :args ((= (* @t24 1/5) @t19)))\n(step @p20 :rule refl :args (1/5))\n(step @p21 :rule arith_poly_norm :args ((= (+ 1/1 @t25) @t24)))\n(step @p22 :rule arith_poly_norm :args ((= @t26 @t25)))\n(step @p23 :rule nary_cong :premises (@p15 @p22) :args (@t27))\n(step @p24 :rule trans :premises (@p23 @p21))\n(step @p25 :rule arith_poly_norm :args ((= @t4 @t27)))\n(step @p26 :rule trans :premises (@p25 @p24))\n(step @p27 :rule nary_cong :premises (@p26 @p20) :args (@t5))\n(step @p28 :rule trans :premises (@p27 @p19))\n(step @p29 :rule arith_poly_norm :args ((= @t6 @t20)))\n(step @p30 :rule arith_poly_norm :args ((= @t7 @t21)))\n(step @p31 :rule nary_cong :premises (@p30 @p29 @p28) :args (@t8))\n(step @p32 :rule trans :premises (@p31 @p18))\n(step @p33 :rule nary_cong :premises (@p32 @p15) :args (@t9))\n(step @p34 :rule trans :premises (@p33 @p17))\n(step @p35 :rule arith_poly_norm :args ((= (+ @t21 @t20 @t28) @t18)))\n(step @p36 :rule arith_poly_norm :args ((= (* @t24 3/5) @t28)))\n(step @p37 :rule refl :args (3/5))\n(step @p38 :rule nary_cong :premises (@p26 @p37) :args (@t10))\n(step @p39 :rule trans :premises (@p38 @p36))\n(step @p40 :rule nary_cong :premises (@p30 @p29 @p39) :args (@t11))\n(step @p41 :rule trans :premises (@p40 @p35))\n(step @p42 :rule nary_cong :premises (@p41 @p34) :args (@t12))\n(step @p43 :rule trans :premises (@p42 @p16))\n(step @p44 :rule cong :premises (@p43 @p15) :args (@t29))\n(step @p45 :rule trans :premises (@p44 @p14))\n(step @p46 :rule cong :premises (@p45) :args ((not @t29)))\n(step @p47 :rule arith-elim-leq :args (@t12 1/1))\n(step @p48 :rule symm :premises (@p47))\n(step @p49 :rule cong :premises (@p48) :args ((not (>= 1/1 @t12))))\n(step @p50 :rule arith-elim-gt :args (@t12 1/1))\n(step @p51 :rule trans :premises (@p50 @p49))\n(step @p52 :rule trans :premises (@p51 @p46))\n(step @p53 :rule eq_resolve :premises (@p4 @p52))\n(step @p54 :rule bool-double-not-elim :args (@t17))\n(step @p55 :rule refl :args (@t30))\n(step @p56 :rule refl :args (@t31))\n(step @p57 :rule nary_cong :premises (@p56 @p55 @p54) :args ((or @t31 @t30 (not @t32))))\n(assume-push @p115 @t13)\n(assume-push @p116 @t14)\n(assume-push @p117 @t32)\n(step @p61 :rule arith_poly_norm :args ((= (* 11/1 (- @t3 -11/1)) (* 11/1 @t15))))\n(step @p62 :rule arith_poly_norm_rel :premises (@p61) :args ((= @t33 @t17)))\n(step @p63 :rule cong :premises (@p62) :args ((not @t33)))\n(step @p64 :rule arith-elim-lt :args (@t3 -11/1))\n(step @p65 :rule trans :premises (@p64 @p63))\n(step @p66 :rule cong :premises (@p65) :args ((not @t34)))\n(step @p67 :rule trans :premises (@p66 @p54))\n(step @p68 :rule symm :premises (@p67))\n(step @p69 :rule trans :premises (@p62 @p68))\n(step @p70 :rule symm :premises (@p62))\n(step @p71 :rule trans :premises (@p67 @p70))\n(assume-push @p118 @t34)\n(step @p73 :rule evaluate :args ((not true)))\n(step @p74 :rule evaluate :args ((>= 0/1 -11/1)))\n(step @p75 :rule evaluate :args ((+ -11/1 0/1 0/1)))\n(step @p76 :rule evaluate :args (@t35))\n(step @p77 :rule refl :args (-11/1))\n(step @p78 :rule nary_cong :premises (@p77 @p76 @p76) :args (@t36))\n(step @p79 :rule trans :premises (@p78 @p75))\n(step @p80 :rule arith_poly_norm :args ((= @t37 0/1)))\n(step @p81 :rule arith_poly_norm :args ((= @t38 @t37)))\n(step @p82 :rule trans :premises (@p81 @p80))\n(step @p83 :rule cong :premises (@p82 @p79) :args (@t39))\n(step @p84 :rule trans :premises (@p83 @p74))\n(step @p85 :rule cong :premises (@p84) :args ((not @t39)))\n(step @p86 :rule trans :premises (@p85 @p73))\n(step @p87 :rule arith-elim-lt :args (@t38 @t36))\n(step @p88 :rule trans :premises (@p87 @p86))\n(step @p89 :rule arith_mult_neg :args (-1/1 @t1))\n(step @p90 :rule evaluate :args ((< -1/1 0/1)))\n(step @p91 :rule true_elim :premises (@p90))\n(step @p92 :rule and_intro :premises (@p91 @p1))\n(step @p93 :rule modus_ponens :premises (@p92 @p89))\n(step @p94 :rule arith_mult_neg :args (-1/1 @t2))\n(step @p95 :rule and_intro :premises (@p91 @p2))\n(step @p96 :rule modus_ponens :premises (@p95 @p94))\n(step @p97 :rule arith_sum_ub :premises (@p118 @p96 @p93))\n(step @p98 false :rule eq_resolve :premises (@p97 @p88))\n(step-pop @p119 :rule scope :premises (@p98))\n(step @p99 :rule process_scope :premises (@p119) :args (false))\n(step @p101 :rule eq_resolve :premises (@p99 @p71))\n(step @p102 :rule eq_resolve :premises (@p101 @p69))\n(step @p103 :rule symm :premises (@p65))\n(step @p104 :rule eq_resolve :premises (@p4 @p52))\n(step @p105 :rule eq_resolve :premises (@p104 @p103))\n(step @p106 false :rule contra :premises (@p105 @p102))\n(step-pop @p120 :rule scope :premises (@p106))\n(step-pop @p121 :rule scope :premises (@p120))\n(step-pop @p122 :rule scope :premises (@p121))\n(step @p107 :rule process_scope :premises (@p122) :args (false))\n(step @p111 :rule not_and :premises (@p107))\n(step @p112 :rule eq_resolve :premises (@p111 @p57))\n(step @p113 :rule reordering :premises (@p112) :args ((or @t17 @t31 @t30)))\n(step @p114 false :rule chain_resolution :premises (@p113 @p53 @p10 @p7) :args ((@list true false false) (@list @t17 @t14 @t13)))\n)\n",
+        "proof_sha256": "66effbf7c61469dd63406e6d5c87c1da19f2ccb5e9b64928e8480efe4fb69223",
+        "rules": {
+          "ProofRule.AND_INTRO": 2,
+          "ProofRule.ARITH_MULT_NEG": 2,
+          "ProofRule.ARITH_POLY_NORM": 16,
+          "ProofRule.ARITH_POLY_NORM_REL": 4,
+          "ProofRule.ARITH_SUM_UB": 1,
+          "ProofRule.ASSUME": 6,
+          "ProofRule.CHAIN_RESOLUTION": 1,
+          "ProofRule.CONG": 7,
+          "ProofRule.CONTRA": 1,
+          "ProofRule.DSL_REWRITE": 6,
+          "ProofRule.EQ_RESOLVE": 9,
+          "ProofRule.EVALUATE": 6,
+          "ProofRule.MODUS_PONENS": 2,
+          "ProofRule.NARY_CONG": 9,
+          "ProofRule.NOT_AND": 1,
+          "ProofRule.REFL": 6,
+          "ProofRule.REORDERING": 1,
+          "ProofRule.SCOPE": 4,
+          "ProofRule.SYMM": 4,
+          "ProofRule.TRANS": 21,
+          "ProofRule.TRUE_ELIM": 1
+        },
+        "trust": "cvc5 covering leaves; no external CPC kernel replay; independent Z3 decision"
+      },
+      "z3_query": "(set-logic QF_NRA)\n(declare-fun x1 () Real)\n(declare-fun x0 () Real)\n(assert (> (+ 0.0 0.0 (* 0.0 x0) (* 1.0 x1)) 0.0))\n(assert (> (+ 1.0 0.0 (* (- 1.0) x0) (* (- 1.0) x1)) 0.0))\n(assert (> (+ 0.0 0.0 (* 1.0 x0) (* 0.0 x1)) 0.0))\n(assert (let ((a!1 (* 1.0\n              (+ (/ 1.0 5.0) (+ 0.0 (* 0.0 x0)) (* (/ 2.0 5.0) x1))\n              (+ (/ 1.0 5.0) (+ 0.0 (* 0.0 x0)) (* 0.0 x1)))))\n  (< 1.0 a!1)))\n\n(check-sat)\n",
+      "rejected_before_success": [],
+      "z3_version": "4.15.3"
+    }
+  }
+}
