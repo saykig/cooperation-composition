@@ -82,3 +82,32 @@ ranges needs fine one even after optimizing over all orders. A component's separ
 probability range is therefore not a sufficient summary for this strategic query.
 Preserve shared compatibility constraints until the order/enforcement calculation
 is complete.
+
+## D24 — September 19, R09: replace vertex evaluation with a certificate
+
+A three-sender segment passes the same order at both endpoints but every order
+cascades at its midpoint. Direct vertex evaluation fails. A weighted log-product
+inequality and its supporting normal, checked at vertices, is instead necessary
+and sufficient. This uses established convex alternatives, not a new minimax rule.
+
+## D25 — September 19, R09: distinguish ranges from exact projected regions
+
+Full pairwise feasible regions suffice for three senders; they can fail at four.
+All (n−1)-projections suffice in the benchmark, while all (n−2)-projections can lose
+the enforcement answer. The prior separate-range counterexample did not establish
+that every kind of pairwise information is inadequate at three senders.
+
+## D26 — September 19, R09: adaptation needs more than the AND path
+
+A deterministic adaptive public order has one all-positive path, hence one
+strategically relevant permutation in this benchmark. It offers no enforcement
+improvement. Multiple successful evidence sets or other changed premises require
+new analysis; concealed future randomization is not covered by this theorem.
+
+## D27 — September 19, R09: local structure is not a global complexity claim
+
+Cost-first greedy and ordinary antimatroid/greedoid word representations fail.
+Uniform adjacent score dominance is safe, and a complete stable ranking is optimal;
+partial local dominance alone has not yielded a general sorting theorem. Rational-
+segment verification is polynomial and order existence is in NP. No NP-hardness
+has been proved, and floating-point convex feasibility cannot certify exact ties.

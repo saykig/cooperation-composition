@@ -30,3 +30,11 @@ large revision experiment remains unrun.
 
 Use the progress and decision ledgers to add later work and corrections. Keep
 mathematical proofs, numerical checks and formal verification clearly distinguished.
+
+## Latest result — R09, September 19
+
+[Robust disclosure orders over polytopes](research/robust_order_polytope_2026_09_19/README.md)
+gives an exact certificate for a common zero-fine order, sharp counterexamples to
+vertex/local-summary shortcuts, and a no-adaptation result for the AND benchmark.
+The main question remains; variable-n order selection on rational segments is the
+next unresolved attack.

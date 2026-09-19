@@ -252,3 +252,35 @@ declared class of genuinely shared uncertainty constraints. Rectangular uncertai
 is already solved by the upper corner. For a class such as compact polytopes in
 local probabilities, seek a necessary-and-sufficient certificate or a complexity
 boundary. Do not replace the shared family by independent coordinate ranges.
+
+## R09 — September 19: robust-order certificates and the projection boundary
+
+Read and preserved all R08 records at `254f5d9`; first new mathematical milestone
+`317ba53`. The [new phase](research/robust_order_polytope_2026_09_19/README.md)
+keeps the common-order/shared-uncertainty question and exact complementary-evidence
+benchmark. Some order works at zero fine iff one order admits a universal weighted
+log-product inequality; for a polytope this has a finite tangent/normal certificate.
+The proof specializes established minimax and convex optimization.
+
+**Counterexamples:** three senders and a segment disprove vertex-only testing.
+Full pairwise feasible regions suffice at three senders but fail at four; generally
+all (n−1)-projections suffice and all (n−2)-projections can fail. Simple cost sorting
+and poset/antimatroid/greedoid representations of successful orders also fail.
+
+**Additional proved structure:** stable r_i p_i ranking yields a valid sorted order;
+deterministic public adaptive ordering has the same enforcement value as its unique
+all-positive path. Rational-segment fixed-order verification is polynomial via
+univariate sign determination, so common-order existence on segments is in NP.
+No NP-hardness or general polynomial selection algorithm was established.
+
+**Evidence:** analytical proofs plus 15,653 new exact rational checks, including
+independent continuation-game/tree recursion and a rational continuum certificate.
+The general root-isolation algorithm is a written reduction, not implemented.
+No Lean run. R08 retains only a summary of its 4,802 checks, so those historical
+checks were not claimed as reproduced. No novelty or empirical validity claim.
+
+**Next attack:** keep the main question; settle variable-n rational-segment order
+selection by a polynomial algorithm or a genuine hardness reduction. See the
+[research note](research/robust_order_polytope_2026_09_19/manuscript/RESEARCH_NOTE.md),
+[audit](research/robust_order_polytope_2026_09_19/AUDIT.md) and
+[research log](research/robust_order_polytope_2026_09_19/RESEARCH_LOG.md).

@@ -1,11 +1,26 @@
-# R09 current state
+# R09 current state — completed bounded investigation
 
-Active. Derived a general-n convex alternative and a finite polytope certificate
-for robust zero enforcement. Vertex evaluation fails minimally at three senders;
-full pairwise projections suffice for three but fail at four. A naive greedy rule
-and ordinary poset/antimatroid/greedoid word representations have small failures.
+September 19, 2026. Predecessor 254f5d9; first theorem milestone 317ba53.
 
-Still auditing: adjacent-swap dominance, adaptive protocols, exact computational
-reproduction, direct prior-art comparison and final research assessment. No hardness,
-novelty or formal-verification claim. R08's old experiment source is not present;
-new checks will be self-contained.
+**Established:** general-n necessary/sufficient weighted log-product alternative;
+finite polytope certificate; minimal three-sender vertex-test counterexample;
+sharp n−1 versus n−2 projection boundary; adjacent exchange and stable-score
+sorting; no gain from deterministic adaptive ordering in the AND benchmark;
+polynomial verification and NP membership for order existence on rational segments.
+
+**Enforcement:** exactly zero or B in this inherited game, with a continuous
+cascade margin and binary semialgebraic phase structure under finite polynomial
+parameterizations. This is not a claim of linear threshold surfaces.
+
+**Evidence:** written proofs, exact rational continuum certificate, 15,653 checks
+including direct continuation-game and adaptive-tree recursion. Normal and -O
+agree. No formal proof assistant. R08's old executable checks were unavailable.
+
+**Open:** general selection algorithm or NP-hardness, exact arbitrary-polytope bit
+complexity, hidden future randomization, broader evidence objectives, novelty,
+independent review and empirical warrant.
+
+**Decision:** keep the main question. Next isolate variable-n order selection on a
+single rational segment: either prove a polynomial algorithm or construct a valid
+NP-hardness reduction. Do not confuse fixed-order convex verification with solving
+that remaining combinatorial problem.

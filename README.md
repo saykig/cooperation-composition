@@ -16,3 +16,7 @@ This is an abstract mathematical question, but the structure appears in real sec
 ## Working ground
 
 The [research working ground](docs/working-ground/README.md) collects the mathematical research, progress ledger, counterexamples and evidence, beginning August 13, 2026.
+
+The latest [robust-order investigation](docs/working-ground/research/robust_order_polytope_2026_09_19/manuscript/RESEARCH_NOTE.md)
+characterizes zero enforcement over jointly constrained probability families and
+identifies exactly where simple summaries and ordering rules fail.
