@@ -10,8 +10,4 @@ This is an abstract mathematical question but the structure appears in real inst
 
 > How do connected information structures determine the incentives or enforcement required to sustain cooperation?
 
-## Current working title
-
-> **Composing Cooperation: Information Structure, Incentives, and Enforcement**
-
 The current research question is in its rough draft and will evolve over time. The purpose of this repository is to preserve the research trajectory of the paper.
