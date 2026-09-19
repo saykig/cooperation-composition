@@ -47,4 +47,14 @@ proves that a common zero-fine order on a rational segment exists exactly when
 a prefix of at most two senders works. Selection is polynomial in input bit size.
 An implemented exact selector returns checkable success or all-pair rejection
 certificates. The dimension-d bound d+1 is proved and attained for d=0,1,2,3;
-general sharpness beyond that remains open.
+R11 below establishes the general construction with dimension-dependent payoffs.
+
+## Latest result — R11, September 19
+
+[General sharpness](research/general_sharpness_2026_09_19/manuscript/RESEARCH_NOTE.md)
+constructs, for every d, a rational d-dimensional family requiring a prefix of
+exactly d+1 senders. The proof specifies thresholds approaching one. It separately
+resolves all twenty missing dimension-four witnesses and proves why fixed-q and
+fixed-threshold versions of this particular construction fail. Arbitrary-family
+sharpness at fixed τ=2/3 remains open. The next algorithmic target is exact
+selection over rational polygons; sharpness does not imply hardness.

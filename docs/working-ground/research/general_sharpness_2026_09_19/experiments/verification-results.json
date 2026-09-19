@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "saved_prefix_certificates": 20,
+  "source_hashes_checked": 6,
+  "corruptions_rejected": 4,
+  "log_identity_controls": 7,
+  "fixed_threshold_checks": 99,
+  "preserved_R08_quantifier_controls": 3,
+  "general_construction_controls": 4,
+  "receipt_sha256": {
+    "prefix-results.json": "3401cb076d9960c810fe67acaa9dc50a3aea38b552b3e4ec49eaef597d29e5f7",
+    "construction-results.json": "664e673a3e6354df5de94eac0a795680961a7099426d7e720e9c14f32fc6a240"
+  },
+  "verifier_sha256": "998d0c3d41f6ee3bb65d65e7ea6e0f258e5c4afbd6937479139c50d772350e77",
+  "scope": "Exact arithmetic replay of specific certificates and controls; no proof-assistant or independent-kernel claim."
+}

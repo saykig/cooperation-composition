@@ -19,6 +19,7 @@ This is an abstract mathematical question, but the structure appears in real sec
 
 The [research working ground](docs/working-ground/README.md) collects the mathematical research, progress ledger, counterexamples and evidence, beginning August 13, 2026. The [verification ledger](docs/working-ground/VERIFICATION.md) states exactly which results have written proofs, computational checks, or Lean coverage.
 
-The latest [two-prefix investigation](docs/working-ground/research/two_prefix_selection_2026_09_19/manuscript/RESEARCH_NOTE.md)
-gives an exact polynomial-time way to select a robust disclosure order on rational
-segments, with checkable certificates and sharp higher-dimensional counterexamples.
+The latest [general sharpness investigation](docs/working-ground/research/general_sharpness_2026_09_19/manuscript/RESEARCH_NOTE.md)
+proves that the dimension-based prefix bound is attained in every dimension when
+admissible payoffs may vary, and separates this from the still-open fixed-threshold question.
+The earlier exact polynomial-time selector on rational segments remains the algorithmic baseline.

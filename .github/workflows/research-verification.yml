@@ -52,6 +52,12 @@ jobs:
           python3 sharpness.py >/tmp/r10-sharpness.json
           python3 audit.py >/tmp/r10-audit.json
 
+      - name: R11 general sharpness exact certificates
+        working-directory: docs/working-ground/research/general_sharpness_2026_09_19/experiments
+        run: |
+          python3 check_construction.py >/tmp/r11-construction.json
+          python3 verify_results.py >/tmp/r11-certificates.json
+
   numerical-python:
     name: Numerical falsification/regression checks
     runs-on: ubuntu-latest
@@ -72,6 +78,11 @@ jobs:
         run: python3 docs/working-ground/research/partial_certificate_frontier_2026_08_14/experiments/check.py >/tmp/r04-check.json
       - name: R05 disclosure boundaries
         run: python3 docs/working-ground/research/disclosure_boundaries_2026_08_14/experiments/check.py >/tmp/r05-check.json
+
+      - name: R11 candidate optimization followed by exact certificates
+        run: |
+          pip install -r docs/working-ground/research/general_sharpness_2026_09_19/experiments/requirements.txt
+          python3 docs/working-ground/research/general_sharpness_2026_09_19/experiments/resolve_prefixes.py >/tmp/r11-prefixes.json
 
   lean-existing:
     name: Existing Lean proof scope

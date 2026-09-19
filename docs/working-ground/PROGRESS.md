@@ -333,3 +333,30 @@ the original parameters. Rational tangent/knapsack/log-series certificates also
 bound each optimal margin; the widest bracket is below 4.7·10^-8. Thus that failed
 search provides no dimension-four obstruction. The arbitrary-d construction and
 fixed-threshold distinction remain the next parts of this gate.
+
+## R11b — September 19: general sharpness construction and its parameter boundary
+
+Following `5518615`, proved the arbitrary-d theorem: for every d, an explicit
+rational family of affine dimension d and n=d+2 senders has minimum successful
+prefix length d+1. Weighted AM-GM certifies the canonical prefix throughout the
+hull. A running-maxima/block-deficit construction gives a strict rational witness
+for EVERY shorter prefix, with a uniform positive slack. Dimension-spanning points
+prove actual dimension. The theorem chooses q_d and τ_d approaching one explicitly.
+
+**Construction limitations:** keeping q=4/5 fails for m≥11. At any fixed τ<1 the
+uniform-AM-GM ansatz eventually has a singleton blocker regardless of q; at τ≤2/3
+it does for every m≥2. These are not universal game bounds. All-d sharpness outside
+that ansatz at fixed τ=2/3 remains open, and R08 guards against overgeneralization.
+
+**Evidence:** complete written proof; 23,115 exhaustive rational prefix checks
+plus 75 larger-m controls through m=100; exact margin-certificate replay for the
+twenty optimized cases; exact affine-rank and obstruction controls. No Lean proof,
+independent trusted kernel or historical novelty claim. Updated the verification
+ledger and added scoped CI replay steps, preserving the other task's CI changes.
+
+**Gate conclusion:** achieved a general construction plus proved limitations,
+not more isolated examples. Keep the main question. The next algorithmic attack
+is exact common-order selection on rational polygons; prefix sharpness alone does
+not imply computational hardness. See the
+[note](research/general_sharpness_2026_09_19/manuscript/RESEARCH_NOTE.md) and
+[goal audit](research/general_sharpness_2026_09_19/AUDIT.md).

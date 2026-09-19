@@ -143,3 +143,18 @@ Every one is defeated by a certified rational model in the original q=4/5 slice.
 Optimization located candidates; exact products establish feasibility, and rational
 concavity/support/log-series bounds bracket the true supremum. Solver success alone
 is not the certificate. Historical R10 receipts remain intact.
+
+## D32 — September 19, R11b: dimension-dependent parameters earn general sharpness
+
+Running-record blocks supply a strict weighted deficit surplus for every too-short
+prefix. A rational quantitative perturbation transfers it to actual probabilities,
+proving arbitrary-d sharpness. The theorem includes τ_d→1 and is not promoted into
+a fixed-threshold result. See the general construction proof.
+
+## D33 — September 19, R11b: fixed-parameter ansatz failure is not a universal bound
+
+The old uniform-AM-GM/geometric-cost construction cannot stay sharp with q=4/5
+beyond m=10. For fixed τ<1 it also fails in sufficiently large m regardless of q;
+at τ≤2/3 it has a singleton blocker for every m≥2. These obstructions depend on
+its special budget and cost equations. Arbitrary families at τ=2/3 remain an open
+problem; R08 already prevents a universal singleton conclusion. No hardness claim.
