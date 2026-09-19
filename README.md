@@ -12,3 +12,7 @@ This is an abstract mathematical question, but the structure appears in real sec
 
 
 *The current research question is in its rough draft and will evolve over time. The purpose of this repository is to preserve the research trajectory of the paper*
+
+## Working ground
+
+The [research working ground](docs/working-ground/README.md) collects the mathematical research, progress ledger, counterexamples and evidence, beginning August 13, 2026.
