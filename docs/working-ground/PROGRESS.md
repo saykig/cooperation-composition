@@ -284,3 +284,21 @@ selection by a polynomial algorithm or a genuine hardness reduction. See the
 [research note](research/robust_order_polytope_2026_09_19/manuscript/RESEARCH_NOTE.md),
 [audit](research/robust_order_polytope_2026_09_19/AUDIT.md) and
 [research log](research/robust_order_polytope_2026_09_19/RESEARCH_LOG.md).
+
+## R10a — September 19: two-prefix theorem and implemented exact selector
+
+The [new phase](research/two_prefix_selection_2026_09_19/README.md) resolves R09's
+rational-segment selection question in polynomial bit time. Finite Helly selects
+at most two strict cascade inequalities; moving their senders to the front preserves
+their empty intersection. Enumerate ordered pairs and use exact polynomial signs.
+The proof covers favorable ties, degenerate segments, constant coordinates and
+empty products. In affine dimension d it gives a prefix of at most d+1 senders.
+
+**First implementation evidence:** 2,271 exact checks; exhaustive full-order
+comparison on 96 instances, 240 comparisons with the historical independent
+quadratic oracle, portable certificate checks and deliberate certificate corruption.
+Includes the midpoint, changing-blocker and distinct-witness quantifier examples,
+tangencies, shared/endpoint roots and a feasible interval narrower than 10^-29.
+No Lean verification or implementation bit-complexity guarantee. The polynomial
+algorithm reduction credits Helly and established root-isolation machinery.
+Higher-dimensional sharpness testing continues after this completed segment milestone.

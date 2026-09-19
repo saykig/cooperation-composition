@@ -1,0 +1,728 @@
+{
+  "status": "passed",
+  "counts": {
+    "selector_certificate": 96,
+    "full_order_certificate": 1752,
+    "exhaustive_selection_agreement": 96,
+    "json_roundtrip": 12,
+    "fixture_prefix": 12,
+    "returned_order_successful": 42,
+    "preserved_midpoint": 1,
+    "preserved_changing_blocker": 1,
+    "preserved_quantifiers": 1,
+    "different_pair_witnesses": 1,
+    "narrow_not_missed": 1,
+    "narrow_exact_witness_bound": 1,
+    "tangent_zero_is_blocker": 1,
+    "algebraic_sign_stress": 8,
+    "independent_quadratic_oracle": 240,
+    "reject_missing_pair": 1,
+    "reject_wrong_witness": 1,
+    "reject_wrong_order": 1,
+    "reject_missing_root": 1,
+    "reject_false_sign": 1,
+    "reject_missing_sample": 1
+  },
+  "total_checks": 2271,
+  "fixtures": {
+    "midpoint": {
+      "input": {
+        "a": [
+          "1/2",
+          "1/5",
+          "3/5"
+        ],
+        "b": [
+          "1/2",
+          "3/5",
+          "1/5"
+        ],
+        "r": [
+          "3/20",
+          "1/10",
+          "1/10"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "rejection",
+        "pairs": [
+          {
+            "prefix": [
+              0,
+              1
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "7/12"
+            }
+          },
+          {
+            "prefix": [
+              0,
+              2
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "7/12"
+            }
+          },
+          {
+            "prefix": [
+              1,
+              0
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "1/2"
+            }
+          },
+          {
+            "prefix": [
+              1,
+              2
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "1/2"
+            }
+          },
+          {
+            "prefix": [
+              2,
+              0
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "1/2"
+            }
+          },
+          {
+            "prefix": [
+              2,
+              1
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "1/2"
+            }
+          }
+        ]
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "witness",
+        "t": "7/12"
+      },
+      "elapsed_seconds": 0.006610291000000004
+    },
+    "changing_blocker_shared_root": {
+      "input": {
+        "a": [
+          "13/20",
+          "3/5",
+          "1/5"
+        ],
+        "b": [
+          "13/20",
+          "3/80",
+          "13/20"
+        ],
+        "r": [
+          "7/50",
+          "2/5",
+          "1/10"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "success",
+        "prefix": [
+          0,
+          1
+        ],
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "certificate": {
+          "kind": "sign_cover",
+          "root_intervals": [
+            [
+              "1/8",
+              "1/4"
+            ],
+            [
+              "1/4",
+              "1/2"
+            ]
+          ],
+          "samples": [
+            "1/16",
+            "1/4",
+            "3/4"
+          ],
+          "signs": [
+            [
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              -1,
+              1
+            ]
+          ]
+        }
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "sign_cover",
+        "root_intervals": [
+          [
+            "1/8",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/2"
+          ]
+        ],
+        "samples": [
+          "1/16",
+          "1/4",
+          "3/4"
+        ],
+        "signs": [
+          [
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      },
+      "elapsed_seconds": 0.005806208000000007
+    },
+    "modelwise_success_no_common_order": {
+      "input": {
+        "a": [
+          "1/10",
+          "3/5"
+        ],
+        "b": [
+          "3/5",
+          "1/10"
+        ],
+        "r": [
+          "2/5",
+          "3/10"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "rejection",
+        "pairs": [
+          {
+            "prefix": [
+              0,
+              1
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "1/8"
+            }
+          },
+          {
+            "prefix": [
+              1,
+              0
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "3/4"
+            }
+          }
+        ]
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "witness",
+        "t": "1/8"
+      },
+      "elapsed_seconds": 0.0013435000000000114
+    },
+    "tangency": {
+      "input": {
+        "a": [
+          "1/2",
+          "3/5",
+          "1/5"
+        ],
+        "b": [
+          "1/2",
+          "1/5",
+          "3/5"
+        ],
+        "r": [
+          "4/25",
+          "2/5",
+          "1/10"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "success",
+        "prefix": [
+          0,
+          1
+        ],
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "certificate": {
+          "kind": "sign_cover",
+          "root_intervals": [
+            [
+              "1/3",
+              "2/3"
+            ]
+          ],
+          "samples": [
+            "1/6",
+            "5/6"
+          ],
+          "signs": [
+            [
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1
+            ]
+          ]
+        }
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "sign_cover",
+        "root_intervals": [
+          [
+            "1/3",
+            "2/3"
+          ]
+        ],
+        "samples": [
+          "1/6",
+          "5/6"
+        ],
+        "signs": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      },
+      "elapsed_seconds": 0.003930292000000002
+    },
+    "endpoint_roots": {
+      "input": {
+        "a": [
+          "1/2",
+          "3/5",
+          "1/5"
+        ],
+        "b": [
+          "1/2",
+          "1/5",
+          "3/5"
+        ],
+        "r": [
+          "3/25",
+          "3/5",
+          "1/10"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "success",
+        "prefix": [
+          0,
+          1
+        ],
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "certificate": {
+          "kind": "sign_cover",
+          "root_intervals": [],
+          "samples": [
+            "1/2"
+          ],
+          "signs": [
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "sign_cover",
+        "root_intervals": [],
+        "samples": [
+          "1/2"
+        ],
+        "signs": [
+          [
+            1,
+            -1
+          ]
+        ]
+      },
+      "elapsed_seconds": 0.0030692499999999956
+    },
+    "narrow_interval_large_denominator": {
+      "input": {
+        "a": [
+          "1/2",
+          "3/5",
+          "1/5"
+        ],
+        "b": [
+          "1/2",
+          "1/5",
+          "3/5"
+        ],
+        "r": [
+          "159999999999999999999999999999999999999999999999999999999999/1000000000000000000000000000000000000000000000000000000000000",
+          "2/5",
+          "1/10"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "success",
+        "prefix": [
+          1,
+          0
+        ],
+        "order": [
+          1,
+          0,
+          2
+        ],
+        "certificate": {
+          "kind": "sign_cover",
+          "root_intervals": [],
+          "samples": [
+            "1/2"
+          ],
+          "signs": [
+            [
+              -1,
+              1
+            ]
+          ]
+        }
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "witness",
+        "t": "190760212238472915814324949405/381520424476945831628649898809"
+      },
+      "elapsed_seconds": 0.05715791699999999
+    },
+    "degenerate_success_tie": {
+      "input": {
+        "a": [
+          "1/2",
+          "1/2"
+        ],
+        "b": [
+          "1/2",
+          "1/2"
+        ],
+        "r": [
+          "1/2",
+          "1/10"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "success",
+        "prefix": [
+          0,
+          1
+        ],
+        "order": [
+          0,
+          1
+        ],
+        "certificate": {
+          "kind": "constant_blocker",
+          "index": 0
+        }
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "constant_blocker",
+        "index": 0
+      },
+      "elapsed_seconds": 0.00030683300000000635
+    },
+    "degenerate_rejection": {
+      "input": {
+        "a": [
+          "1/2",
+          "1/2"
+        ],
+        "b": [
+          "1/2",
+          "1/2"
+        ],
+        "r": [
+          "1/4",
+          "1/4"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "rejection",
+        "pairs": [
+          {
+            "prefix": [
+              0,
+              1
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "1/2"
+            }
+          },
+          {
+            "prefix": [
+              1,
+              0
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "1/2"
+            }
+          }
+        ]
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "witness",
+        "t": "1/2"
+      },
+      "elapsed_seconds": 0.0004942920000000073
+    },
+    "constant_coordinate_zero_polynomial": {
+      "input": {
+        "a": [
+          "1/5",
+          "1/2"
+        ],
+        "b": [
+          "3/5",
+          "1/2"
+        ],
+        "r": [
+          "1/2",
+          "1/10"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "success",
+        "prefix": [
+          0,
+          1
+        ],
+        "order": [
+          0,
+          1
+        ],
+        "certificate": {
+          "kind": "constant_blocker",
+          "index": 0
+        }
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "constant_blocker",
+        "index": 0
+      },
+      "elapsed_seconds": 0.00037908400000000175
+    },
+    "empty_product_tie": {
+      "input": {
+        "a": [
+          "1/5",
+          "1/2"
+        ],
+        "b": [
+          "3/5",
+          "1/2"
+        ],
+        "r": [
+          "1/10",
+          "1"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "success",
+        "prefix": [
+          0,
+          1
+        ],
+        "order": [
+          0,
+          1
+        ],
+        "certificate": {
+          "kind": "constant_blocker",
+          "index": 1
+        }
+      },
+      "specified_prefix": [
+        0,
+        1
+      ],
+      "prefix_certificate": {
+        "kind": "constant_blocker",
+        "index": 1
+      },
+      "elapsed_seconds": 0.0004636249999999953
+    },
+    "one_sender_tie": {
+      "input": {
+        "a": [
+          "1/2"
+        ],
+        "b": [
+          "1/2"
+        ],
+        "r": [
+          "1"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "success",
+        "prefix": [
+          0
+        ],
+        "order": [
+          0
+        ],
+        "certificate": {
+          "kind": "constant_blocker",
+          "index": 0
+        }
+      },
+      "specified_prefix": [
+        0
+      ],
+      "prefix_certificate": {
+        "kind": "constant_blocker",
+        "index": 0
+      },
+      "elapsed_seconds": 0.0001243750000000099
+    },
+    "one_sender_cascade": {
+      "input": {
+        "a": [
+          "1/3"
+        ],
+        "b": [
+          "1/2"
+        ],
+        "r": [
+          "1/2"
+        ],
+        "tau": "2/3"
+      },
+      "result": {
+        "status": "rejection",
+        "pairs": [
+          {
+            "prefix": [
+              0
+            ],
+            "certificate": {
+              "kind": "witness",
+              "t": "1/2"
+            }
+          }
+        ]
+      },
+      "specified_prefix": [
+        0
+      ],
+      "prefix_certificate": {
+        "kind": "witness",
+        "t": "1/2"
+      },
+      "elapsed_seconds": 0.0001855000000000051
+    }
+  },
+  "python": "3.9.6",
+  "elapsed_seconds": 9.00823625,
+  "source_sha256": {
+    "selector.py": "8ae91d740352d5e8a0ff42e373a5f72f4ea10100806257e8766f42468f082fb7",
+    "check.py": "e4455006eb97d011acf7f7f5f3865319f8aec183a02a1e95fcaa2e6efcbee715",
+    "explore.py": "bf6aa5862afe619ceacd4358e20cf00bc3249ea9dec2e1ce271a8c13d2bc3d1a"
+  },
+  "scope": "Exact checks; not formal verification or performance complexity proof."
+}

@@ -111,3 +111,11 @@ Uniform adjacent score dominance is safe, and a complete stable ranking is optim
 partial local dominance alone has not yielded a general sorting theorem. Rational-
 segment verification is polynomial and order existence is in NP. No NP-hardness
 has been proved, and floating-point convex feasibility cannot certify exact ties.
+
+## D28 — September 19, R10a: segment selection is polynomial, not merely in NP
+
+R09's NP upper bound was correct but incomplete. The two-prefix theorem reduces
+existential order selection to n(n−1) exact univariate decisions. Distinct rejected
+pairs can require distinct witness models; never replace this with one universal
+bad model. Software certificates cover root cells exactly, not a sampled grid.
+See [proof](research/two_prefix_selection_2026_09_19/math/THEOREM.md).
