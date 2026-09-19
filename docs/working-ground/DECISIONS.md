@@ -190,3 +190,20 @@ for the most important zero-margin fixtures, but not for every possible polygon.
 The next confidence gain should come from independent game-level R08 derivation,
 not more checks that merely reuse its cascade formula. Growing-dimension complexity
 is open and should not be inferred from the length of a sharp prefix.
+
+## D38 — September 19, R13a: derive beliefs before substituting continuation products
+
+R08's receiver lemma is valid in its exact game, because each fixed transcript
+factorizes by private bit and silent-bit posteriors never exceed their priors.
+The denominators stay positive, giving unique consistent beliefs even off path.
+This is stronger evidence than choosing convenient arbitrary off-path beliefs.
+Continuation incentives initially contain endogenous disclosure probabilities;
+they reduce to suffix products only after the backward argument establishes them.
+
+## D39 — September 19, R13a: favorable equilibrium existence is not uniqueness
+
+A two-sender exact tie supports both a silent equilibrium and disclosing mixed
+equilibria. R08 claims existence, so this is a warning against strengthening its
+quantifier, not a counterexample to its theorem. Completely mixed consistency
+sequences need not be equilibria themselves; do not silently replace sequential
+equilibrium with a stronger refinement or mandatory tie rule.

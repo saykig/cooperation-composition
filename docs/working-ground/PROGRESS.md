@@ -403,3 +403,18 @@ fixed-threshold general sharpness theorem.
 R10 reduction plus established mathematics. Next confidence attack: independently
 rederive/check R08's strategic bridge. Growing dimension remains the subsequent
 complexity frontier, without a hardness claim.
+
+## R13a — September 19: reconstruct the strategic bridge independently
+
+The [game audit](research/game_cascade_audit_2026_09_19/README.md) begins from Nature,
+messages, information sets and payoffs, not from suffix products. It proves unique
+consistent beliefs at every information set by likelihood factorization and an
+explicit completely mixed limit. Full continuation incentives include future
+disclosure probabilities before backward induction earns R08's original criterion.
+Both directions and the attained minimum fine 0 or B survive the written audit.
+
+New finite evidence: 3,324 exhaustive pure profiles, 139 arbitrary-mixed real
+feasibility queries, 142 constructed assessments and 312 exact belief-limit checks.
+An exact mixed tie example rejects “every equilibrium is silent,” while preserving
+the claimed existence result. Historical R08 artifacts remain intact; no replay
+of its missing executable is asserted. Final replay/implication audit is pending.
