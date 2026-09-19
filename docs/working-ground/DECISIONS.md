@@ -136,3 +136,10 @@ The bounded six-sender construction search left 20 four-prefixes without found
 witnesses. This does not prove those prefixes succeed or that the dimension-four
 bound improves. Retain the inconclusive receipt and distinguish it from the
 fully certified lower-dimensional hulls.
+
+## D31 — September 19, R11a: the twenty missing prefixes were search failures
+
+Every one is defeated by a certified rational model in the original q=4/5 slice.
+Optimization located candidates; exact products establish feasibility, and rational
+concavity/support/log-series bounds bracket the true supremum. Solver success alone
+is not the certificate. Historical R10 receipts remain intact.

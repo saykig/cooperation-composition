@@ -322,3 +322,14 @@ open; a bounded d=4 search was inconclusive, not a nonexistence result.
 root machinery plus the move-to-front argument. Next attack: general within-game
 sharpness, including whether keeping a particular receiver threshold changes the
 bound. No historical novelty, formal verification or production performance claim.
+
+## R11a — September 19: resolve every missing dimension-four prefix
+
+The [general sharpness gate](research/general_sharpness_2026_09_19/README.md) keeps
+R08's game and the main question. All twenty missing prefixes in R10's bounded
+search begin with sender 1. Maximizing their minimum log cascade margins, then
+rationalizing and checking products exactly, finds a strict witness for EACH at
+the original parameters. Rational tangent/knapsack/log-series certificates also
+bound each optimal margin; the widest bracket is below 4.7·10^-8. Thus that failed
+search provides no dimension-four obstruction. The arbitrary-d construction and
+fixed-threshold distinction remain the next parts of this gate.
