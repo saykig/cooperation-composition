@@ -85,7 +85,12 @@ jobs:
           "$HOME/.elan/bin/elan" toolchain install leanprover/lean4:v4.33.1
       - name: R01 relational core
         working-directory: docs/working-ground/research/foundations/lean
-        run: lean +leanprover/lean4:v4.33.1 Compatibility.lean
+        run: |
+          lean +leanprover/lean4:v4.33.1 Compatibility.lean | tee /tmp/r01-lean.txt
+          if grep -q 'sorryAx' /tmp/r01-lean.txt; then
+            echo "R01 proof output depends on sorryAx"
+            exit 1
+          fi
       - name: Prepare pinned Mathlib cache
         working-directory: docs/working-ground/research/information_incentives_2026_08_14/lean
         run: |
