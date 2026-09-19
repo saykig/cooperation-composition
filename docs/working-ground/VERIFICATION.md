@@ -39,12 +39,12 @@ by which method**.
 | R04 partial certificates | three-state robust frontier, cost profiles, upper-image composition, disclosure obstruction | exact finite queries plus numerical original-cell checks | **Lean checked:** six profile/disclosure/determinant lemmas | entropy/conjugacy, complete game equilibrium and network elimination remain written proofs |
 | R05 disclosure boundaries | information-only discontinuity criterion and full boundary classification | exact rational witnesses plus numerical source-law optimization | **Lean checked:** fixed-information disclosure game and threshold bridge | global continuity classification, KL family optimization and overlapping-certificate theorem are not formalized |
 | R07 optimized gate recovery | optimized discontinuity counterexample and compact recovery boundary | **2,025 exact rational checks** with separate producer/receiver roles | none | counterexample, full-information smoothing theorem and recovery statements remain written proofs; the general recovery principle is borrowed optimization theory |
-| R08 sequential disclosure | exact disclosure-cascade/order criterion and shared-family vs separate-range enforcement gap | historical **4,802 exact rational checks** are documented, but the originating executable was not retained in this repo | none | the strategic game-to-cascade theorem and shared-family continuum argument need formalization/replay |
+| R08 sequential disclosure | exact disclosure-cascade/order criterion and shared-family vs separate-range enforcement gap | historical **4,802 exact rational checks** are documented, but the originating executable was not retained; R13 adds a separate independent primitive-game suite | none | R13 supplies a complete written strategic audit; formalization and the original historical executable remain missing |
 | R09 robust order polytope | minimax certificate, projection boundary, ordering/adaptation results, fixed-order segment verification | **15,653 exact rational checks**; replayable Python suite | none | minimax specialization, projection impossibility and no-adaptation theorem remain written proofs |
 | R10 two-prefix selection | move-to-front lemma, Helly dimension bound, polynomial segment selector and sharpness through d=3 | exact certificate selector/checker, exhaustive small-order comparisons and retained receipts | none | the central R08→R10 theorem chain is not yet proof-assistant checked; current Python selector/checker share arithmetic code and are not an independent trusted kernel |
 | R11 general sharpness | **Written proof:** arbitrary-d sharpness with dimension-dependent thresholds; fixed-q and fixed-threshold obstructions for the uniform-AM–GM ansatz | 20 numerical optimizations followed by exact rational witnesses and certified supremum brackets; 23,115 exhaustive-prefix checks plus 75 higher-dimensional controls; exact certificate replay | none | arbitrary-d theorem and strategic fidelity remain unformalized; fixed τ=2/3 sharpness outside this ansatz and historical novelty remain open |
 | R12 fixed-dimensional selection | **Written proof:** polynomial-bit decision/order output at fixed affine dimension; two scoped sharpness refinements | 14 saved bundles replayed; 132 direct full-order comparisons with independent cvc5 encoding, 42 prior-Sturm comparisons, three rational AM-GM success certificates; exact side-refinement checks | none; general emptiness uses solver-trusted replay, not an external CPC kernel | R08 strategic bridge remains unformalized; growing dimension unresolved; no complete solver-free polygon certificate format claimed |
-| R13 independent strategic audit (in progress) | **Written primitive derivation:** unique consistent beliefs, full mixed continuation conditions, both directions of R08 and attained fine 0 or B | 3,324 exhaustive pure profiles; 139 mixed real-arithmetic decisions; 142 constructed assessments; 312 polynomial-tremble belief checks | none; exact mixed solver retains backend trust | final replay/implication audit pending; arbitrary-n game proof remains informal |
+| R13 independent strategic audit | **Complete written primitive derivation:** unique consistent beliefs, full mixed continuation conditions, both directions of R08 and attained fine 0 or B | 3,324 exhaustive pure profiles; 139 mixed real-arithmetic decisions; 142 constructed assessments; 312 polynomial-tremble belief checks; normal/optimized receipts agree | none; exact mixed solver retains backend trust | arbitrary-n game proof remains informal; fixed-order suite is not an exhaustive check of adaptive policies |
 
 R06 was a preservation/trajectory phase and introduced no new mathematical claim.
 
@@ -55,10 +55,10 @@ research suite that is suitable for CI and rechecks the existing Lean sources.
 A green workflow means those specific programs/formal files passed at that commit.
 It does **not** upgrade written theorems outside their coverage.
 
-R08 is the main reproducibility exception: its 4,802-check receipt is preserved as
-a historical result summary, but no executable was retained when the phase was
-transferred. Treat those checks as non-replayable until an independent replacement
-suite is written.
+R08's original 4,802-check receipt remains non-replayable: no executable was
+retained when the phase was transferred. R13 now supplies a SEPARATE independent
+primitive-game suite and detailed derivation. Its counts/evidence must not be
+presented as replay of the original historical checks.
 
 ## Why Lean, not "more languages"
 

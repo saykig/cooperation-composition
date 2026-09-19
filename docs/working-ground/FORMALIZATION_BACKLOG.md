@@ -11,7 +11,7 @@ likely to enter the thesis.
 Formalize the finite sequential hard-evidence game far enough to prove the bridge
 
 ```
-profitable all-positive disclosure cascade
+no all-silent target sequential equilibrium exists at 0 <= e < B
 iff
 k_{pi_j} < eta_{pi_j} * product_{l>j} p_{pi_l}
 for every position j
@@ -21,7 +21,23 @@ including favorable ties and the claim that the minimum fine is 0 or B in the
 declared benchmark. This is the highest-value target because R09 and R10 inherit
 this characterization.
 
-**Current status:** written proof + historical exact checks; no Lean proof.
+**Current status:** R13 independently rederived the game from its primitives and
+completed the written audit. It supplies a new exact state/path/tremble suite and
+arbitrary-mixed finite-game checks. No Lean proof; original R08 check executable
+is still unavailable. The exact existence predicate above avoids falsely claiming
+that a weak blocker makes every equilibrium silent.
+
+Suggested formalization order, now grounded in
+[R13's proof](research/game_cascade_audit_2026_09_19/math/AUDIT.md):
+
+1. Product prior and transcript likelihood factorization; unique consistent
+   beliefs from completely mixed limits with positive denominators.
+2. Incomplete-transcript receiver strictness and complete-transcript fine boundary.
+3. Full mixed continuation payoff from the extensive game, retaining endogenous
+   report probabilities before any backward substitution.
+4. Both directions of target existence and the attained minimum at 0 or B.
+
+Formalizing only the final suffix inequalities does not establish steps 1–3.
 
 ### 2. R10 move-to-front and short-prefix theorem
 

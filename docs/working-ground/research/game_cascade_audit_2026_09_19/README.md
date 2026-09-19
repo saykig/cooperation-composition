@@ -9,12 +9,14 @@ deriving incentives independently. Determine whether R09–R12 retain their clai
 strategic meaning.
 
 - [Complete primitive derivation](math/AUDIT.md)
-- [Developing research note](manuscript/RESEARCH_NOTE.md)
+- [Research note](manuscript/RESEARCH_NOTE.md)
 - [Current state](CURRENT_STATE.md)
 - [Executable checker and evidence](experiments/README.md)
 - [Source notes](sources/NOTES.md)
+- [R09–R12 implications](IMPLICATIONS.md)
+- [Completion audit](AUDIT.md)
 
-**First milestone:** R08 survives the audit. A unique consistent-belief formula,
+**Completed finding:** R08 survives the audit. A unique consistent-belief formula,
 including off-path histories, justifies its receiver lemma. Full continuation
 incentives first include endogenous disclosure probabilities; backward induction
 then earns the original product criterion. The minimum fine is attained at 0 or B.

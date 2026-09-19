@@ -1,6 +1,6 @@
 # Current state
 
-19 September 2026. First audit milestone.
+19 September 2026. Audit complete.
 
 **Established by written derivation:** under the original assumptions, every
 behavioral profile has a unique consistent belief system; R08's receiver lemma
@@ -18,6 +18,7 @@ all orders at four shared-family parameter values, ties and near-boundary cases.
 equilibrium silent. Mixed tied continuations permit both silent and disclosing
 equilibria. This leaves R08's existential theorem unchanged.
 
-Before closing: finish executable/source identity and optimized replay checks,
-record detailed R09–R12 implications and completion audit, and add CI replay.
-The arbitrary-n derivation remains informal, with no Lean claim.
+Normal/optimized receipts agree after excluding time. Downstream implications
+and the completion audit are recorded. CI replays the new suite without changing
+the old R08 receipt. The arbitrary-n derivation remains informal, with no Lean
+claim. Formalizing the belief and continuation bridge is the recommended next step.

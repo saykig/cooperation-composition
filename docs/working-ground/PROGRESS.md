@@ -418,3 +418,22 @@ feasibility queries, 142 constructed assessments and 312 exact belief-limit chec
 An exact mixed tie example rejects “every equilibrium is silent,” while preserving
 the claimed existence result. Historical R08 artifacts remain intact; no replay
 of its missing executable is asserted. Final replay/implication audit is pending.
+
+## R13b — September 19: strategic audit completed without changing the game
+
+Following `9df1f77`, normal and optimized executions agree on every mathematical
+receipt field. The [complete research note](research/game_cascade_audit_2026_09_19/manuscript/RESEARCH_NOTE.md)
+states the assumptions, arbitrary-n proof, mixed tie counterexample to an
+overstatement, detailed R09–R12 consequences, source comparison and assurance
+limits. The original theorem survives; no historical formula or artifact is changed.
+
+The new suite reconstructs payoffs and beliefs from states, paths and polynomial
+trembles, rather than using the suffix formula to solve the game. Exact mixed
+feasibility supplements exhaustive pure plans, while the written proof establishes
+the arbitrary-n result. Added CI replay for the new suite. No Lean or external
+proof-kernel claim is made, and the missing historical R08 executable remains a
+distinct historical gap rather than being silently replaced.
+
+**Question retained.** The next bounded confidence step is formalizing the unique
+consistent-belief lemma and continuation bridge. No growing-dimension complexity
+work was begun in this gate.

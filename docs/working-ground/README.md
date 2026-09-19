@@ -70,10 +70,11 @@ solver-free AM-GM success certificates. A separate sharpness investigation tight
 the existing ansatz's singleton threshold and constructive margin, without claiming
 fixed-threshold general sharpness.
 
-## Current audit — R13, September 19
+## Latest result — R13, September 19
 
 [Independent game-to-cascade audit](research/game_cascade_audit_2026_09_19/README.md)
 reconstructs R08 from its primitives, including unique consistent off-path beliefs
 and arbitrary mixed continuations. The original existence theorem and 0-or-B fine
-survive. A new exact state/path/tremble checker supports the derivation; final
-replay and implications are being recorded. No growing-dimension work is included.
+survive. The new exact state/path/tremble checker supports the complete written
+derivation; replay and downstream implications are recorded. Formal verification
+remains open. No growing-dimension work is included.

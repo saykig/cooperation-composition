@@ -102,6 +102,33 @@ jobs:
           python3 additional_checks.py >/tmp/r12-additional.json
           python3 ../side_investigation/check.py >/tmp/r12-side.json
 
+  exact-game-audit:
+    name: R13 primitive game and mixed-equilibrium audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned real-arithmetic backend
+        run: pip install -r docs/working-ground/research/game_cascade_audit_2026_09_19/experiments/requirements.txt
+      - name: Primitive game and independent formula comparison
+        working-directory: docs/working-ground/research/game_cascade_audit_2026_09_19/experiments
+        run: |
+          python3 check.py --output /tmp/r13-normal.json
+          python3 -O check.py --output /tmp/r13-optimized.json
+          python3 - <<'PY'
+          import json
+          with open('/tmp/r13-normal.json') as f:
+              normal = json.load(f)
+          with open('/tmp/r13-optimized.json') as f:
+              optimized = json.load(f)
+          normal.pop('seconds')
+          optimized.pop('seconds')
+          if normal != optimized:
+              raise SystemExit('R13 normal/optimized mathematical receipts differ')
+          PY
+
   lean-existing:
     name: Existing Lean proof scope
     runs-on: ubuntu-latest

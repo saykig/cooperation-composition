@@ -207,3 +207,12 @@ equilibria. R08 claims existence, so this is a warning against strengthening its
 quantifier, not a counterexample to its theorem. Completely mixed consistency
 sequences need not be equilibria themselves; do not silently replace sequential
 equilibrium with a stronger refinement or mandatory tie rule.
+
+## D40 — September 19, R13b: the strategic bridge survives, with its exact scope
+
+The independent primitive derivation proves both directions and the full feasible-
+fine set [0,∞) or [B,∞). R09–R12 need no algebraic correction. Their fixed-order
+strategic interpretation is strengthened, not generalized to new private signals,
+correlations or selection requirements. The fixed-order checker does not claim to
+exhaustively verify R09's separate adaptive-policy theorem. Formalization remains
+open; an informal audit must not be relabeled as Lean verification.
