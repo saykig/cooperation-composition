@@ -1,0 +1,323 @@
+{
+  "audit_sha256": "c8ba99bc731424492535f3601fafe063c7b62ae784574584ddf437eb92e36337",
+  "audited_declarations": {
+    "Cooperation.Feasible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.FullyMixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.Hist": [],
+    "Cooperation.Info": [],
+    "Cooperation.Strategy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.actionProbability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.atom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.atom_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.bayes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.bayes_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.bayes_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.belief": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.belief_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.belief_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.belief_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.bern": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.bern_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.bern_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.consistent_beliefs_exist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.consistent_beliefs_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.evidence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.global_consistency_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.global_consistency_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.joint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.joint_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.likelihood": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.localMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.localMass_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.mass_known": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.mass_report": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.mass_silent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.mass_unseen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.nature": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.nature_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.nature_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.normalizer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.normalizer_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.normalizer_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.observed": [],
+    "Cooperation.pastInfo": [
+      "propext"
+    ],
+    "Cooperation.posterior": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.posterior_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.posterior_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.prefixLikelihood": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.prefixLikelihood_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.privateLikelihood": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.privateLikelihood_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.privateObserved": [],
+    "Cooperation.rateAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.rate_feasible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.rate_mixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.rate_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.receiver_perturbation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.senderBayes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.senderBayes_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.sender_bayes_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.silent_den_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.silent_posterior_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.transcriptBayes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.transcriptBayes_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.transcript_bayes_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.tremble": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.tremble_mixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Cooperation.tremble_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "compiler_output": {
+    "Beliefs": "/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Beliefs.lean:41:14: warning: This simp argument is unused:\n  Fintype.sum_bool\n\nHint: Omit it from the simp argument list.\n  [apply] simp [bern]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Beliefs.lean:44:41: warning: This simp argument is unused:\n  Fintype.sum_bool\n\nHint: Omit it from the simp argument list.\n  [apply] simp [localMass, atom, evidence, bern]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Beliefs.lean:47:41: warning: This simp argument is unused:\n  Fintype.sum_bool\n\nHint: Omit it from the simp argument list.\n  [apply] simp [localMass, atom, evidence, bern]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Beliefs.lean:51:41: warning: This simp argument is unused:\n  Fintype.sum_bool\n\nHint: Omit it from the simp argument list.\n  [apply] simp [localMass, atom, evidence, bern]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Beliefs.lean:54:53: warning: This simp argument is unused:\n  Fintype.sum_bool\n\nHint: Omit it from the simp argument list.\n  [apply] simp [localMass, atom, evidence, bern]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Beliefs.lean:100:0: warning: automatically included section variable(s) unused in theorem `Cooperation.joint_product`:\n  [DecidableEq \u03b9]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq \u03b9] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Beliefs.lean:156:0: warning: automatically included section variable(s) unused in theorem `Cooperation.nature_nonneg`:\n  [DecidableEq \u03b9]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq \u03b9] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Beliefs.lean:178:0: warning: automatically included section variable(s) unused in theorem `Cooperation.belief_tendsto`:\n  [DecidableEq \u03b9]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq \u03b9] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n",
+    "Transcripts": "/Users/kimchee/Documents/ChatGPT/cooperation-enforcement/docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/Transcripts.lean:115:39: warning: This simp argument is unused:\n  ho\n\nHint: Omit it from the simp argument list.\n  [apply] simp [privateObserved, j, evidence, H, observed]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n"
+  },
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": [
+    "Beliefs",
+    "Transcripts"
+  ],
+  "source_sha256": {
+    "Beliefs.lean": "695f4eea50eff30f8f5da78590fd631426131407092cfa36fbe754eac07fb0d0",
+    "Transcripts.lean": "0ac9e09011d3762c3d6e4248982664b0ca616565b84ae001d5f8dd6b286aa442"
+  },
+  "status": "Lean checked; formal scope only",
+  "toolchain": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "verifier_sha256": "a97dcd00536477a586052ac6b7179615e1f7a803bcbbc1ead719dc4e8fe06b2b"
+}

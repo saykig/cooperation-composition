@@ -46,6 +46,8 @@ by which method**.
 | R12 fixed-dimensional selection | **Written proof:** polynomial-bit decision/order output at fixed affine dimension; two scoped sharpness refinements | 14 saved bundles replayed; 132 direct full-order comparisons with independent cvc5 encoding, 42 prior-Sturm comparisons, three rational AM-GM success certificates; exact side-refinement checks | none; general emptiness uses solver-trusted replay, not an external CPC kernel | R08 strategic bridge remains unformalized; growing dimension unresolved; no complete solver-free polygon certificate format claimed |
 | R13 independent strategic audit | **Complete written primitive derivation:** unique consistent beliefs, full mixed continuation conditions, both directions of R08 and attained fine 0 or B | 3,324 exhaustive pure profiles; 139 mixed real-arithmetic decisions; 142 constructed assessments; 312 polynomial-tremble belief checks; normal/optimized receipts agree | none; exact mixed solver retains backend trust | arbitrary-n game proof remains informal; fixed-order suite is not an exhaustive check of adaptive policies |
 
+| R14 Lean bridge (active) | Actual-game unique consistent beliefs for arbitrary finite n | fresh pinned compilation and audit of all 64 local declarations; source-bound receipt | **Lean checked:** independent Nature masses, transcript/private Bayesian conditioning, global off-path limit existence and uniqueness; standard axioms only | receiver best replies and state/path continuation gains in progress; complete sequential-equilibrium existence, target characterization and minimum fine not formalized |
+
 R06 was a preservation/trajectory phase and introduced no new mathematical claim.
 
 ## Continuous integration

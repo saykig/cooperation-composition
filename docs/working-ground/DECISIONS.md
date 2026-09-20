@@ -216,3 +216,12 @@ strategic interpretation is strengthened, not generalized to new private signals
 correlations or selection requirements. The fixed-order checker does not claim to
 exhaustively verify R09's separate adaptive-policy theorem. Formalization remains
 open; an informal audit must not be relabeled as Lean verification.
+
+## D41 — September 20, R14a: consistency requires a global strategy limit
+
+History-by-history convenient beliefs are insufficient. R14's Lean theorem uses
+one sequence of complete behavioral strategies for every public and private
+information set, and proves uniqueness for arbitrary such sequences. The receiver
+can be trembled with the same index because its later action does not affect Bayes
+conditioning. No equilibrium condition is imposed on perturbations. This is a
+formal belief bridge, not a formal proof of sequential-equilibrium existence.

@@ -78,3 +78,12 @@ and arbitrary mixed continuations. The original existence theorem and 0-or-B fin
 survive. The new exact state/path/tremble checker supports the complete written
 derivation; replay and downstream implications are recorded. Formal verification
 remains open. No growing-dimension work is included.
+
+## Active result — R14, September 20
+
+[Lean belief and continuation bridge](research/lean_belief_bridge_2026_09_19/README.md)
+now formally proves unique consistent beliefs from the actual history-dependent
+game, for arbitrary finite sender counts. A fresh compilation audits all 64 local
+declarations with standard Lean axioms only. Receiver best replies and sender
+continuation gains are the remaining active bridge work; full sequential-equilibrium
+existence is not yet formalized.

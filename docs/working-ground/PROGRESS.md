@@ -437,3 +437,19 @@ distinct historical gap rather than being silently replaced.
 **Question retained.** The next bounded confidence step is formalizing the unique
 consistent-belief lemma and continuation bridge. No growing-dimension complexity
 work was begun in this gate.
+
+## R14a — September 20: primitive-game belief bridge in Lean
+
+The [R14 formalization](research/lean_belief_bridge_2026_09_19/README.md) derives
+Bayes beliefs from independent Nature draws, full history-dependent behavior and
+transcript likelihoods. For arbitrary finite sender counts it proves normalization,
+positive denominators, silent-bit bounds, and existence and uniqueness of all
+consistent public/private beliefs, including zero-reach histories. One global
+perturbation sequence works for every information set; receiver behavior admits
+a perturbation with the same index.
+
+Fresh compilation plus an audit of all 64 local declarations found only the
+standard dependencies `propext`, `Classical.choice`, and `Quot.sound`. This closes
+the belief portion, not the whole goal: receiver expected-payoff derivation and
+primitive state/path continuation gains are next. Full assessment rationality,
+backward construction, target existence and the 0-or-B theorem remain unformalized.
