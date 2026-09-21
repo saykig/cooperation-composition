@@ -1,6 +1,6 @@
 # Verification ledger
 
-**Last structural audit:** September 19, 2026.
+**Last structural audit:** September 20, 2026.
 
 This file records what kind of evidence exists for each mathematical phase. It is
 deliberately conservative. A written proof, an exact finite computation, a
@@ -47,6 +47,7 @@ by which method**.
 | R13 independent strategic audit | **Complete written primitive derivation:** unique consistent beliefs, full mixed continuation conditions, both directions of R08 and attained fine 0 or B | 3,324 exhaustive pure profiles; 139 mixed real-arithmetic decisions; 142 constructed assessments; 312 polynomial-tremble belief checks; normal/optimized receipts agree | none; exact mixed solver retains backend trust | R14 formalizes its belief/receiver/continuation bridge; arbitrary-n equilibrium-existence construction remains informal; fixed-order suite is not an exhaustive check of adaptive policies |
 
 | R14 Lean belief and continuation bridge | Unique consistent beliefs, receiver best replies, full mixed sender gains and normalized behavioral continuation kernel for arbitrary finite n | fresh pinned compilation of six modules; all 119 named declarations axiom-audited; 844 posterior, 4,944 kernel, 9,888 path, 408 sender-gain and 204 cascade comparisons; normal/optimized receipts agree | **Lean checked:** actual Nature/action likelihoods and Bayesian conditioning, global off-path limit existence/uniqueness, primitive expected payoffs and derived mixed continuation gain; only standard axioms | full assessment/sequential-equilibrium existence, backward construction, silent-target characterization and attained 0-or-B minimum remain unformalized; no external kernel or independent human model review |
+| R15 enforcement compression and codec | exact contextual interface discrepancy, independent-composition error law, gamma-separated storage bounds, planar proof-carrying codec, finite shared-label rule | originating run: **19,264 exact rational checks**, **250 valid compact bundles**, **250 corruption rejections**, clean pre-transfer replay; executable package not yet committed for CI replay | none for R15; written proofs only | operational metric, storage bounds and shared-interface theorem remain unformalized; general-dimensional encoder, logarithmic gap, optimized-value-only minimality and historical novelty remain open |
 
 R06 was a preservation/trajectory phase and introduced no new mathematical claim.
 
