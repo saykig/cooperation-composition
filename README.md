@@ -19,10 +19,9 @@ This is an abstract mathematical question, but the structure appears in real sec
 
 The [research working ground](docs/working-ground/README.md) collects the mathematical research, progress ledger, counterexamples and evidence, beginning August 13, 2026. The [verification ledger](docs/working-ground/VERIFICATION.md) states exactly which results have written proofs, computational checks, or Lean coverage.
 
-The latest [Lean belief and continuation bridge](docs/working-ground/research/lean_belief_bridge_2026_09_19/manuscript/RESEARCH_NOTE.md)
-formally derives unique consistent beliefs, receiver best replies and sender
-continuation gains from the sequential game's primitives, for arbitrary finite
-sender counts. Its 119-declaration audit closes this bridge; complete equilibrium
-existence remains a written proof. Earlier phases establish exact selection at
-fixed affine dimension and dimension-dependent sharpness. Growing-dimension
-complexity remains open.
+The latest [enforcement-sufficient compression phase](docs/working-ground/research/enforcement_codec_2026_09_20/manuscript/RESEARCH_NOTE.md)
+asks what a minimal reusable information interface must retain to preserve
+enforcement decisions under composition. It derives an operational error measure,
+composition law and fixed-dimensional storage bounds, and records a proof-carrying
+planar codec from the originating run. These new compression results remain
+written proofs plus exact computational evidence; they are not yet Lean-verified.
