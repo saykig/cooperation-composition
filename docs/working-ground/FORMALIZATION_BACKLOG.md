@@ -44,7 +44,25 @@ state/path payoffs. Step 4 is now the first open formalization step; it requires
 the assessment predicate and backward construction, not additional suffix algebra.
 See [R14's precise scope](research/lean_belief_bridge_2026_09_19/math/FORMAL_SCOPE.md).
 
-### 2. R10 move-to-front and short-prefix theorem
+### 2. R15 enforcement-interface metric and certified sandwich
+
+After completing the R08/R14 target-existence formalization, formalize the R15
+bridge from a certified interface approximation to enforcement-margin guarantees:
+
+- the rational domination sandwich implies the weighted-log support bound;
+- the directed discrepancy bounds every permitted contextual margin query;
+- one added sender attains the discrepancy;
+- independent-product discrepancies add exactly;
+- a certified interval crossing zero yields `refine`, not a false exact fine.
+
+The planar encoder implementation itself does not need to be formalized before
+these mathematical statements. The storage upper/lower bounds may remain written
+until the operational metric is stable.
+
+**Current status:** written proof plus exact executed verifiers; no Lean proof for
+R15. The originating executable package is also not yet repository-CI replayable.
+
+### 3. R10 move-to-front and short-prefix theorem
 
 Formalize:
 
@@ -60,7 +78,7 @@ Do not formalize the software implementation as if that proved the game theorem.
 
 **Current status:** written proof + exact selector checks; no Lean proof.
 
-### 3. R10 exact algorithm statement
+### 4. R10 exact algorithm statement
 
 After the structural theorem is formalized, formalize only the mathematical
 correctness specification of the certificate classes (constant blocker, strict
