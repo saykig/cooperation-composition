@@ -21,6 +21,7 @@ literature notes, experiments and changes of direction in one place.
 | August 14, 2026 | [Disclosure discontinuity boundaries](research/disclosure_boundaries_2026_08_14/manuscript/RESEARCH_NOTE.md) |
 | August 14, 2026 | [Optimized gates and recovery](research/optimized_gate_recovery_2026_08_14/manuscript/RESEARCH_NOTE.md) |
 | September 9, 2026 | [Sequential disclosure and compatible uncertainty](research/sequential_disclosure_2026_09_09/manuscript/RESEARCH_NOTE.md) |
+| September 20, 2026 | [Enforcement-sufficient compression and certified codec](research/enforcement_codec_2026_09_20/manuscript/RESEARCH_NOTE.md) |
 
 Each phase includes its available mathematical development, source notes,
 experiments, evidence and limitations. The latest phase returns to the composition
@@ -89,3 +90,14 @@ recursive behavioral tree. A fresh build audits 119 named declarations with
 standard Lean axioms only; exact finite model comparisons separately agree with
 R13's independent evaluator. Full sequential-equilibrium existence, the backward
 construction and the 0-or-B fine theorem remain written proofs.
+
+
+## Latest result — R15, September 20
+
+[Enforcement-sufficient compression](research/enforcement_codec_2026_09_20/README.md)
+identifies an exact contextual discrepancy for enforcement-relevant interfaces,
+proves additive error accounting under independent composition, derives
+fixed-dimensional storage upper/lower bounds with the same main exponent, and
+records a rational proof-carrying planar codec. It also shows that shared scenario
+labels must survive until connection. R15 has written proofs and exact executed
+checks; no new Lean or historical-novelty certification is claimed.
