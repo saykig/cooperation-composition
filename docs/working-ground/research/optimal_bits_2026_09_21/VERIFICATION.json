@@ -39,10 +39,10 @@
     "experiments/sample.bin": "3b1cd0d2411350e3e76991cccde7bffba6f8f45a1403541d1b5f90a227484ba6",
     "experiments/tree_receipt.json": "554881609df36917fe67cdc1568ffa45260f097580ce68625a45c431d702a9d8",
     "experiments/verify.py": "7e5fb47c4d7e2f3fea1e2c38c2a21aac6ef704b8460f42831a4d7de35109d1b3",
-    "math/BIT_MODEL.md": "ad1245974eae5caf08630e10a2352b8160cf4db3668ad98c0bacd10bc6923646",
+    "math/BIT_MODEL.md": "be8a46f1416784ffdf6d2572afa99826fae203fb06e2f256546de01651e98508",
     "math/EXTENSIONS.md": "31ee89fc4b30972bde0eed0b5bc59f7475e3a37b2f4f37c58273f4f13aa35070",
     "math/FOUNDATION_AUDIT.md": "08632518c8dfd9d9abd9c422fbdfcab098d44e252fd0d624f4441d59a1ef901e",
-    "math/PLANAR_RATE.md": "33cfdd2a736d4d90a0a0cb47b607fae8065e4ca315bfa571c1c137bf0c41e2d2",
+    "math/PLANAR_RATE.md": "fee9de93def3183dee00b750cc7806f9548a71c9e587051ab7f9aa9dc595b7dd",
     "sources/NOTES.md": "a7380faa0ba2e7e758c063e47a8483a266a504874d3de63480bc801958e10a44"
   }
 }

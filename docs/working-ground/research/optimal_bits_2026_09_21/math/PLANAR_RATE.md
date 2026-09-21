@@ -8,7 +8,8 @@ entropy, not claimed as a new discovery.
 
 Fix `0<ell<u<tau<1` rational. For rational convex planar inputs in [ell,u]^2,
 all rational order/cost queries, one compressed block with arbitrary exact
-independent attachments, and the correctness/completeness contract of Gate 2,
+independent rational V-polytope attachments, and the correctness/completeness
+contract of Gate 2,
 
     R*(gamma) = Theta(gamma^(-1/2)).
 

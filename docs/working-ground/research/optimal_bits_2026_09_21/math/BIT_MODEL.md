@@ -16,7 +16,10 @@ dictionary, real oracle, or advice table. Randomized/cryptographic models are
 outside this note.
 
 The principal query class is every rational positive cost-ratio vector and every
-order, with arbitrary finitely described exact independent attachments. Return
+order, with arbitrary exact independent rational V-polytope attachments. Their
+dimension, vertex count and coordinate precision are part of the query input.
+The mathematical discrepancy guarantee also holds for arbitrary compact convex
+attachments, but no algorithm on an unspecified real-set oracle is claimed. Return
 0 or B only when justified; always answer when |m|>=gamma. At m=0 favorable ties
 give true fine zero, but an approximation may return REFINE. Optimized queries
 replace m by min over orders and require a witnessing order for a zero answer.
