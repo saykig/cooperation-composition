@@ -9,6 +9,7 @@ literature notes, experiments and changes of direction in one place.
 - [How to revisit and extend the work](RECOVERY.md)
 - [Verification ledger](VERIFICATION.md)
 - [Formalization backlog](FORMALIZATION_BACKLOG.md)
+- [Research north star](research/foundations/NORTH_STAR.md)
 
 ## Research phases
 
