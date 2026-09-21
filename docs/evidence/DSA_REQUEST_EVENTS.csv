@@ -1,0 +1,8 @@
+event_id,episode,event_date,event_type,description,status,source_ids,limitation
+DE-01,Germany 2025,2024-04-17,request,First data-access application recorded in later court urgency reasoning,SOURCE CLAIM,D2,Court reconstruction; underlying application not inspected
+DE-02,Germany 2025,2025-05-13,judicial disposition,Interim relief refused for lack of urgency; applicant delay material,FACT,D2,Judicial disposition and rationale; not a finding of platform motive
+HU-01,Hungary 2026,2026-02-17,judicial disposition,Court of Appeal orders public-data access,FACT,D3;D4,Order does not establish actual delivery
+HU-02,Hungary 2026,,access grant,DRI reports X granted access after its 2026 court win,SOURCE CLAIM,D8,Exact grant date and usable scope unknown; post observed 2026-09-21
+HU-03,Hungary 2026,,usable delivery,First usable retrieval and requested-field completeness,UNKNOWN,,No inspected receipt or data package
+EU-01,Parallel Commission action,2025-12-05,enforcement,Commission announces fine spanning three transparency infringements,FACT,D6,Do not code as a DRI-specific remedy or delivery outcome
+EU-02,Parallel Commission action,2026-07-16,action plan,Commission update describes advertising-repository commitments,SOURCE CLAIM,D7,Different disclosure channel from DRI Article 40(12) request

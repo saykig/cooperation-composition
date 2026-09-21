@@ -1,101 +1,43 @@
-# European application: case selection before theorem selection
+# European case selection: evidence before model choice
 
-21 September 2026. Scoping note, not an empirical finding or an adopted hypothesis.
-The mathematical dependencies in `../MATHEMATICAL_DEPENDENCIES.md` remain unresolved.
-No external mathematical repository is linked or pinned by this note.
+21 September 2026. Comparative empirical review; supersedes the initial scoping judgments while preserving the three starting candidates. **Recommendation: prioritise DRI/X researcher data access under the EU Digital Services Act for a bounded MA process study.** This is a research recommendation, not a finding that regulation produced compliance or that a strategic motive has been proved. The author's final case adoption remains open.
 
-## Decision to make
+## What changed through evidence collection
 
-Which European case offers observable evidence of how information-sharing rules,
-strategic incentives and institutional responses interact? Start the case research
-now; there is no need to wait for every mathematical result. Equally, do not assume
-that any available theorem fits the case. Select the empirical mechanism and map
-its assumptions before importing mathematics.
+The initial note had mainly programme and rule descriptions. This pass assembled [30 sources](../evidence/SOURCES.md), including judicial records, legislation, an actual provider contact interface, diplomatic commitments, user-access reporting and independent journalism. All maps distinguish **FACT / SOURCE CLAIM / INFERENCE / HYPOTHESIS / UNKNOWN** under the [methods protocol](../methods/EMPIRICAL_INFERENCE.md).
 
-Ukraine remains a leading candidate. EU AI governance and Nordic/High North
-cooperation are now authorized alternatives. Choosing one does not require testing
-all three in the finished paper.
+- [Ukraine](../evidence/UKRAINE.md): narrowed from DELTA/interoperability to the March 2025 GEGD account suspension and restoration. It reveals a specific government-controlled information channel during coalition bargaining. The simultaneous aid pause prevents isolating intelligence pressure. DELTA exercise evidence remains a separate, weaker lead.
+- [EU AI governance](../evidence/EU_AI.md): identified an actual documentation inquiry channel and independent public-transparency research. Neither supplies an observed downstream request/refusal/decision chain. Code opposition is not proof of noncompliance.
+- [Nordic / High North](../evidence/NORDIC_HIGH_NORTH.md): separated Arctic trials, Nordic Warden warning sharing and the Eagle S ship/shore information dispute. The August 2026 appellate decision strengthens the public institutional record, but its treatment of allegations does not establish intentional deception, Russian direction or a warning-system effect.
+- [Additional EU case: DRI/X](../evidence/EU_DSA_RESEARCH_ACCESS.md): found repeated data-access litigation, an adverse urgency ruling, later relief and a participant report of an access grant. This provides the best current opportunity to distinguish legal entitlement, practical access and procedural timing.
 
-## Candidate 1 — Ukraine and coalition decision systems
+These are **INFERENCES about research feasibility**, supported by the linked evidence maps. None is an empirical verdict on the overall institution.
 
-**Possible question:** when data can technically cross institutional boundaries,
-what still determines whether the resulting information is trusted and acted upon?
-Keep decision authority, uncertainty communication and incentives distinct from
-bandwidth or file-format compatibility.
+## Ranking against the six requested criteria
 
-**Retrieved evidence:** Ukraine's Ministry of Defence reports that DELTA provided
-command-and-control for a multinational team during REPMUS 2025, with unmanned
-platform and NATO-standard integration. This is an official exercise account,
-not independent evidence of wartime decision quality, incentives or outcomes.
-[MoD, 3 October 2025](https://mod.gov.ua/en/news/ukrainian-combat-system-delta-became-primary-command-platform-for-combined-multinational-team-at-nato-exercises).
+Ordinal judgments, not measured scores. Read the first three criteria first; significance and feasible scope break ties. Mathematical compatibility has no selection weight beyond leaving room for a later, justified model.
 
-**Next evidence needed:** a bounded, publicly documented decision process; who
-controlled disclosure and authority; what information was withheld or transformed;
-what alternatives the actors faced; and evidence of an actual institutional
-response or failure. Exercise success alone cannot identify an enforcement effect.
-Do not presume that technical interoperability demonstrates strategic cooperation.
+| Priority / bounded case | Observable strategic mechanism | Evidence availability | Rival discrimination | European significance | MA feasibility | Later formal compatibility |
+|---|---|---|---|---|---|---|
+| **1. DRI/X public-data access** | Actual gatekeeping dispute and remedies; motive remains a hypothesis | Highest: successive court records, law, participant grant claim, independent reporting | Best: applicant timing is an explicit adverse explanation; delivery records still needed | Democratic oversight and cross-border EU governance | High for two request episodes; lower for causal compliance claims | Delay/access choices could later be represented, without needing a theorem |
+| **2. Ukraine GEGD, March 2025** | Clearest political conditionality and identifiable access controller | Good for public commitments/restriction; poor for private decision records | Weak for separating intelligence, weapons and diplomacy | Very high for coalition security | Good institutional case; poor military-effect design | Revocable access might be modelled only after mapping dependencies |
+| **3. Nordic Eagle S inquiry/jurisdiction** | Concrete alleged information discrepancy; intent unresolved | Good legal record, weak access to communications and exhibits | Negligence versus deception remains unresolved | High for Baltic infrastructure and national authority | Moderate; legal-process study feasible, operational study harder | Verification/authority questions possible; no model selected |
+| **4. GPAI downstream documentation** | Plausible asymmetry; observable interface, no retrieved contested request | Extensive rules and public documents, weak recipient evidence | Low until a named request chain is obtained | High for European digital governance | Good descriptive audit; weak strategic-mechanism paper now | Disclosure could later be represented if recipient decisions are observed |
 
-## Candidate 2 — EU AI information duties and downstream responsibility
+Within the Nordic family, Warden's warning-sharing and X-Arctic experimentation rank below the Eagle S subcase for the requested strategic mechanism: the inspected corpus lacks matched alerts, national decisions and consequences. The Baltic case cannot validate Arctic cooperation claims.
 
-**Possible question:** what information must an upstream model provider supply for
-a downstream organization or regulator to make defensible decisions, and how do
-compliance incentives shape that disclosure?
+**Why recommend first place:** DRI/X combines a repeat requester/platform comparison with adverse evidence and reported behaviour beyond an announcement. Its advantage is documentary access and rival testing, not conceptual resemblance. Ukraine would lead if the overriding question were coalition bargaining rather than identifying an information-access mechanism with public records. Eagle S could rise if recordings and merits evidence permit distinguishing mistakes from deception. GPAI could rise with documented downstream refusals and observable integration consequences.
 
-**Retrieved evidence:** the Commission's GPAI guidance distinguishes information
-for authorities from information for downstream system providers, including model
-capabilities, limitations and integration requirements. This establishes a public
-institutional information structure, not actual compliance, enforcement success,
-or cooperative behavior. The guidance itself distinguishes its interpretative
-status from legally binding law.
-[Commission guidance](https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers).
-The [Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai)
-provides a related public documentation and safety framework.
+**Sensitivity:** removing DRI's uncorroborated grant claim leaves it the strongest legal-process case but removes the basis for a behavioural-enforcement paper. Treat the recommendation as conditional on the next evidence test, not a declaration that it dominates every conceivable research question. No candidate currently supports a clean causal-effect estimate.
 
-**Next evidence needed:** specific provider/distributor documentation, change
-records, observable disputes or enforcement decisions, and alternative explanations
-for disclosure behavior. A law on the books is not evidence that it changes conduct.
-Do not translate an all-silent target into a disclosure-duty case without showing
-why the strategic model fits; the desired direction of behavior may be different.
+## Recommended next empirical attack
 
-## Candidate 3 — Nordic/High North shared situational awareness
+**Question:** when does a legally enforceable right to public platform data become usable access in time for election-risk research?
 
-**Possible question:** how are uncertainty, shared observations and decision
-authority retained when national and commercial sensing systems feed a multinational
-situational picture?
+Reconstruct DRI's two request sequences, separate applicant delay from provider delay, and establish the first usable delivery date and field coverage in the Hungarian-election episode. Compare those dates with judicial relief and the distinct Commission proceeding. The [methods note](../methods/EMPIRICAL_INFERENCE.md) specifies rival predictions and the stop/narrow rule; the [search record](../evidence/SEARCH_LOG.md) states retrieval gaps.
 
-**Retrieved evidence:** NATO ACT describes Task Force X-Arctic as an integration
-and experimentation programme involving networked uncrewed systems and records
-initial trials near Iceland in June/July 2026. This identifies candidate interfaces
-and institutional participants, not a measured cooperation or deterrence effect.
-[NATO ACT programme page](https://www.act.nato.int/activities/task-force-x-arctic/).
+The present finding is limited: public records support studying how access disputes are processed, and a participant reports a later grant. They do not yet establish complete timely delivery, deliberate obstruction, an enforcement treatment effect or an improvement in election integrity. The next attack should produce a request-to-delivery ledger, not a simulation.
 
-**Next evidence needed:** a limited public decision or exercise process, its
-sharing restrictions, national obligations, validation records and observed
-consequences. Russian activity can be relevant context, but do not infer its causes
-or effects from a NATO programme announcement.
+## Mathematical and simulation boundary
 
-## Provisional assessment, not a selection
-
-EU AI offers the clearest documentary starting point for information duties.
-Ukraine is closest to the author's war/security interest. The High North offers
-a multi-institution information-sharing setting, but the available programme pages
-are not yet outcome evidence. These are scoping judgments, not results of a full
-comparative review. No case has been selected by this pass.
-
-## Next bounded application goal
-
-For each candidate, produce a short evidence map naming: actors, actions, target
-arrangement, information access, potential deviation, institutional response,
-outcome that can actually be observed, and the strongest rival explanation.
-Retrieve one substantive primary record beyond an announcement and one independent
-corroborating source where available. Explicitly mark unavailable records.
-
-Reject or narrow a candidate if no observable incentive/intervention mechanism can
-be identified, the decisive data are inaccessible, or its main claim would depend
-on a numerical model assumption rather than evidence. Recommend one case and one
-research question based on the map, not on whichever gives a desired conclusion.
-Do not begin a large simulation before establishing what it would test.
-
-The paper may first be an institutional/process study; a quantitative theorem
-application is earned only after an explicit mapping. Mathematical proof, empirical
-support and normative desirability are three separate tasks.
+[Mathematical dependencies](../MATHEMATICAL_DEPENDENCIES.md) remain unresolved and unchanged. No theorem, code pin, unpublished project citation or mathematical premise was introduced. No simulation was built. Any future dependency must identify its exact statement, assumptions, empirical mapping, evidence/formal status, dependent substantive claim and limitations. The public empirical argument must stand on its own evidence.

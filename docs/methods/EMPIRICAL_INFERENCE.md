@@ -24,7 +24,7 @@ The Ukraine episode can expose access conditionality but bundles imagery, other 
 
 **Unit:** a single request and its response, litigation and delivery sequence. Begin with DRI's German-election and Hungarian-election episodes. Keep the Commission proceeding as a separate timeline rather than another observation of the same treatment.
 
-Create an event ledger with request date, requested fields/time span, claimed eligibility, provider response and reasons, applicant follow-up, filing date, court jurisdiction/urgency decision, relief/service date, first successful retrieval, scope/quotas, end of research window, source and claim status. Code unknown delivery dates as missing, not as zero delay. Preserve who reported each event and whether the original record is available.
+The initial [event ledger](../evidence/DSA_REQUEST_EVENTS.csv) records retrieved events and leaves unknown delivery dates blank. Extend it with request date, requested fields/time span, claimed eligibility, provider response and reasons, applicant follow-up, filing date, court jurisdiction/urgency decision, relief/service date, first successful retrieval, scope/quotas, end of research window, source and claim status. Code unknown delivery dates as missing, not as zero delay. Preserve who reported each event and whether the original record is available.
 
 | Explanation | Evidence that would favour it | Evidence that would weaken it |
 |---|---|---|

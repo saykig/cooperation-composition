@@ -271,4 +271,3 @@ Access/review date: 21 September 2026. Dates below are publication/event-documen
 - Type: Primary participant claim / public LinkedIn post.
 - Locator: Post sentence reporting access granted after 2026 case.
 - Scope/limitation: Exact publication date unresolved; retrieved by 2026-09-21. Access grant reported, usable coverage and receipt date unverified.
-
