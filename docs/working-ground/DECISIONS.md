@@ -312,3 +312,19 @@ A source-readable verifier can recompute the rational sandwich with zero
 additional witnesses. This does not prove a source-free recipient's relationship
 to unseen data, eliminate source storage, or make verification/query work free.
 Tree max-sum messages compute only error budgets, not complete strategic answers.
+
+
+## D52 — September 21: separate foundation ownership from the CEES application
+
+[Decision-interfaces](https://github.com/saykig/decision-interfaces) is canonical
+for future mathematical theorems, proofs, verification and provenance.
+Cooperation-enforcement owns the Ukraine-focused CEES application and proving
+ground. Preserve all inherited mathematical work and history here until later
+user-directed cleanup; keep both README files unchanged in this handoff.
+
+Cite foundation results by full commit and exact path/result, with assumptions and
+evidence status. A stable commit identifies a mathematical edition; it does not
+prove empirical applicability. Future reusable mathematical corrections belong in
+the foundation repository; assess their impact on pinned application claims here.
+The earlier all-project-work routing is superseded by this boundary. No mathematical
+claim or verification status is changed.

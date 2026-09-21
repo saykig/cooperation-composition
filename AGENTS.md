@@ -1,17 +1,30 @@
 # Cooperation & Enforcement project instructions
 
-## Default repository for every project chat
+## Repository boundary — September 21, 2026
 
-The user has selected `https://github.com/saykig/cooperation-enforcement` as the
-default repository for all work, commits and pushes in this research project.
-Work in this checkout, including when a chat was originally opened in Bellman.
-Before committing or pushing, verify the repository root and that origin points
-to `saykig/cooperation-enforcement`.
+This repository is the application and proving ground for the Ukraine-focused CEES
+paper: empirical evidence, case interpretation, application-specific modelling and
+evaluation. `https://github.com/saykig/decision-interfaces` is now canonical for
+future theorem development, proofs, verification and mathematical provenance.
+This handoff supersedes the former instruction to put all project research here.
 
-Only use Bellman as a writing/commit/push destination when the user explicitly
-requests that exception for the current chat. An exception does not change the
-project default for other chats. Do not replace Bellman's remote or push its Git
-history here. Prior Bellman research may be read as background.
+For application work, use this checkout and verify origin points to
+`saykig/cooperation-enforcement` before committing or pushing. For mathematical
+foundation work, use the separate decision-interfaces checkout and its own origin;
+never repoint this remote. Read the foundation
+[research programme](https://github.com/saykig/decision-interfaces/blob/91bfb6fc58ff33959e6f5c9029c8a3e32c789509/RESEARCH_PROGRAMME.md)
+for the ownership and citation contract.
+
+Cite foundation results using a full 40-character decision-interfaces commit SHA,
+exact file/result, assumptions and evidence status. Treat upgrades as explicit
+changes to application dependencies. Mathematical results are conditional on their
+premises; Ukraine hypotheses require separate empirical support.
+
+Preserve all existing mathematical files and history here for later user-directed
+cleanup. Route new reusable mathematical results and corrections to the foundation
+repository, then cite them here. Both README files are reserved for the user's own
+revision; do not change them as part of this handoff. Their existing research
+ownership language predates the boundary recorded here.
 
 ## Working practice
 
@@ -29,7 +42,8 @@ history here. Prior Bellman research may be read as background.
   domain boundary.
 - Record corrections and failed approaches without erasing prior mathematical
   findings. Distinguish assumptions, proofs, computations and formal verification.
-- For every new mathematical phase, update `docs/working-ground/VERIFICATION.md`.
+- For every new mathematical phase, update `docs/working-ground/VERIFICATION.md`
+  in decision-interfaces, where that phase now belongs.
   Never write simply "verified": state the exact theorem/artifact and whether the
   evidence is a written proof, exact computation, numerical check, Lean proof, or
   independent external replay. Unformalized current mathematics must stay labelled

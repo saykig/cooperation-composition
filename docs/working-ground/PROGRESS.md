@@ -564,3 +564,21 @@ These supplement written proofs, not Lean or independent human review.
 minimality, practical higher-d codecs and the full strategic formalization.
 The storage question is resolved under the explicit finite-budget contract;
 continuous fine frontiers were not begun.
+
+
+## September 21, 2026 — mathematical foundation handoff
+
+The complete research snapshot and all main history through source commit
+`7dfd6ae183ce8a1e68648993661be2e39b31f16a` were copied into
+[decision-interfaces](https://github.com/saykig/decision-interfaces).
+Its initial ownership-guidance commit is
+[`91bfb6fc58ff33959e6f5c9029c8a3e32c789509`](https://github.com/saykig/decision-interfaces/commit/91bfb6fc58ff33959e6f5c9029c8a3e32c789509).
+That repository now owns future theorem development, proofs, verification and
+mathematical provenance. Cooperation-enforcement becomes the application/proving
+ground for the Ukraine-focused CEES paper, citing stable foundation results by
+full commit, exact result, assumptions and evidence status.
+
+All existing mathematics and history remain here for later cleanup. No theorem,
+receipt or proof status changes in this handoff. Both README files remain unchanged
+at the user's request. See the foundation
+[programme and citation contract](https://github.com/saykig/decision-interfaces/blob/91bfb6fc58ff33959e6f5c9029c8a3e32c789509/RESEARCH_PROGRAMME.md).
