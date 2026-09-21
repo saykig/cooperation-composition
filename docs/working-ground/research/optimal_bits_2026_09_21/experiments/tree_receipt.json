@@ -1,8 +1,0 @@
-{
-  "arithmetic": "fractions.Fraction",
-  "compatible_assignments_enumerated": 2500,
-  "globally_empty_instances": 24,
-  "scope": "error-budget dynamic program; not order optimization",
-  "status": "pass",
-  "tree_instances": 168
-}
