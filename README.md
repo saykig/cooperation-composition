@@ -12,6 +12,25 @@ This is an abstract mathematical question, but the structure appears in real sec
 
 > How do connected information structures determine the incentives or enforcement required to sustain cooperation?
 
+## Broader programme and current proving ground
+
+This thesis is the current proving ground for a broader research programme:
+building reusable mathematical interfaces for consequential decision-making under
+uncertainty, strategic interaction and changing information.
+
+“Universal” here does not mean one equation that predicts every outcome. It means
+that the mathematical pieces should be interoperable: uncertainty, dynamics,
+strategy, incentives, enforcement and other components should be reusable across
+different domains when their assumptions and interfaces match.
+
+Cooperation and enforcement are the current test case. Security and war are
+important applications, not the intended boundary of the mathematics. The same
+underlying interfaces should eventually be testable in other settings such as AI
+coordination, biosecurity and institutional bargaining.
+
+The canonical research-purpose statement, including the September 20 clarification,
+is recorded in the [research north star](docs/working-ground/research/foundations/NORTH_STAR.md).
+
 
 *The current research question is in its rough draft and will evolve over time. The purpose of this repository is to preserve the research trajectory of the paper*
 
