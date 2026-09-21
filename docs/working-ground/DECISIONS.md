@@ -269,3 +269,16 @@ preserve.
 The robust fine is discontinuous at zero margin. A small representation error does
 not imply a small fine error. A correct approximate decoder must return `refine`
 when its certified interval crosses the decision boundary rather than guessing.
+
+## D47 — September 20: preserve the original north star and add the interoperable programme
+
+The August 13 north star remains part of the research record and is not superseded.
+The September 20 clarification adds a broader programme: reusable mathematical
+interfaces for consequential decision-making under uncertainty and strategic
+interaction. Cooperation/enforcement remains the active proving ground; security
+and war remain applications rather than the mathematical boundary.
+
+“Universal” is therefore not interpreted as one predictive equation. It means
+interoperable components with explicit assumptions, preserved queries, composition
+rules, error propagation and refinement boundaries. Broader generality must be
+earned mathematically rather than asserted from analogy.
