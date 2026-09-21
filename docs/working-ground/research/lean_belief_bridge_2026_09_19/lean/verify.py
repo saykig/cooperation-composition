@@ -30,7 +30,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--packages', type=Path, required=True)
     parser.add_argument('--lean', default='lean')
-    parser.add_argument('--modules', nargs='+', default=['Beliefs', 'Transcripts'])
+    parser.add_argument('--modules', nargs='+', default=['Beliefs', 'Transcripts', 'Receiver', 'Continuation', 'Bridge', 'Kernel'])
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     packages = args.packages.resolve()
@@ -58,7 +58,7 @@ def main():
             declarations.extend('Cooperation.' + name for name in names)
             sources[source.name] = hashlib.sha256(source.read_bytes()).hexdigest()
             logs[module] = run(lean + ['--root=' + str(ROOT), '-o', str(build / f'{module}.olean'),
-                                       str(source)], env)
+                                       str(source)], env).replace(str(ROOT) + os.sep, "")
         if len(set(declarations)) != len(declarations):
             raise SystemExit('Duplicate declaration in audit')
         audit = '\n'.join('import ' + m for m in args.modules) + '\n'

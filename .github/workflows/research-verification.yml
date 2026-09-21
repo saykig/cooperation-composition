@@ -58,6 +58,12 @@ jobs:
           python3 check_construction.py >/tmp/r11-construction.json
           python3 verify_results.py >/tmp/r11-certificates.json
 
+      - name: R14 exact formal-model fidelity checks
+        run: |
+          python3 docs/working-ground/research/lean_belief_bridge_2026_09_19/experiments/check_model.py >/tmp/r14-model.json
+          python3 -O docs/working-ground/research/lean_belief_bridge_2026_09_19/experiments/check_model.py >/tmp/r14-model-O.json
+          cmp /tmp/r14-model.json /tmp/r14-model-O.json
+
   numerical-python:
     name: Numerical falsification/regression checks
     runs-on: ubuntu-latest
@@ -161,3 +167,8 @@ jobs:
       - name: R05 fixed-information game proof
         run: |
           python3 docs/working-ground/research/disclosure_boundaries_2026_08_14/lean/verify.py             --packages docs/working-ground/research/information_incentives_2026_08_14/lean/.lake/packages             --lean lean >/tmp/r05-lean.json
+      - name: R14 primitive belief and continuation bridge
+        run: |
+          python3 docs/working-ground/research/lean_belief_bridge_2026_09_19/lean/verify.py \
+            --packages docs/working-ground/research/information_incentives_2026_08_14/lean/.lake/packages \
+            --lean lean >/tmp/r14-lean.json

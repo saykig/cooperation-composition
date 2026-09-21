@@ -225,3 +225,19 @@ information set, and proves uniqueness for arbitrary such sequences. The receive
 can be trembled with the same index because its later action does not affect Bayes
 conditioning. No equilibrium condition is imposed on perturbations. This is a
 formal belief bridge, not a formal proof of sequential-equilibrium existence.
+
+## D42 — September 20, R14b: derive the strategic product and keep the proof boundary
+
+The payoff calculation must retain all Nature states, terminal paths and actual
+future disclosure probabilities until receiver optimality justifies reducing it.
+R14 formally connects these sums to a normalized recursive behavioral tree and
+then derives the product. Replacing mixed continuation probabilities by one is
+invalid before backward induction; the exact mixed-tie example exposes the error.
+Likewise, endpoint 0/0 is not an off-path Bayesian belief, and relaxing p_i<τ to
+p_i≤τ can destroy strict receiver cooperation at incomplete evidence.
+
+The 119-declaration Lean audit closes beliefs, receiver choices and continuation
+gains. It does not prove full sequential-equilibrium existence or the 0-or-B
+classification. Keep those statements labeled as written proofs until the
+assessment predicate and both backward arguments are formalized. Model-fidelity
+computations, kernel checks and publication novelty are distinct claims.

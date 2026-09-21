@@ -1,8 +1,8 @@
 # Formal model and statement map
 
 R14, started September 19; updated September 20, 2026.
-This is a scope map, not a claim that every file below has finished compiling.
-Completed scopes and source identities are in the phase receipts and verification ledger.
+The complete source set passed a fresh build and all 119 named declarations
+passed the standard-axiom audit. Exact identities are in the receipts and ledger.
 
 ## Game represented
 
@@ -55,7 +55,7 @@ and nonnegativity are separate theorems. Receiver behavior can be perturbed at t
 same indices, so full feasible-profile consistency does not require equilibrium
 play by the perturbations.
 
-## Receiver and continuation: next compilation gate
+## Receiver and continuation
 
 `receiverGain` starts with the finite expectation of the primitive D payoff:
 B−e in the all-positive state, −A−e otherwise. The C payoff is zero. Its expression
@@ -66,12 +66,32 @@ coordinate. Its posterior is at most p_i, and the all-positive state probability
 is at most that coordinate. Complete transcripts reveal the all-positive state.
 Best replies must be established by comparison with every feasible mixed action.
 
+`terminal_bestReply_below` derives the unique receiver strategy from comparisons
+with all feasible mixed deviations. The boundary and above-B complete-history
+best replies are also proved.
+
 The continuation calculation sums over all terminal transcripts, multiplying each
 future sender's primitive action probability at its own full preceding history.
 It then integrates over the current sender's conditional distribution of Nature.
+The current forced action is evaluated only for the positive private type in
+`senderPayoff`; zero-type states have conditional mass zero. The helper kernel
+is defined on all Boolean states, but this extension does not give the zero type
+a new feasible action.
 Only applying the receiver's derived below-B rule eliminates all but the complete
 report path. A separate finite distributivity calculation integrates the future
 bits and earns the factors p_i q_i. The gain is not defined as a suffix product.
+
+`continuation_bridge` combines the derived receiver rule with this actual payoff
+calculation. It assumes receiver optimality, not a suffix condition. The
+`sender_bestReply_gain` and sign/tie lemmas handle all mixed sender deviations.
+
+`Kernel.lean` defines a recursive binary behavioral tree separately. It proves
+its normalization, unrolls it to a product, and identifies that product with the
+`continuationWeight` used in the payoff calculation. The actual continuation
+kernel therefore has nonnegative weights summing to one. `Bridge.lean` also
+combines sender and receiver perturbations into one full-profile existence theorem,
+proves positivity of actual public/private conditioning masses, and checks three
+small assumption/interpretation examples.
 
 ## Explicit boundary of this goal
 

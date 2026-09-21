@@ -453,3 +453,29 @@ standard dependencies `propext`, `Classical.choice`, and `Quot.sound`. This clos
 the belief portion, not the whole goal: receiver expected-payoff derivation and
 primitive state/path continuation gains are next. Full assessment rationality,
 backward construction, target existence and the 0-or-B theorem remain unformalized.
+
+## R14b — September 20: Lean belief and continuation bridge completed
+
+Following `a11ae37`, the [complete note](research/lean_belief_bridge_2026_09_19/manuscript/RESEARCH_NOTE.md)
+and six Lean modules now derive receiver best replies from finite primitive
+expected payoffs and sender gains from the full state/path expectation. Below B,
+the report-minus-silence gain after all reports is η_j∏_{i>j}(p_i q_i)−k_j; after
+any past silence it is −k_j. Future behavior is arbitrary and may be mixed.
+The receiver's complete-history tie at B and strict choices on either side are
+proved. A recursive behavioral-tree identity additionally proves that the actual
+continuation weights are nonnegative and sum to one.
+
+The fresh build audits **119 named declarations** with only standard Lean axioms.
+The retained receipt binds every source and the verifier. Exact finite fidelity
+checks independently compare R14's definitions with R13's recursive evaluator:
+844 posteriors, 4,944 normalized kernels, 9,888 path expectations, 408 sender gains,
+and 204 cascade comparisons across 28 designed profiles at n=1..4. Normal and
+optimized Python agree. These computations supplement, rather than prove, the
+arbitrary-n formal statements. Added CI replay of the full audit and fidelity suite.
+
+**Boundary retained:** full assessment/sequential-equilibrium existence, backward
+no-mixed-rescue and largest-blocker construction, silent-target equivalence and
+the attained 0-or-B minimum remain written R13 proofs. The bridge alone does not
+upgrade all of R08–R12 to Lean. No external kernel replay or publication novelty
+is claimed. The main research question is unchanged; no growing-dimension work
+was begun. The next formal attack is the assessment and backward construction.

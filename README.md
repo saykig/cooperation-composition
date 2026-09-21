@@ -19,7 +19,10 @@ This is an abstract mathematical question, but the structure appears in real sec
 
 The [research working ground](docs/working-ground/README.md) collects the mathematical research, progress ledger, counterexamples and evidence, beginning August 13, 2026. The [verification ledger](docs/working-ground/VERIFICATION.md) states exactly which results have written proofs, computational checks, or Lean coverage.
 
-The latest [general sharpness investigation](docs/working-ground/research/general_sharpness_2026_09_19/manuscript/RESEARCH_NOTE.md)
-proves that the dimension-based prefix bound is attained in every dimension when
-admissible payoffs may vary, and separates this from the still-open fixed-threshold question.
-The earlier exact polynomial-time selector on rational segments remains the algorithmic baseline.
+The latest [Lean belief and continuation bridge](docs/working-ground/research/lean_belief_bridge_2026_09_19/manuscript/RESEARCH_NOTE.md)
+formally derives unique consistent beliefs, receiver best replies and sender
+continuation gains from the sequential game's primitives, for arbitrary finite
+sender counts. Its 119-declaration audit closes this bridge; complete equilibrium
+existence remains a written proof. Earlier phases establish exact selection at
+fixed affine dimension and dimension-dependent sharpness. Growing-dimension
+complexity remains open.

@@ -22,8 +22,10 @@ declared benchmark. This is the highest-value target because R09 and R10 inherit
 this characterization.
 
 **Current status:** R13 independently rederived the game from its primitives and
-completed the written audit. It supplies a new exact state/path/tremble suite and
-arbitrary-mixed finite-game checks. No Lean proof; original R08 check executable
+completed the written audit. R14 now Lean-checks the primitive belief, receiver
+and full mixed continuation bridge, with 119 audited declarations and a normalized
+behavioral tree. Full assessment/sequential-equilibrium existence, both backward
+arguments and the 0-or-B theorem remain unformalized. The original R08 executable
 is still unavailable. The exact existence predicate above avoids falsely claiming
 that a weak blocker makes every equilibrium silent.
 
@@ -37,7 +39,10 @@ Suggested formalization order, now grounded in
    report probabilities before any backward substitution.
 4. Both directions of target existence and the attained minimum at 0 or B.
 
-Formalizing only the final suffix inequalities does not establish steps 1–3.
+R14 closes steps 1–3 from the primitive game, including off-path limits and full
+state/path payoffs. Step 4 is now the first open formalization step; it requires
+the assessment predicate and backward construction, not additional suffix algebra.
+See [R14's precise scope](research/lean_belief_bridge_2026_09_19/math/FORMAL_SCOPE.md).
 
 ### 2. R10 move-to-front and short-prefix theorem
 
