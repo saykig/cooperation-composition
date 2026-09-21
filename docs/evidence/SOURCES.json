@@ -1,0 +1,302 @@
+[
+  {
+    "id": "U1",
+    "publication_date": "2025-10-03",
+    "source_type": "Primary / official exercise report",
+    "title": "Ukraine MoD: DELTA at REPMUS 2025",
+    "url": "https://mod.gov.ua/en/news/ukrainian-combat-system-delta-became-primary-command-platform-for-combined-multinational-team-at-nato-exercises",
+    "locator": "Opening four paragraphs",
+    "limitation": "Exercise integration claims; no independent mission logs or wartime inference.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "U2",
+    "publication_date": "2025-03-07",
+    "source_type": "Independent journalism / Reuters; embedded primary statements",
+    "title": "US government revokes some access to satellite imagery for Ukraine",
+    "url": "https://www.investing.com/news/world-news/us-aerospace-firm-maxar-disables-satellite-photos-for-ukraine-3915785",
+    "locator": "Corrected report; Maxar and NGA statements",
+    "limitation": "One government platform only; other Maxar customer programmes unchanged. Statements mediated by Reuters.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "U3",
+    "publication_date": "2025-03-11",
+    "source_type": "Primary / joint diplomatic statement",
+    "title": "Joint statement after Jeddah (Ukrainian original)",
+    "url": "https://president.gov.ua/news/spilna-zayava-za-pidsumkami-zustrichi-delegacij-ukrayini-ta-96553",
+    "locator": "Paragraphs on ceasefire and intelligence resumption",
+    "limitation": "Public commitments, not proof of delivery. English endpoint failed; Ukrainian text retrieved and paraphrased.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "U4",
+    "publication_date": "2025-03-12",
+    "source_type": "Specialist journalism / original user reporting",
+    "title": "Militarnyi: Maxar resumes GEGD access",
+    "url": "https://militarnyi.com/en/news/exclusive-maxar-resumes-gegd-access-for-ukrainian-users/",
+    "locator": "Opening paragraphs; user notification image",
+    "limitation": "Multiple unnamed users and reproduced notice; users not independently authenticated in this review.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "U5",
+    "publication_date": "2025-03-07",
+    "source_type": "Independent journalism / Associated Press",
+    "title": "Russia attacks energy supplies as US cuts imagery access",
+    "url": "https://apnews.com/article/942d5fa7c9bdd42e6361e5fa7ddb3ae3",
+    "locator": "NGA and Maxar passages",
+    "limitation": "Independent newsroom corroboration of restriction; much evidence still comes from the same institutions.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "U6",
+    "publication_date": "2025-03-11",
+    "source_type": "Independent journalism / Reuters",
+    "title": "US to resume security support after Jeddah",
+    "url": "https://www.investing.com/news/world-news/us-and-ukraine-to-meet-in-saudi-arabia-after-disastrous-white-house-talks-3919494",
+    "locator": "Joint-statement reporting",
+    "limitation": "Corroborates diplomatic sequence, not a separate observation of every restored intelligence feed.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "A1",
+    "publication_date": "2024-07-12",
+    "source_type": "Primary / legislation (OJ publication)",
+    "title": "Regulation (EU) 2024/1689",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "locator": "Article 53; Annexes XI/XII; Article 111(3)",
+    "limitation": "Original enacted text; consult current legal status before later compliance adjudication.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "A2",
+    "publication_date": null,
+    "source_type": "Primary / Commission interpretative guidance",
+    "title": "Guidelines on obligations for GPAI providers: FAQ",
+    "url": "https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers",
+    "locator": "Documentation and enforcement questions",
+    "limitation": "Living guidance; distinguishes authorities, downstream recipients and public summaries. Not an outcome evaluation.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "A3",
+    "publication_date": "2025-07-10",
+    "source_type": "Primary / voluntary instrument and living signatory list",
+    "title": "General-Purpose AI Code of Practice",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+    "locator": "Three chapters and signatories",
+    "limitation": "Date is Code publication, not date of every list entry. Signature is not compliance; chapter coverage differs.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "A4",
+    "publication_date": null,
+    "source_type": "Primary / provider implementation interface",
+    "title": "Google EU AI Act Model Documentation Point of Contact",
+    "url": "https://support.google.com/eu-ai-act-model-documentation/troubleshooter/16896505?hl=en",
+    "locator": "Introductory paragraph",
+    "limitation": "Public contact mechanism observed; no request submitted or response tested.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "A5",
+    "publication_date": "2025-12-11",
+    "source_type": "Independent academic empirical study / preprint",
+    "title": "Wan et al.: The 2025 Foundation Model Transparency Index",
+    "url": "https://arxiv.org/abs/2512.10169",
+    "locator": "Abstract; indicator design in full-text rendering",
+    "limitation": "Global public-transparency measurement; changing indicators/sample; not an EU legal compliance score.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "A6",
+    "publication_date": "2025-07-23",
+    "source_type": "Independent journalism / Euronews",
+    "title": "Meta will not sign EU AI Code, but who will?",
+    "url": "https://www.euronews.com/my-europe/2025/07/23/meta-wont-sign-eus-ai-code-but-who-will",
+    "locator": "Provider positions",
+    "limitation": "Evidence of public contestation, not proof that Meta withheld legally owed downstream information.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "A7",
+    "publication_date": null,
+    "source_type": "Primary / Commission implementation guidance",
+    "title": "Enforcement framework of the AI Act",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act",
+    "locator": "AI Office powers and application date",
+    "limitation": "Current institutional account; no named GPAI downstream-disclosure enforcement outcome established here.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N1",
+    "publication_date": null,
+    "source_type": "Primary / NATO programme page",
+    "title": "Task Force X-Arctic",
+    "url": "https://www.act.nato.int/activities/task-force-x-arctic/",
+    "locator": "Trials, technical lead and operational integration paragraphs",
+    "limitation": "June/July 2026 trials; anticipated capabilities and organisational assignments, not demonstrated deterrence.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N2",
+    "publication_date": "2025-01-06",
+    "source_type": "Primary / UK MoD announcement",
+    "title": "JEF activates Nordic Warden",
+    "url": "https://www.gov.uk/government/news/joint-expeditionary-force-activates-uk-led-reaction-system-to-track-threats-to-undersea-infrastructure-and-monitor-russian-shadow-fleet",
+    "locator": "Risk warnings; Northwood; trial chronology",
+    "limitation": "Describes warning route and monitoring; not an alert-to-interdiction audit.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N3",
+    "publication_date": "2025-01-22",
+    "source_type": "Primary / ministerial parliamentary statement",
+    "title": "Russian maritime activity and UK response",
+    "url": "https://www.gov.uk/government/speeches/defence-secretary-oral-statement-on-russian-maritime-activity-and-uk-response-22-january-2025",
+    "locator": "Nordic Warden and Baltic Sentry passages",
+    "limitation": "Accountable public statement claiming warnings were being sent; no alert log attached.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N4",
+    "publication_date": "2025-01-15",
+    "source_type": "Independent analysis / Polish publicly funded research institute",
+    "title": "OSW: Baltic Sentry",
+    "url": "https://www.osw.waw.pl/en/publikacje/analyses/2025-01-15/baltic-sentry-natos-enhanced-activity-baltic-sea",
+    "locator": "Coordination and JEF support",
+    "limitation": "Institutionally separate analysis, reliant on official deployment accounts; not independent operational measurement.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N5",
+    "publication_date": "2025-10-03",
+    "source_type": "Independent journalism / Finnish public broadcaster",
+    "title": "Yle: Finnish court has no jurisdiction in Eagle S case",
+    "url": "https://yle.fi/a/74-20186464",
+    "locator": "Opening paragraphs; updated 2025-10-04",
+    "limitation": "Historical lower-court outcome, superseded by August 2026 appeal decision.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N6",
+    "publication_date": "2025-10-09",
+    "source_type": "Primary / prosecution statement",
+    "title": "Prosecutor appeals Eagle S judgment",
+    "url": "https://valtioneuvosto.fi/-/11121156/syyttaja-hakee-muutosta-tuomioon-eagle-s-asiassa?languageId=en_US",
+    "locator": "English statement",
+    "limitation": "Prosecution position and procedural step; not a merits finding.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N7",
+    "publication_date": "2026-08-27",
+    "source_type": "Primary / published appellate decision",
+    "title": "Helsinki Court of Appeal: HelHO:2026:9",
+    "url": "https://www.tuomioistuimet.fi/ratkaisut/helho20269/",
+    "locator": "Teonkuvaus; assessment and conclusions",
+    "limitation": "Finnish decision paraphrased. Distinguish indictment allegations used in jurisdiction analysis from proven guilt.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N8",
+    "publication_date": "2026-08-27",
+    "source_type": "Primary / court notice",
+    "title": "Eagle S appeal: R 16/2025/2572",
+    "url": "https://www.tuomioistuimet.fi/ajankohtaista/tiedotteet/tiedote-hovioikeuden-paatoksesta-ns-eagle-s-aluksen-asiassa-r-16-2025-2572/",
+    "locator": "Operative disposition and appeal status",
+    "limitation": "Remand; ruling not final. Public full record can be requested; no request sent.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "N9",
+    "publication_date": "2026-08-27",
+    "source_type": "Independent specialist journalism / Recorded Future News",
+    "title": "Finland appeals court revives Eagle S case",
+    "url": "https://therecord.media/finland-appeals-court-revives-case-against-eagle-s",
+    "locator": "Jurisdiction, return to trial, secrecy discussion",
+    "limitation": "Independent report by cybersecurity-industry-owned outlet; no independent proof of crew intent.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "D1",
+    "publication_date": "2022-10-27",
+    "source_type": "Primary / legislation (OJ publication)",
+    "title": "Regulation (EU) 2022/2065: Digital Services Act",
+    "url": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng",
+    "locator": "Article 40(12), contrasted with 40(4) and 40(8)",
+    "limitation": "Public-data access route differs from coordinator-mediated vetted access to other data.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "D2",
+    "publication_date": "2025-05-13",
+    "source_type": "Primary / German judgment hosted by litigant",
+    "title": "Berlin Regional Court II: 41 O 140/25 eV",
+    "url": "https://freiheitsrechte.org/uploads/documents/Freiheit-im-digitalen-Zeitalter/Center-for-User-Rights/Plattform-X/X-DRI/Beschluss_Landgericht_Berlin_x.pdf",
+    "locator": "PDF pp. 11-13, urgency reasoning",
+    "limitation": "Original German court record; host is a litigation participant. Judicial rationale is not proof of platform motivation.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "D3",
+    "publication_date": "2026-02-17",
+    "source_type": "Primary / court judgment in litigant-hosted English translation",
+    "title": "Berlin Court of Appeal: 1 W 399/25",
+    "url": "https://freiheitsrechte.org/uploads/documents/Freiheit-im-digitalen-Zeitalter/Center-for-User-Rights/Plattform-X/Urteil_v_17_02_2026_EN.pdf",
+    "locator": "Operative order and reasons",
+    "limitation": "Translation not certified by this review; first-page text extraction incomplete. Do not equate order with delivery.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "D4",
+    "publication_date": "2026-02-18",
+    "source_type": "Independent journalism / Reuters",
+    "title": "German court orders X data access for Hungary research",
+    "url": "https://www.investing.com/news/economy-news/german-court-orders-x-to-grant-data-access-for-hungary-election-research-4511804",
+    "locator": "Court spokesperson and party response paragraphs",
+    "limitation": "Court confirms immediate effect. X did not respond to Reuters; report records Musk reaction, not full legal defence.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "D5",
+    "publication_date": "2026-03-06",
+    "source_type": "Primary participant account / commentary",
+    "title": "Alvarado Rincon, Ruf and Bering: How researchers won access litigation",
+    "url": "https://www.techpolicy.press/how-researchers-won-a-legal-fight-to-access-xs-data-under-the-dsa/",
+    "locator": "2025/2026 comparison and deadlines",
+    "limitation": "Authors participated in litigation. Independent publication venue does not make the account independent corroboration.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "D6",
+    "publication_date": "2025-12-05",
+    "source_type": "Primary / Commission enforcement announcement",
+    "title": "Commission fines X EUR 120 million",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-fines-x-eu120-million-under-digital-services-act",
+    "locator": "Failure to provide researchers access to public data",
+    "limitation": "Fine covers three infringements; not solely researcher access. Full non-confidential decision not retrieved.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "D7",
+    "publication_date": "2026-07-16",
+    "source_type": "Primary / Commission representation update",
+    "title": "Commission accepts X action plan (Italian)",
+    "url": "https://italy.representation.ec.europa.eu/notizie-ed-eventi/notizie/la-commissione-accetta-il-piano-dazione-di-x-conformarsi-al-regolamento-sui-servizi-digitali-dsa-2026-07-16_it",
+    "locator": "Advertising repository commitments",
+    "limitation": "Ad-library API commitments do not establish delivery to DRI under Article 40(12).",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": "D8",
+    "publication_date": null,
+    "source_type": "Primary participant claim / public LinkedIn post",
+    "title": "DRI: Annual Report 2025, digital democracy case study",
+    "url": "https://www.linkedin.com/posts/dri_annual-report-2025-dd-activity-7498334713070202880-gwjr",
+    "locator": "Post sentence reporting access granted after 2026 case",
+    "limitation": "Exact publication date unresolved; retrieved by 2026-09-21. Access grant reported, usable coverage and receipt date unverified.",
+    "accessed": "2026-09-21"
+  }
+]
