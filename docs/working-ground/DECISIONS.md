@@ -282,3 +282,12 @@ and war remain applications rather than the mathematical boundary.
 interoperable components with explicit assumptions, preserved queries, composition
 rules, error propagation and refinement boundaries. Broader generality must be
 earned mathematically rather than asserted from analogy.
+
+
+## D48 — September 21, R16a: separate reuse and audit models
+
+R15 survives the independent foundation audit. A finite bit claim must specify
+whether it covers one compressed block with exact attachments, bounded total
+compressed error, or unlimited repeated reuse. Certificate bits likewise depend
+on whether the verifier rereads the source and how much computation it may do.
+The upcoming rate theorem will keep these models separate.

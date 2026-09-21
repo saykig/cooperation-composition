@@ -524,3 +524,17 @@ and [source notes](research/enforcement_codec_2026_09_20/sources/NOTES.md).
 jointly control reusable representation size, certificate size and query cost for
 proof-carrying shared interfaces. Formalize the sandwich/contextual-margin bridge
 after the R08/R14 target-existence theorem is completed in Lean.
+
+
+## R16a — September 21: independent foundation audit
+
+Read R13–R15 and rederived the five R15 foundations; all survive within their
+stated scope. Added an explicit rational-query separation lemma, strict-margin
+boundary examples, and warnings about nonconvex aggregation and source-relative
+verification. New Fraction-based probes pass 32,847 checks, with byte-identical
+normal/optimized receipts. This is written proof plus exact finite evidence, not
+Lean or a replay of the missing R15 executable.
+
+Recover: [foundation audit](research/optimal_bits_2026_09_21/math/FOUNDATION_AUDIT.md).
+Next: declare composition budgets and separate representation, certificate,
+verification/query and refinement costs before closing the planar bit rate.

@@ -82,3 +82,15 @@ Current priorities:
    formal proof in this repository.
 
 See [FORMALIZATION_BACKLOG.md](FORMALIZATION_BACKLOG.md) for the order of work.
+
+
+## R16a — September 21 independent R15 foundation audit
+
+**Written proof:** rederived operational discrepancy, single-sender attainment,
+directed product addition, arbitrary-encoder packing and rational sandwich;
+added rational-query continuity and strict-boundary qualifications.
+**Exact computation:** 32,847 Fraction checks; normal and optimized Python
+receipts agree. [Evidence](research/optimal_bits_2026_09_21/experiments/foundation_receipt.json).
+**Limits:** no R16 Lean, external kernel or independent human audit; historical
+R15 executable remains unavailable here. See the linked foundation audit for
+which identities the finite checks cover.
