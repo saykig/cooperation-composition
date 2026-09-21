@@ -479,3 +479,48 @@ the attained 0-or-B minimum remain written R13 proofs. The bridge alone does not
 upgrade all of R08–R12 to Lean. No external kernel replay or publication novelty
 is claimed. The main research question is unchanged; no growing-dimension work
 was begun. The next formal attack is the assessment and backward construction.
+
+
+## R15 — September 20: enforcement-sufficient compression and proof-carrying codec
+
+**Question:** what is the smallest reusable representation of an uncertain
+information component that preserves the enforcement decisions we need, including
+after composition?
+
+**Outcome:** the exact independent-composition interface is the downward hull /
+complete positive weighted-log support profile. A directed discrepancy between
+interfaces equals the worst change in a permitted contextual incentive-margin
+query, and one additional sender can attain it. Directed errors add exactly across
+independent compressed blocks; exact attachments add no error.
+
+For fixed affine dimension d>=2 and probabilities bounded away from zero, the
+phase derives reusable-storage bounds
+`O(gamma^{-(d-1)/2} log(1/gamma))` and
+`Omega(gamma^{-(d-1)/2})` for all gamma-separated enforcement queries. A
+working planar encoder produces a convex-hull summary and rational sandwich
+certificate; the decoder returns zero fine, full fine or `refine` near ties.
+A finite shared-label rule preserves matched dependencies, while an exact
+counterexample shows that erasing the label can invent a cascade.
+
+**Evidence:** written proofs plus 19,264 exact rational checks, 250 valid compact
+bundle comparisons and 250 corruption-rejection controls. Normal and optimized
+Python receipts agreed, and the full originating package replayed cleanly before
+the repository record was created. The executable package itself is not yet stored
+in this phase directory, so these R15 computations are currently recorded evidence,
+not repository-CI replay. No new Lean or Palomar proof was run.
+
+**Limits:** convex/Pareto approximation machinery is borrowed; historical novelty
+of the enforcement specialization remains open. The general-dimensional codec is
+not implemented here, a logarithmic storage gap remains, optimized-value-only
+minimality is unproved, and arbitrary later evidence can require source recovery.
+
+**Recover:** [phase README](research/enforcement_codec_2026_09_20/README.md),
+[research note](research/enforcement_codec_2026_09_20/manuscript/RESEARCH_NOTE.md),
+[complete results](research/enforcement_codec_2026_09_20/math/RESULTS.md),
+[verification status](research/enforcement_codec_2026_09_20/VERIFICATION.json),
+and [source notes](research/enforcement_codec_2026_09_20/sources/NOTES.md).
+
+**Next attack:** close or explain the constructive logarithmic storage gap and
+jointly control reusable representation size, certificate size and query cost for
+proof-carrying shared interfaces. Formalize the sandwich/contextual-margin bridge
+after the R08/R14 target-existence theorem is completed in Lean.
