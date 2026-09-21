@@ -21,6 +21,12 @@ history here. Prior Bellman research may be read as background.
 - Preserve other chats' uncommitted work; stage only the current task's changes.
 - The research home is `docs/working-ground/`. Read its README, PROGRESS.md and
   DECISIONS.md before continuing the trajectory. Keep those ledgers current.
+- Read the canonical north star at
+  `docs/working-ground/research/foundations/NORTH_STAR.md`. Preserve the August 13
+  statement and its September 20 clarification: the broader programme concerns
+  interoperable mathematics for consequential decision-making, while
+  cooperation/enforcement is the current proving ground rather than the final
+  domain boundary.
 - Record corrections and failed approaches without erasing prior mathematical
   findings. Distinguish assumptions, proofs, computations and formal verification.
 - For every new mathematical phase, update `docs/working-ground/VERIFICATION.md`.
