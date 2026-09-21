@@ -23,24 +23,4 @@ that the mathematical pieces should be interoperable: uncertainty, dynamics,
 strategy, incentives, enforcement and other components should be reusable across
 different domains when their assumptions and interfaces match.
 
-Cooperation and enforcement are the current test case. Security and war are
-important applications, not the intended boundary of the mathematics. The same
-underlying interfaces should eventually be testable in other settings such as AI
-coordination, biosecurity and institutional bargaining.
-
-The canonical research-purpose statement, including the September 20 clarification,
-is recorded in the [research north star](docs/working-ground/research/foundations/NORTH_STAR.md).
-
-
 *The current research question is in its rough draft and will evolve over time. The purpose of this repository is to preserve the research trajectory of the paper*
-
-## Working ground
-
-The [research working ground](docs/working-ground/README.md) collects the mathematical research, progress ledger, counterexamples and evidence, beginning August 13, 2026. The [verification ledger](docs/working-ground/VERIFICATION.md) states exactly which results have written proofs, computational checks, or Lean coverage.
-
-The latest [enforcement-sufficient compression phase](docs/working-ground/research/enforcement_codec_2026_09_20/manuscript/RESEARCH_NOTE.md)
-asks what a minimal reusable information interface must retain to preserve
-enforcement decisions under composition. It derives an operational error measure,
-composition law and fixed-dimensional storage bounds, and records a proof-carrying
-planar codec from the originating run. These new compression results remain
-written proofs plus exact computational evidence; they are not yet Lean-verified.
