@@ -28,6 +28,12 @@ enforcement required for cooperation?
 
 > How do connected information structures determine the incentives or enforcement required to sustain cooperation?
 
+Ukraine remains a leading case, but I am also comparing EU AI governance and
+Nordic/High North security settings before settling the European application.
+The [case-selection note](docs/paper/CASE_SELECTION.md) records what the available
+evidence supports and what still needs to be established. No final case or
+mathematical dependency has been chosen.
+
 ## Broader programme and current proving ground
 
 This paper is one current proving ground for a broader research programme:
@@ -40,7 +46,7 @@ strategy, incentives, enforcement and other components should be reusable across
 different domains when their assumptions and interfaces match.
 
 For this repository, that broader mathematical programme is background rather than
-the object being documented in full. As the Ukraine-focused paper develops, I will
+the object being documented in full. As the European-focused paper develops, I will
 bring in only the mathematical results actually needed to state, operationalize,
 or test its claims. The exact mathematical dependencies are still being worked out.
 

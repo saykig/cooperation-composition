@@ -2,48 +2,43 @@
 
 ## Repository scope
 
-This repository is the application and proving ground for the Ukraine-focused
-European-security paper.
+This repository is the application and proving ground for a European-focused
+research paper. The user's September 21 clarification authorizes comparing Ukraine,
+EU AI governance, and Nordic/High North security rather than fixing the case early.
+Ukraine remains a leading candidate, not a mandatory outcome of the comparison.
+Read `docs/paper/CASE_SELECTION.md` before changing the research question.
 
-Use it for:
+Use it for empirical evidence, source assessment, hypotheses and rival explanations,
+application-specific models/simulations, research design and operationalization,
+and concise mathematical statements actually used by the paper.
 
-- empirical evidence and source assessment;
-- Ukraine-specific hypotheses and interpretation;
-- application-specific modelling and simulations;
-- methods and operationalization;
-- concise mathematical statements actually used by the paper.
-
-Do **not** use this repository as the home for broad theorem development,
-mathematical provenance, formal-verification trails, or reusable mathematical
-research that is not yet part of the application.
+Do not use this repository for broad theorem development, mathematical provenance,
+formal-verification trails, or reusable mathematical research that is not part of
+the application. Do not publicly name or link an unpublished foundation project.
 
 ## Mathematical dependencies
 
-The paper's mathematical dependencies are currently unresolved.
+The paper's mathematical dependencies remain unresolved. No theorem, code pin or
+numerical claim becomes a dependency simply because it is potentially interesting.
+Do not import a foundation automatically or claim a new case validates it.
 
-Do not pin, import, or present a mathematical theorem as a dependency merely because
-it is interesting or potentially relevant. A result becomes an application
-dependency only when the paper actually uses it.
-
-When that happens, record in this repository:
-
-- the exact mathematical statement used;
-- its assumptions;
-- how application quantities map to those assumptions;
-- its evidence/verification status;
-- what substantive claim in the paper depends on it.
-
-Keep proofs, discovery logs, failed approaches, and general theorem provenance out
-of this repository unless they are necessary to understand an application-specific
-derivation.
+When a result is genuinely used, record its precise statement, assumptions,
+application mapping, evidence status, dependent argument and limitations. Discuss
+publication/citation of unpublished work with the author rather than exposing it
+through a public repository link. Keep application-specific derivations here when
+needed to understand the method; keep the full general discovery trail elsewhere.
 
 ## Working practice
 
 - Do not create branches unless the user instructs you to.
-- Commit and push coherent milestones.
-- Preserve empirical uncertainty and distinguish evidence from interpretation.
-- Treat simulations as tests of declared assumptions, not as empirical proof.
-- Keep the paper centered on Ukraine unless the user explicitly expands the case
-  scope.
-- Do not let the degree requirement limit the broader mathematical research
-  programme; this repository is only the application paper.
+- Commit and push coherent milestones; preserve unrelated work and prior evidence.
+- Distinguish institutional announcements, observed behavior, causal evidence and
+  interpretation. An official claim is not an independently established outcome.
+- Treat simulations as consequences of declared assumptions, not empirical proof.
+- Compare candidate cases using observable actors/actions, information access,
+  incentives, intervention instruments, an identifiable target and credible evidence.
+- Do not select the case because it appears to confirm a desired conclusion.
+- A technical integration success is not automatically incentive-compatible
+  cooperation; a stable arrangement is not automatically desirable.
+- The degree requirement concerns this paper's European focus, not the ceiling of
+  the broader mathematical research programme.
