@@ -2,7 +2,7 @@
 
 Start with [PROGRESS.md](PROGRESS.md) to find the phase, then inspect its exact
 mathematical statement, assumptions, source notes and evidence. R01–R02 concern
-foundations and revision; R03–R10 develop information, disclosure, enforcement and sequential protocol composition.
+foundations and revision; R03–R15 develop information, disclosure, enforcement, sequential protocol composition and enforcement-sufficient compression.
 The games and information assumptions change between phases: their numerical
 results cannot be compared without checking those differences.
 
@@ -39,3 +39,11 @@ that is not yet Lean-formalized. That is allowed, but the inherited status must 
 be silently upgraded. Every new phase should record which prior statements it
 uses and whether those statements are written, computationally checked or formally
 proved.
+
+
+For R15, distinguish the exact model family, its exact downward-hull/support
+interface, a certified approximation of that interface, and arbitrary later
+revision of the model family. The product/additive-error law applies only to the
+declared independent or matched-label compositions. A compact interface is not
+permission to answer an unmodeled future revision without recovering the source
+family. Near zero margin, `refine` is the correct output.
