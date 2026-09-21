@@ -538,3 +538,29 @@ Lean or a replay of the missing R15 executable.
 Recover: [foundation audit](research/optimal_bits_2026_09_21/math/FOUNDATION_AUDIT.md).
 Next: declare composition budgets and separate representation, certificate,
 verification/query and refinement costs before closing the planar bit rate.
+
+
+## R16b — September 21: log-free bits and the reuse boundary
+
+[The completed gates](research/optimal_bits_2026_09_21/README.md) establish
+Theta(gamma^-1/2) planar reusable bits with an explicit rational multiscale
+codec. Source-readable sandwich verification uses no additional witness bits
+and polynomial work in source size and 1/gamma; source retention and expanded
+query memory remain separate costs. Bronshtein already supplies the generic
+geometric entropy rate. A uniform finite construction extends the bit theorem
+to fixed affine d>=2, with Theta(log(1/gamma)) at dimensions zero/one.
+
+Up to k repeated uses require Theta(sqrt(k/gamma)) planar bits per reusable
+code. Unlimited repetition at fixed final margin forces exact interface
+distinguishability and unbounded worst-case bits. Finite shared labels retain
+a direct-sum rate when label selection is permitted; tree conditional products
+admit a max-sum error budget without convexifying the wired union.
+
+**Evidence:** 1,637 exact codec controls including 63 continuum sandwich checks;
+4,608 exact contextual queries and 3 tie controls; 168 tree comparisons against
+2,500 compatible assignments. Normal/optimized receipts match. Added CI replay.
+These supplement written proofs, not Lean or independent human review.
+**Remaining:** optimal verification/query/update tradeoffs, optimized-only
+minimality, practical higher-d codecs and the full strategic formalization.
+The storage question is resolved under the explicit finite-budget contract;
+continuous fine frontiers were not begun.

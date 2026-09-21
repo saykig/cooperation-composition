@@ -141,3 +141,21 @@ A Palomar submission should be considered only when all of the following hold:
 External registration would strengthen confidence in the formal proof artifact.
 It would still not establish novelty, empirical relevance, or that the strategic
 model is the right representation of a real institution.
+
+
+## R16 update — September 21: preserve the thesis-bearing priority order
+
+The planar storage gap is closed by a written rational multiscale argument;
+fixed-d entropy is classical. Do not prioritize coding identities merely because
+they are easy to formalize. After R08/R14 assessment existence, target:
+
+1. Rational domination sandwich -> weighted-log support -> contextual interval.
+2. Rational-query continuity plus one-sender attainment.
+3. Exact directed product addition -> finite-repeat budget and collision
+   impossibility under unlimited reuse.
+4. Finite branch max/min interval transport, compatibility masks and tree
+   max-sum error-budget induction.
+
+The [R16 candidate theorem and plan](research/optimal_bits_2026_09_21/sources/NOTES.md)
+states assumptions, closest literature and priority uncertainty. No R16 Lean
+formalization has been started. Fast certificate/query complexity remains open.

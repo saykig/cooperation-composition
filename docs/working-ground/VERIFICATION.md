@@ -94,3 +94,20 @@ receipts agree. [Evidence](research/optimal_bits_2026_09_21/experiments/foundati
 **Limits:** no R16 Lean, external kernel or independent human audit; historical
 R15 executable remains unavailable here. See the linked foundation audit for
 which identities the finite checks cover.
+
+
+## R16b — September 21 optimal-bit and composition gates
+
+**Written proofs:** matching planar rate via rational multiscale rank coding;
+source-relative zero-additional-witness audit model; finite-repeat rate and
+unlimited-repeat impossibility; fixed-d entropy construction; finite label
+selection lower bound and tree error-budget transport. Geometric entropy is
+borrowed from Bronshtein; the enforcement foundations are inherited R15.
+**Exact computation:** 1,637 codec controls (63 sandwich fixtures), 4,608
+contextual queries plus 3 tie controls, 168 tree instances / 2,500 compatible
+assignments; all normal/optimized receipts agree.
+[Bound source/receipt manifest](research/optimal_bits_2026_09_21/VERIFICATION.json).
+**Scope:** no R16 Lean or external kernel, no independent human proof audit;
+no implemented high-dimensional codebook, general order optimizer or optimal
+query-time theorem. Repository workflow added; local checks are the evidence
+recorded here. See [gate reports](research/optimal_bits_2026_09_21/README.md).

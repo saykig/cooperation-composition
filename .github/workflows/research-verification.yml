@@ -64,6 +64,24 @@ jobs:
           python3 -O docs/working-ground/research/lean_belief_bridge_2026_09_19/experiments/check_model.py >/tmp/r14-model-O.json
           cmp /tmp/r14-model.json /tmp/r14-model-O.json
 
+      - name: R16 optimal-bit codec and composition budgets
+        working-directory: docs/working-ground/research/optimal_bits_2026_09_21/experiments
+        run: |
+          python3 foundation_audit.py >/tmp/r16-foundation.json
+          cmp foundation_receipt.json /tmp/r16-foundation.json
+          python3 check_codec.py >/tmp/r16-codec.json
+          python3 -O check_codec.py >/tmp/r16-codec-O.json
+          cmp codec_receipt.json /tmp/r16-codec.json
+          cmp /tmp/r16-codec.json /tmp/r16-codec-O.json
+          python3 check_tree.py >/tmp/r16-tree.json
+          python3 -O check_tree.py >/tmp/r16-tree-O.json
+          cmp tree_receipt.json /tmp/r16-tree.json
+          cmp /tmp/r16-tree.json /tmp/r16-tree-O.json
+          python3 check_queries.py >/tmp/r16-queries.json
+          python3 -O check_queries.py >/tmp/r16-queries-O.json
+          cmp query_receipt.json /tmp/r16-queries.json
+          cmp /tmp/r16-queries.json /tmp/r16-queries-O.json
+
   numerical-python:
     name: Numerical falsification/regression checks
     runs-on: ubuntu-latest

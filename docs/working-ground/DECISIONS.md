@@ -291,3 +291,24 @@ whether it covers one compressed block with exact attachments, bounded total
 compressed error, or unlimited repeated reuse. Certificate bits likewise depend
 on whether the verifier rereads the source and how much computation it may do.
 The upcoming rate theorem will keep these models separate.
+
+
+## D49 — September 21, R16: coordinate precision does not force the logarithm
+
+Independent coordinate coding gives a log factor, but arbitrary encoders need
+not pay it once per frontier vertex. Multiscale composition ranks encode
+positions and amplitudes together in Theta(gamma^-1/2) planar bits. Classical
+convex metric entropy already predicts this rate; do not claim it as new geometry.
+
+## D50 — September 21, R16: unlimited repeated approximation is impossible
+
+Exact attachments preserve discrepancy, but repeated approximate occurrences
+add it. Unlimited products amplify every discarded distinction beyond a fixed
+margin. Finite rates require a total error budget or source-assisted refinement.
+
+## D51 — September 21, R16: certificate size is inseparable from verifier access
+
+A source-readable verifier can recompute the rational sandwich with zero
+additional witnesses. This does not prove a source-free recipient's relationship
+to unseen data, eliminate source storage, or make verification/query work free.
+Tree max-sum messages compute only error budgets, not complete strategic answers.

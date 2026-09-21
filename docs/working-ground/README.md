@@ -102,3 +102,13 @@ fixed-dimensional storage upper/lower bounds with the same main exponent, and
 records a rational proof-carrying planar codec. It also shows that shared scenario
 labels must survive until connection. R15 has written proofs and exact executed
 checks; no new Lean or historical-novelty certification is claimed.
+
+
+## Latest result — R16, September 21
+
+[Optimal bits and the composition contract](research/optimal_bits_2026_09_21/README.md)
+closes the planar logarithmic storage gap with a rational multiscale codec,
+separates source-readable verification from payload size, and proves unlimited
+repeat reuse cannot have finite worst-case bits at a fixed final margin. It
+extends the information rate to fixed dimension and error budgeting to labelled
+trees. Written proofs and exact executable checks; no new Lean or priority claim.
