@@ -241,3 +241,31 @@ gains. It does not prove full sequential-equilibrium existence or the 0-or-B
 classification. Keep those statements labeled as written proofs until the
 assessment predicate and both backward arguments are formalized. Model-fidelity
 computations, kernel checks and publication novelty are distinct claims.
+
+
+## D43 — September 20, R15: measure compression in incentive-margin units
+
+A generic geometric approximation norm is not the research objective. R15
+calibrates the directed support-profile discrepancy to the largest contextual
+enforcement-margin error in the declared query class. This is the operative
+compression error; it is not Shannon information, utility, welfare or the fine.
+
+## D44 — September 20, R15: exact attachments do not amplify compressed-block error
+
+Under independent composition, directed errors add exactly. Attaching an exact
+component of arbitrary size leaves the compressed block's error unchanged. Error
+accounting should charge only information that was actually compressed.
+
+## D45 — September 20, R15: compression is interface-relative, not revision-complete
+
+Finite shared labels can be retained and matched before elimination; erasing them
+can invent a profitable cascade. Arbitrary future evidence restrictions remain a
+different operation and can make discarded feasible models relevant. A compact
+interface must not silently claim support for revisions it was not designed to
+preserve.
+
+## D46 — September 20, R15: refinement near ties is part of correctness
+
+The robust fine is discontinuous at zero margin. A small representation error does
+not imply a small fine error. A correct approximate decoder must return `refine`
+when its certified interval crosses the decision boundary rather than guessing.
